@@ -1,7 +1,7 @@
 class User < ApplicationRecord 
     validates :fname, :lname, :email, :zip_code, :password_digest, :session_token, presence: true
     validates :email, uniqueness: true
-    validates :password, length: { minimum: 8 }, allow_nil: true
+    validates :password, length: { minimum: 6 }, allow_nil: true
 
     has_many :reviews,
         primary_key: :id,
@@ -16,7 +16,7 @@ class User < ApplicationRecord
         return user if user && user.is_password?(password)
     end
 
-    def is_password?(passwrd)
+    def is_password?(password)
         BCrypt::Password.new(self.password_digest).is_password?(password)
     end
 
@@ -36,6 +36,6 @@ class User < ApplicationRecord
     end
 
     def self.generate_session_token
-        SecrureRandom::urlsafe_base64(16)
+        SecureRandom::urlsafe_base64(16)
     end
 end
