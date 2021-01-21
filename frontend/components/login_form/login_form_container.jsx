@@ -13,6 +13,7 @@ const msp = (state, ownProps) => (
 const mdp = dispatch => (
     {
         processForm: (user) => dispatch(login(user)),
+        eraseErrors: () => dispatch(clearErrors)
     }
 )
 
