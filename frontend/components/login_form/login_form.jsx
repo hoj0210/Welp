@@ -8,6 +8,7 @@ class LoginForm extends React.Component {
             email: "",
             password: ""
         }
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     handleChange(type){
@@ -18,7 +19,7 @@ class LoginForm extends React.Component {
 
     handleSubmit(e){
         e.preventDefault();
-        this.props.processForm(this.state)
+        this.props.processForm(this.state).then(() => this.props.history.push(`/`))
     }
 
     renderErrors() {
@@ -35,8 +36,8 @@ class LoginForm extends React.Component {
         return(
             <form onSubmit={this.handleSubmit}>
                 <h2>Log in to Yelp</h2>
-                <p>New to Yelp?</p>
-                <Link to='/signup'>Sign up</Link>
+                {this.renderErrors()}
+                <p>New to Yelp? <Link to='/signup'>Sign up</Link> </p>
                 <label>Email:
                     <input type="text" value={this.state.email} onChange={this.handleChange("email")}/>
                 </label>
