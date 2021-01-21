@@ -13,11 +13,12 @@ const NavBar = props => {
     const inSession = () => (
         <div>
             <h2>Hi!</h2>
+            <button className="header-button" onClick={() => props.logout()}>Log Out</button>
         </div>
     )
 
     return (
-        <div>{props.currentUser ? inSession() : notInSession() }</div>
+        props.currentUser ? inSession() : notInSession() 
     )
 }
 

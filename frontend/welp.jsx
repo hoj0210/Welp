@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         store = configureStore();
     }
     //testing
+    window.store = store;
     window.getState = store.getState;
     window.dispatch = store.dispatch;
     window.login = SessionApiUtil.login
