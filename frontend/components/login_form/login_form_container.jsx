@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { login } from '../../actions/session_actions';
+import { login, eraseErrors } from '../../actions/session_actions';
 import LoginForm from './login_form';
 
 const msp = (state, ownProps) => (
@@ -13,7 +13,7 @@ const msp = (state, ownProps) => (
 const mdp = dispatch => (
     {
         processForm: (user) => dispatch(login(user)),
-        eraseErrors: () => dispatch(clearErrors)
+        eraseErrors: () => dispatch(eraseErrors())
     }
 )
 

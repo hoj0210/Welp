@@ -34,18 +34,37 @@ class LoginForm extends React.Component {
 
     render(){
         return(
-            <form onSubmit={this.handleSubmit}>
-                <h2>Log in to Yelp</h2>
-                {this.renderErrors()}
-                <p>New to Yelp? <Link to='/signup'>Sign up</Link> </p>
-                <label>Email:
-                    <input type="text" value={this.state.email} onChange={this.handleChange("email")}/>
-                </label>
-                <label>Password:
-                    <input type="password" value={this.state.password} onChange={this.handleChange("password")} />
-                </label>
-                <button>Log In</button>
-            </form>
+            <div className="session-form">
+                <div className="session-form-inner">
+                    <Link to="/"><img className="welplogo" src="https://vivalajaiba.com/wp-content/uploads/2018/07/yelp-logo.png"/></Link>
+                </div>
+                <div className="session-form-container">
+                    <div className = "session-form-area">
+                        <form onSubmit={this.handleSubmit}>
+                            <p className="session-form-header">Log in to Welp</p>
+                            {this.renderErrors()}
+                            <p className="session-form-header-2">New to Welp? 
+                                <Link to='/signup'>Sign up</Link> 
+                            </p>
+                            <input 
+                                type="text" 
+                                value={this.state.email} 
+                                placeholder="Email" 
+                                onChange={this.handleChange("email")} 
+                                className="session-form-input"/>
+                            <input 
+                                type="password" 
+                                value={this.state.password} 
+                                placeholder="Password" 
+                                onChange={this.handleChange("password")} 
+                                className="session-form-input"/>
+                            <input type="submit" value="Log In" className="submit"/>
+                        </form>
+                        <img className="graphics" src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" />
+                    </div>
+                </div>
+            </div>
+            
         )
     }
 }
