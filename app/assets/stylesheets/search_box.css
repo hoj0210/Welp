@@ -2,10 +2,49 @@
     position: relative;
     top: 350px;
     z-index: 5;
-    left: 500px;
+    left: 100px;
 }
 
-.search-box-text{
-    font: bold 16px Arial Helvetica "Helvetica Neue";
-    color: white
+.search-texts{
+}
+
+.search-text{
+    padding: 12px 13px;
+    font: 18px Arial, Helvetica, "Helvetica Neue";
+    border: none;
+    outline: none;
+    width: 360px;
+}
+
+.search-word1{
+    font: bold 18px Arial, Helvetica, "Helvetica Neue";
+    color: rgb(99, 98, 98);
+    font-weight: bolder;
+    background-color: white;
+    padding: 13px 13px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.search-word2{
+    font: bold 18px Arial, Helvetica, "Helvetica Neue";
+    color: rgb(99, 98, 98);
+    font-weight: bolder;
+    background-color: white;
+    padding: 13px 13px;
+    border-left: 1px, black
+}
+
+.search-icon-button{
+    position: relative;
+    top: 11px;
+    border: none;
+    background-color: #d32323;
+    border-radius: 0px 4px 4px 0px;
+    height: 46px;
+    width: 65px;
+    outline: none;
+}
+
+.search-icon-button:hover{
+    cursor: pointer;
 }

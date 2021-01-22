@@ -16,17 +16,19 @@ class SearchBox extends React.Component {
                 <div className="search-box">
                     <form>
                         <div className="search-texts">
-                            <label>Find
-                                <input type="text" />
+                            <label className="search-word1">Find
+                                <input className="search-text"type="text" placeholder="tacos, pizza, burger..." />
                             </label>
-                            <label>Near
-                                <input type="text" />
+                            <label className="search-word2">Near
+                                <input className="search-text"type="text" placeholder="New York, NY" />
                             </label>
+                            <button className="search-icon-button">
+                                <img src={window.searchIcon}/>
+                            </button>
                         </div>
                         
                     </form>
-                </div>
-                <p className="search-box-text">This is the search Bar</p>  
+                </div> 
             </div>
         )
     }
