@@ -4,7 +4,7 @@ import SearchBox from './search_box';
 
 const msp = (state, ownProps) => (
     {
-        formType: "splash"
+        formType: "otherpages"
     }
 )
 

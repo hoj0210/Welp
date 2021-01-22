@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { LOGOUT_CURRENT_USER } from '../../actions/session_actions';
+import SearchBoxContainer from '../search_box/search_box_container'
 //import SearchBoxContainer 
 
 const NavBar = props => {
@@ -20,7 +21,7 @@ const NavBar = props => {
     return (
         <div>
             {props.currentUser ? inSession() : notInSession()}
-            {/* <SearchBoxContainer/> */}
+            <SearchBoxContainer/>
         </div>
 
     )

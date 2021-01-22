@@ -1,0 +1,11 @@
+.search-box-container{
+    position: relative;
+    top: 350px;
+    z-index: 5;
+    left: 500px;
+}
+
+.search-box-text{
+    font: bold 16px Arial Helvetica "Helvetica Neue";
+    color: white
+}
