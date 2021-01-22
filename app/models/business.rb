@@ -12,5 +12,4 @@ class Business < ApplicationRecord
         :longitude,
         :latitude,
         presence: true 
-    validates 
 end
