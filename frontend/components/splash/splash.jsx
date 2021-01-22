@@ -11,7 +11,7 @@ class Splash extends React.Component {
         return(
             <div id="wrapper">
                 <div className="background-pic-container">
-                    <img className="background-pic" src="http://www.theasian.asia/wp-content/uploads/2017/03/10-great-korean-dishes.jpg"/>
+                    <img className="background-pic" src={window.backgroundPic}/>
                     <div className="block-1"></div>
                 </div>
                 <div className="splash-top">
