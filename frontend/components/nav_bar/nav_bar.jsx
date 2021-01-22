@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { LOGOUT_CURRENT_USER } from '../../actions/session_actions';
+//import SearchBoxContainer 
 
 const NavBar = props => {
     const notInSession = () => (
@@ -11,13 +12,17 @@ const NavBar = props => {
     );
 
     const inSession = () => (
-        <div>
-            <button className="header-button" onClick={() => props.logout()}>Log Out</button>
+        <div className="nav-loggedin">
+            <button className="logout-button" onClick={() => props.logout()}>Log Out</button>
         </div>
     )
 
     return (
-        props.currentUser ? inSession() : notInSession() 
+        <div>
+            {props.currentUser ? inSession() : notInSession()}
+            {/* <SearchBoxContainer/> */}
+        </div>
+
     )
 }
 

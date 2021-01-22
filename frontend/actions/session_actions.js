@@ -18,18 +18,18 @@ const logoutCurrentUser = () => (
     }
 )
 
-const receiveErrors = errors => (
+export const receiveErrors = errors => (
     {
         type: RECEIVE_ERRORS,
         errors
     }
 )
 
-export const eraseErrors = () => (
-    {
-        type: ERASE_ERRORS
-    }
-)
+// export const eraseErrors = () => (
+//     {
+//         type: ERASE_ERRORS
+//     }
+// )
 
 export const login = (user) => dispatch => (
     SessionApiUtil.login(user)

@@ -22,6 +22,10 @@ class LoginForm extends React.Component {
         this.props.processForm(this.state).then(() => this.props.history.push(`/`))
     }
 
+    componentWillUnmount(){
+        this.props.receiveErrors([]);
+    }
+
     renderErrors() {
         return (
             <ul>
