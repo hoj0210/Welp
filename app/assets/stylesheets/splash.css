@@ -1,0 +1,48 @@
+.splash-top{
+    position: relative;
+    z-index: 10;
+    width: 1200px;
+    margin: auto;
+}
+
+.splash-logo-container{
+    z-index: 1;
+    left: 490px;
+    position: relative;
+    width: 180px;
+    top: 120px;
+}
+
+.splash-logo{
+    width: 100%;
+    height: auto
+}
+
+
+
+.background-pic-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 105%;
+    z-index: -1;
+    min-width: 1024px;
+}
+
+.background-pic{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 105%;
+    z-index: -1;
+    min-width: 1024px;
+
+}
+
+.block-1{
+    height: 1000px;
+    width: 105%;
+    background-color: white;
+    position: relative;
+    top: 600px;
+}

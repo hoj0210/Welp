@@ -1,0 +1,49 @@
+
+
+.login-signup{
+    position: relative;
+    z-index: 1;
+    top: 16px;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-signup :first-child{
+    margin-right: 5px
+}
+
+.session-button1{
+    font: bold 14px Arial, Helvetica, "Helvetica Neue";
+    color: white;
+    padding: 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.session-button1:active{
+    color: rgb(180, 180, 180);
+}
+
+.session-button1:hover{
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.session-button2{
+    font: bold 14px Arial, Helvetica, "Helvetica Neue";
+    color: white;
+    padding: 7px 24px 8px;
+    border: white solid 2px;
+    border-radius: 4px;
+    background: transparent;
+}
+
+.session-button2:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    /* background-color: white; */
+    color: black;
+    background-color: white;
+}

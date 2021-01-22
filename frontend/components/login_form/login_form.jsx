@@ -9,7 +9,6 @@ class LoginForm extends React.Component {
             password: ""
         }
         this.handleSubmit = this.handleSubmit.bind(this)
-        this.loginDemoUser = this.loginDemoUser.bind(this)
     }
 
     handleChange(type){
@@ -21,13 +20,6 @@ class LoginForm extends React.Component {
     handleSubmit(e){
         e.preventDefault();
         this.props.processForm(this.state).then(() => this.props.history.push(`/`))
-    }
-
-    loginDemoUser(e){
-        e.preventDefault();
-        const demoUser = {email: "demouser@email.com", password: "demouser"};
-        this.props.processForm(demoUser)
-            .then(() => this.props.history.push('/'));
     }
 
     renderErrors() {
@@ -42,39 +34,39 @@ class LoginForm extends React.Component {
 
     render(){
         return(
-            <div className="session-form">
-                <div className="session-form-inner">
-                    <Link to="/"><img className="welplogo" src="https://vivalajaiba.com/wp-content/uploads/2018/07/yelp-logo.png"/></Link>
-                </div>
-                <div className="session-form-box">
-                    <div className = "session-form-area">
-                        <form onSubmit={this.handleSubmit}>
-                            <p className="session-form-header">Log in to Welp</p>
-                            {this.renderErrors()}
-                            <p className="session-form-header-2">New to Welp? 
-                                <Link to='/signup'>Sign up</Link> 
-                            </p>
-                            <input 
-                                type="text" 
-                                value={this.state.email} 
-                                placeholder="Email" 
-                                onChange={this.handleChange("email")} 
-                                className="session-form-input"/>
-                            <input 
-                                type="password" 
-                                value={this.state.password} 
-                                placeholder="Password" 
-                                onChange={this.handleChange("password")} 
-                                className="session-form-input"/>
-                            <input type="submit" value="Log In" className="submit"/>
-                        <button className="submit" onClick={this.loginDemoUser}>Demo User</button>
-                        </form>
-                        <br/>
+            <div id="wrapper">
+                <div className="session-form">
+                    <div className="session-form-inner">
+                        <Link to="/"><img className="welplogo" src="https://vivalajaiba.com/wp-content/uploads/2018/07/yelp-logo.png"/></Link>
+                    </div>
+                    <div className="session-form-box">
+                        <div className = "session-form-area">
+                            <form onSubmit={this.handleSubmit}>
+                                <p className="session-form-header">Log in to Welp</p>
+                                {this.renderErrors()}
+                                <p className="session-form-header-2">New to Welp? 
+                                    <Link to='/signup'>Sign up</Link> 
+                                </p>
+                                <input 
+                                    type="text" 
+                                    value={this.state.email} 
+                                    placeholder="Email" 
+                                    onChange={this.handleChange("email")} 
+                                    className="session-form-input"/>
+                                <input 
+                                    type="password" 
+                                    value={this.state.password} 
+                                    placeholder="Password" 
+                                    onChange={this.handleChange("password")} 
+                                    className="session-form-input"/>
+                                <input type="submit" value="Log In" className="submit"/>
+                                <p className="session-form-bottom">New to Welp? <Link to='/signup'>Sign up</Link></p>
+                            </form>
+                        </div>
                         <img className="graphics" src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" />
                     </div>
                 </div>
-            </div>
-            
+            </div>  
         )
     }
 }

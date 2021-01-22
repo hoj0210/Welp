@@ -14,8 +14,8 @@
 .session-form-box {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 120px;
-    min-height: 400px;
+    /* margin-top: 120px;
+    min-height: 400px; */
 }
 
 .session-form-box form{
@@ -30,6 +30,7 @@
     text-decoration: none;
     text-align: center;
     margin-bottom: 5px;
+    margin-top: 50px;
 }
 
 .session-form-header-2 {
@@ -37,38 +38,85 @@
     color: #333;
     text-decoration: none;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .graphics {
-    height: 300px;
+    height: 350px;
+    margin: 50px;
 }
 
 .session-form-input {
     background-color: white;
-    margin: 0px 0px 9px;
+    margin: 0px 5px 9px;
     padding: 5px 9px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 30px;
 }
 .birthday-options {
-    font: 14px Arial, Helvetica, "Hellvetica Neue";
-    margin: 0px 0px 6px
+    font: bold 14px Arial, Helvetica, "Helvetica Neue";
+    margin: 0px 5px 6px;
 }
+
+.bday-smallfont{
+    font: 12px Arial, Helvetica, "Helvetica Neue";
+    color: grey
+}
+
+/* .birthday-options div div{
+    font: 12px Arial, Helvetica, "Helvetica Neue";
+    color: grey;
+} */
 
 .submit{
     background-color: #d32323;
     font: bold 16px Arial, Helvetica, "Helvetica Neue";
     color: white;
-    padding: 10px 13px;
-    margin: 6px 
+    padding: 13px 13px;
+    margin-top: 6px;
+    border: 0px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 5px;
+}
+
+.submit:hover {
+    cursor: pointer;
 }
 
 .birthday{
     width: 100px;
     height: 30px;
     margin-right: 10px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color:grey;
 }
 
 .session-form-bottom {
     font: 12px Arial, Helvetica, "Helvetica Neue";
     color: grey;
     text-align: right;
+}
+
+
+.first-last-name input{
+    margin: 5px; 
+    border: 1px solid grey;
+    border-radius: 4px;
+    height: 30px;
+    width: 162px;
+}
+
+.first-last-name :first-child{
+    margin-right: 11px;
+}
+
+#wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
 }

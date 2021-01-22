@@ -8,10 +8,9 @@ import {AuthRoute} from '../util/route_util'
 
 const App = () => (
     <div>
-        <header>
-            <Link to="/"><h1>Welp!</h1></Link> 
+        {/* <header>
             <NavBarContainer />
-        </header>
+        </header> */}
         <Switch>
             <AuthRoute exact path="/login" component={LoginFormContainer} />
             <AuthRoute exact path="/signup" component={SignupFormContainer} />
