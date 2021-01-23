@@ -4,7 +4,7 @@ import NavBarContainer from '../nav_bar/nav_bar_container'
 import SearchBoxContainer from '../search_box/search_box_container'
 import PopularSearchContainer from '../popular_searches/popular_searches_container'
 import Categories from '../categories/categories'
-
+import About from '../about/about'
 
 class Splash extends React.Component {
     constructor(props){
@@ -35,7 +35,7 @@ class Splash extends React.Component {
                     <Categories/>
                 </div>
                 <div className="splash-about">
-
+                    <About/>
                 </div>
             </div>
             

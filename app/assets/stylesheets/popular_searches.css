@@ -1,3 +1,37 @@
 .popular-search-container{
     display: flex;
 }
+
+.splash-box-title{
+    font: bold 21px Arial, Helvetica, "Helvetica Neue";
+    color: #d32323;
+    text-align: center;
+    margin: 30px 0 20px 0;
+}
+
+.popular-search-item{
+    margin: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.popular-search-item:hover{
+    cursor: pointer;
+    box-shadow: 0px 6px 6px rgb(232, 232, 232);
+    color: rgb(0, 106, 198);
+}
+
+.popular-search-text{
+    font: bold 14px Arial, Helvetica, "Helvetica Neue";
+    text-align: center;
+    border: none;
+    position: relative;
+    bottom: 4px;
+    padding: 12px 0px;
+    border-radius: 0 0 4px 4px;
+}
+
+.popular-search-pic{
+    border-radius: 4px 4px 0 0;
+}
+

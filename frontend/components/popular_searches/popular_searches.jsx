@@ -5,37 +5,29 @@ const PopularSearches = props => (
     <div>
         <h1 className="splash-box-title">Popular Searches</h1>
         <div className="popular-search-container">
-            <div className="search-landing">
-                <div className="search-landing-pic">
-                    <img src={window.tacos} alt=""/>
+            <div className="popular-search-item">
+                <div className="popular-search-pic-c">
+                    <img className="popular-search-pic" src={window.tacos} alt=""/>
                 </div>
-                <div className="search-landing-text">
-                    <p>Tacos</p>
-                </div>
+                <p className="popular-search-text">Tacos</p>
             </div>
-            <div className="search-landing">
-                <div className="search-landing-pic">
-                    <img src={window.loungeBar}/>
+            <div className="popular-search-item">
+                <div className="popular-search-pic-c">
+                    <img className="popular-search-pic" src={window.loungeBar}/>
                 </div>
-                <div className="search-landing-text">
-                    <p>Lounge Bar</p>
-                </div>
+                <p className="popular-search-text">Lounge Bar</p>  
             </div>
-            <div className="search-landing">
-                <div className="search-landing-pic">
-                    <img src={window.auto}/>
+            <div className="popular-search-item">
+                <div className="popular-search-pic-c">
+                    <img className="popular-search-pic" src={window.auto}/>
                 </div>
-                <div className="search-landing-text">
-                    <p>Auto-Repair</p>
-                </div>
+                <p className="popular-search-text">Auto-Repair</p>
             </div>
-            <div className="search-landing">
-                <div className="search-landing-pic">
-
+            <div className="popular-search-item">
+                <div className="popular-search-pic-c">
+                    <img className="popular-search-pic" src={window.shopping}/>
                 </div>
-                <div className="search-landing-text">
-
-                </div>
+                <p className="popular-search-text">Malls</p>
             </div>
         </div>
     </div>
