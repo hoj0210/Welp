@@ -1,12 +1,5 @@
-.search-box-container{
-    position: relative;
-    top: 350px;
-    z-index: 5;
-    left: 100px;
-}
 
-.search-texts{
-}
+
 
 .search-text{
     padding: 12px 13px;

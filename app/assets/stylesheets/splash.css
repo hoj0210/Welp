@@ -1,8 +1,9 @@
-.splash-top{
+.splash-main-top{
     position: relative;
     z-index: 10;
     width: 1200px;
     margin: auto;
+    top: 20px;
 }
 
 .splash-logo-container{
@@ -18,31 +19,48 @@
     height: auto
 }
 
-
+.search-box-container{
+    z-index: 5;
+    position: relative;
+    top: 60px;
+    left: 40px;
+}
 
 .background-pic-container{
-    position: fixed;
     top: 0;
     left: 0;
     width: 105%;
     z-index: -1;
     min-width: 1024px;
+    height: 600px;
 }
 
 .background-pic{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 105%;
     z-index: -1;
     min-width: 1024px;
+    /* max-height: 1000px; */
+    min-height: 600px;
 
 }
 
-.block-1{
-    height: 1000px;
-    width: 105%;
+.popular-searches{
+    height: 400px;
     background-color: white;
-    position: relative;
-    top: 600px;
+    width: 120%
+}
+
+.splash-browse-category{
+    height: 300px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+}
+
+.splash-about{
+   height: 537px;
+   background-color: white; 
 }

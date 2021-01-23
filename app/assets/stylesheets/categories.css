@@ -1,0 +1,35 @@
+.categories-container{
+    display: flex;
+}
+
+.category{
+    margin: 40px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 13px 40px;
+    background-color: white;
+}
+
+.category:hover{
+    cursor: pointer;
+    box-shadow: 0px 5px 5px lightgray;
+    border-color: rgb(0, 0, 198);
+}
+
+.category-icon-text{
+    font: bold 14px Arial, Helvetica, "Helvetica Neue";
+    text-align: center;
+    margin: 5px;
+}
+
+.category-icon-text-1{
+    font: bold 14px Arial, Helvetica, "Helvetica Neue";
+    text-align: center;
+}
+
+.category-title{
+    font: bold 21px Arial, Helvetica, "Helvetica Neue";
+    color: #d32323;
+    text-align: center;
+    margin: 30px 0 0 0;
+}
