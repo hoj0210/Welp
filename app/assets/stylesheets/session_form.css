@@ -89,6 +89,7 @@
 }
 .session-form-main-box{
     display: flex;
+    margin: 100px 0 100px 0;
 }
 
 .birthday{

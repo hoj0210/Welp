@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import About from '../about/about';
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -73,6 +74,9 @@ class LoginForm extends React.Component {
                             <img className="graphics" src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" />
                         </div>
                         
+                    </div>
+                    <div className="splash-about">
+                        <About />
                     </div>
                 </div>
             </div>  
