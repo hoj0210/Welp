@@ -40,34 +40,39 @@ class LoginForm extends React.Component {
         return(
             <div id="wrapper">
                 <div className="session-form">
-                    <div className="session-form-inner">
+                    <div className="session-form-top">
                         <Link to="/"><img className="welplogo" src="https://vivalajaiba.com/wp-content/uploads/2018/07/yelp-logo.png"/></Link>
                     </div>
-                    <div className="session-form-box">
-                        <div className = "session-form-area">
-                            <form onSubmit={this.handleSubmit}>
-                                <p className="session-form-header">Log in to Welp</p>
-                                {this.renderErrors()}
-                                <p className="session-form-header-2">New to Welp? 
-                                    <Link to='/signup'>Sign up</Link> 
-                                </p>
-                                <input 
-                                    type="text" 
-                                    value={this.state.email} 
-                                    placeholder="Email" 
-                                    onChange={this.handleChange("email")} 
-                                    className="session-form-input"/>
-                                <input 
-                                    type="password" 
-                                    value={this.state.password} 
-                                    placeholder="Password" 
-                                    onChange={this.handleChange("password")} 
-                                    className="session-form-input"/>
-                                <input type="submit" value="Log In" className="submit"/>
-                                <p className="session-form-bottom">New to Welp? <Link to='/signup'>Sign up</Link></p>
-                            </form>
+                    <div className="session-form-main">
+                        <div className = "session-form-main-box">
+                            <div className="session-form-fillout">
+                                <form onSubmit={this.handleSubmit}>
+                                    <p className="session-form-header">Log in to Welp</p>
+                                    {this.renderErrors()}
+                                    <p className="session-form-header-2">New to Welp? 
+                                        <Link to='/signup'>Sign up</Link> 
+                                    </p>
+                                    <input 
+                                        type="text" 
+                                        value={this.state.email} 
+                                        placeholder="Email" 
+                                        onChange={this.handleChange("email")} 
+                                        className="session-form-input"/>
+                                    <br/>
+                                    <input 
+                                        type="password" 
+                                        value={this.state.password} 
+                                        placeholder="Password" 
+                                        onChange={this.handleChange("password")} 
+                                        className="session-form-input"/>
+                                    <br />
+                                    <input type="submit" value="Log In" className="submit"/>
+                                    <p className="session-form-bottom">New to Welp? <Link to='/signup'>Sign up</Link></p>
+                                </form>
+                            </div>
+                            <img className="graphics" src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" />
                         </div>
-                        <img className="graphics" src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" />
+                        
                     </div>
                 </div>
             </div>  

@@ -1,4 +1,4 @@
-.session-form-inner {
+.session-form-top {
     display: flex;
     justify-content: center;
     background-color: #d32323;
@@ -11,7 +11,7 @@
     height: 100px;
 }
 
-.session-form-box {
+.session-form-main {
     display: flex;
     justify-content: space-evenly;
     /* margin-top: 120px;
@@ -54,6 +54,7 @@
     border-radius: 4px;
     box-sizing: border-box;
     height: 30px;
+    width: 100%;
 }
 .birthday-options {
     font: bold 14px Arial, Helvetica, "Helvetica Neue";
@@ -80,16 +81,20 @@
     border-radius: 4px;
     box-sizing: border-box;
     margin-left: 5px;
+    width: 100%;
 }
 
 .submit:hover {
     cursor: pointer;
 }
+.session-form-main-box{
+    display: flex;
+}
 
 .birthday{
+    margin-right: 3px;
     width: 100px;
     height: 30px;
-    margin-right: 10px;
     border: 1px solid grey;
     border-radius: 4px;
     box-sizing: border-box;
@@ -102,13 +107,16 @@
     text-align: right;
 }
 
+.first-last-name{
+    display: flex;
+}
 
 .first-last-name input{
-    margin: 5px; 
+    margin: 5px 0px 7px 5px; 
     border: 1px solid grey;
     border-radius: 3px;
     height: 30px;
-    width: 162px;
+    width: 135.5px;
 }
 
 .first-last-name :first-child{
@@ -121,3 +129,16 @@
     width: auto;
     height: auto;
 } */
+
+.session-form-fillout{
+    width: 300px;
+}
+
+.birthday-box{
+    display: flex;
+    width: 300px;
+}
+
+.birthday-texts{
+    margin-bottom: 5px;
+}
