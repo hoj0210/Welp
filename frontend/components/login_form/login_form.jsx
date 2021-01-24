@@ -10,6 +10,10 @@ class LoginForm extends React.Component {
             password: ""
         }
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.demo = {
+            email: "demouser@email.com",
+            password: "demouser"
+        }
     }
 
     handleChange(type){
@@ -68,8 +72,9 @@ class LoginForm extends React.Component {
                                         className="session-form-input"/>
                                     <br />
                                     <input type="submit" value="Log In" className="submit"/>
-                                    <p className="session-form-bottom">New to Welp? <Link to='/signup'>Sign up</Link></p>
                                 </form>
+                                <button className="demo-user-submit"onClick={() => this.props.processForm(this.demo).then(() => this.props.history.push(`/`))}>Demo User</button>
+                                <p className="session-form-bottom">New to Welp? <Link to='/signup'>Sign up</Link></p>
                             </div>
                             <img className="graphics" src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" />
                         </div>
