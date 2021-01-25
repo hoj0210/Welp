@@ -21,7 +21,7 @@ class Business extends React.Component {
             this.props.fetchBusiness(this.props.match.params.businessId)
         }
     }
-
+    
     render(){
         if (!this.props.business) {
             //debugger
@@ -33,17 +33,15 @@ class Business extends React.Component {
             return (
                 <div>
                     <div className="business-page-top">
-                        <img className="top-logo-sign" src={window.mainLogo} />
-                        <div>
-                            <OtherNavBarContainer />
-                        </div>
-                        <div className="search-box-container">
-                            <OtherSearchBoxContainer />
-                        </div>
+                        <div className="top-header-container">
+                            <img className="top-logo-sign" src={window.mainLogo} />
+                            <OtherSearchBoxContainer/>
+                            <OtherNavBarContainer/>
+                        </div>    
                     </div>
                     <div className="business-intro-container">
                         <div className="business-img-container">
-                            <p>images go here</p>
+                            <input type="file" onChange={e => this.setState({photos: e.target.files})} multiple/>
                         </div>
                         <div className="business-intro">
                             <p className="business-logo">image of the business logo</p>

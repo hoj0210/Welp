@@ -1,12 +1,22 @@
 
 
-.login-signup{
+.login-signupsplash{
     position: relative;
     z-index: 1;
     top: 16px;
     float: right;
     display: flex;
     justify-content: flex-end;
+}
+
+.login-signupother_pages{
+    position: relative;
+    z-index: 1;
+    bottom: 57px;
+    left: 1000px;
+    display: flex;
+    /* justify-content: flex-end;  */
+    width: 200px;
 }
 
 .nav-loggedin{
@@ -83,6 +93,7 @@
     padding: 8px 16px;
     border-radius: 4px;
     height: 40px;
+    margin-right: 10px;
     /* width: 80px; */
 }
 

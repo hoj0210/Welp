@@ -28,7 +28,9 @@ business1 = Business.create!(
     latitude: 56.43222
 )
 
-business1 = Business.create!(
+business1.photo.attach()
+
+business2 = Business.create!(
     name: "Sushi",
     address: "3 Bright Way",
     city: "Cypress",
