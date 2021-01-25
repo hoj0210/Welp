@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SplashNavBarContainer from '../nav_bar/splash_nav_bar_container'
 import SplashSearchBoxContainer from '../search_box/splash_search_box_container'
-import PopularSearchContainer from '../popular_searches/popular_searches_container'
+import PopularSearchesContainer from '../popular_searches/popular_searches_container'
 import Categories from '../categories/categories'
 import About from '../about/about'
+import NewBusinessesContainer from '../new_businesses/new_businesses_container'
 
 class Splash extends React.Component {
     constructor(props){
@@ -29,7 +30,10 @@ class Splash extends React.Component {
                     </div>
                 </div>
                 <div className="popular-searches">
-                    <PopularSearchContainer/>
+                    <PopularSearchesContainer/>
+                </div>
+                <div className="new-businesses">
+                    <NewBusinessesContainer/>
                 </div>
                 <div className="splash-browse-category">
                     <Categories/>

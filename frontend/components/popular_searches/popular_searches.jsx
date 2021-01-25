@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const PopularSearches = props => (
     <div>
-        <h1 className="splash-box-title">Popular Searches</h1>
+        <h1 className="splash-box-title">Find the Best Businesses in Town</h1>
         <div className="popular-search-container">
             <div className="popular-search-item">
                 <div className="popular-search-pic-c">
