@@ -14,4 +14,4 @@ json.extract! @business,
             :longitude
             #:reviews,
 
-json.photoUrls @busines.photos.map {|file| url_for(file)}
+#json.photoUrls @business.photos.map {|file| url_for(file)}

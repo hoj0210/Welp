@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { LOGOUT_CURRENT_USER } from '../../actions/session_actions';
 //import SearchBoxContainer 
 
+
+
 const NavBar = props => {
     // debugger
     const type = (props.formType === "splash") ? "splash" : "other_pages";
@@ -17,7 +19,7 @@ const NavBar = props => {
 
     const inSession = () => (
         <div className="nav-loggedin">
-            <button className="logout-button" onClick={() => props.logout()}>Log Out</button>
+            <button className={`logout-button${type}`} onClick={() => props.logout()}>Log Out</button>
         </div>
     )
 

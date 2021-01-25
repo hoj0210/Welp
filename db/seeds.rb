@@ -28,16 +28,18 @@ business1 = Business.create!(
     latitude: 56.43222
 )
 
-business1.photo.attach()
+business1.photos.attach()
 
 business2 = Business.create!(
-    name: "Sushi",
-    address: "3 Bright Way",
-    city: "Cypress",
+    name: "IloveSushi",
+    address: "3 Bright Road",
+    city: "Cerritos",
     state: "CA",
-    b_zip_code: 90630,
+    b_zip_code: 90702,
     phone_num: "714-999-9090",
-    price_range: "$",
+    price_range: "$$",
     longitude: 60.2113,
     latitude: 51.4555
 )
+
+business2.photos.attach()

@@ -28,7 +28,7 @@
     justify-content: flex-end;
 }
 
-.logout-button{
+.logout-buttonsplash{
     font: bold 14px Arial, Helvetica, "Helvetica Neue";
     color: white;
     padding: 7px 24px 8px;
@@ -37,7 +37,7 @@
     background: transparent;
 }
 
-.logout-button:hover{
+.logout-buttonsplash:hover{
     background-color: white;
     transition: 0.5s;
     cursor: pointer;
@@ -119,4 +119,13 @@
     cursor: pointer;
     background-color: red;
     transition: 0.5s;
+}
+
+.logout-buttonother_pages{
+    font: bold 14px Arial, Helvetica, "Helvetica Neue";
+    color: black;
+    padding: 7px 24px 8px;
+    border: white solid 2px;
+    border-radius: 4px;
+    background: transparent;
 }
