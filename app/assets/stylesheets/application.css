@@ -15,5 +15,8 @@
  */
 
  .top-logo-sign{
-     width: 100px;
+     width: 75px;
+     position: relative;
+     top: 30px;
+     left: 40px;
  }

@@ -15,7 +15,7 @@ class SearchBox extends React.Component {
 
     render(){
         return(
-            <div className="search-box-container">
+            <div className={`search-box-container-${this.type}`}>
                 <div className={`search-box${this.type}`}>
                     <form>
                         <div className={`search-texts${this.type}`}>

@@ -5,3 +5,22 @@
     min-width: 800px;
 }
 
+.business-intro-container{
+    height: 400px;
+}
+
+.business-page-link-container{
+    height: 100px;
+}
+
+.business-location-hour-container{
+    height: 400px;
+}
+
+.business-reviews-container{
+    height: 800px;
+}
+
+.search-box-container-splash{
+    min-width: 1000px;
+}

@@ -23,7 +23,7 @@ class Splash extends React.Component {
                         <div className="splash-logo-container">
                             <Link to="/"><img className="splash-logo"src="https://vivalajaiba.com/wp-content/uploads/2018/07/yelp-logo.png" /></Link>
                         </div>
-                        <div className="search-box-container">
+                        <div className="search-box-container-splash">
                             <SplashSearchBoxContainer />
                         </div>
                     </div>

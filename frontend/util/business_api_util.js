@@ -1,5 +1,5 @@
 export const fetchBusiness = (businessId) => {
-    debugger
+    //debugger
     return(
         $.ajax({
             method: "GET",

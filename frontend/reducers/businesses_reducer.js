@@ -4,7 +4,7 @@ import {
 
 const BusinessesReducer = (state = {}, action) => {
     Object.freeze(state);
-    debugger
+    //debugger
     switch(action.type){
         case RECEIVE_BUSINESS:
             return Object.assign({}, state, {[action.business.id]: action.business})

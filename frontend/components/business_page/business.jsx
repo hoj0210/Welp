@@ -12,7 +12,7 @@ class Business extends React.Component {
     }
 
     componentDidMount(){
-        debugger
+        #debugger
         this.props.fetchBusiness(this.props.match.params.businessId)
     }
 
@@ -24,15 +24,14 @@ class Business extends React.Component {
 
     render(){
         if (!this.props.business) {
-            debugger
+            #debugger
             return (
                 <div>Loading..</div>
             )
         } else {
-            debugger
+            #debugger
             return (
                 <div>
-                    <p>This is the business page</p>
                     <div className="business-page-top">
                         <img className="top-logo-sign" src={window.mainLogo} />
                         <div>

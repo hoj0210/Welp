@@ -46,7 +46,7 @@
 
 
 .search-textother{
-    padding: 12px 13px;
+    padding: 4px 13px;
     font: 18px Arial, Helvetica, "Helvetica Neue";
     border: none;
     outline: none;
@@ -76,7 +76,7 @@
 
 .search-icon-buttonother{
     position: relative;
-    top: 11px;
+    top: -1px;
     border: none;
     background-color: #F43939;
     border-radius: 0px 4px 4px 0px;
@@ -87,4 +87,15 @@
 
 .search-icon-buttonother:hover{
     cursor: pointer;
+}
+
+.search-textsother{
+    display: flex;
+    height: 48px;
+}
+
+.search-boxother{
+    position: relative;
+    left: 147px;
+    bottom: 17px;
 }
