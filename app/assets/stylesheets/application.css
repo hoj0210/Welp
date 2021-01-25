@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+ .top-logo-sign{
+     width: 100px;
+ }

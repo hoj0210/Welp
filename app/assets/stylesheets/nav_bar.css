@@ -38,7 +38,7 @@
     margin-right: 5px
 }
 
-.session-button1{
+.session-button1splash{
     font: bold 14px Arial, Helvetica, "Helvetica Neue";
     color: white;
     padding: 10px 10px;
@@ -47,16 +47,16 @@
     outline: none;
 }
 
-.session-button1:active{
+.session-button1splash:active{
     color: rgb(180, 180, 180);
 }
 
-.session-button1:hover{
+.session-button1splash:hover{
     border-bottom: 2px solid white;
     cursor: pointer;
 }
 
-.session-button2{
+.session-button2splash{
     font: bold 14px Arial, Helvetica, "Helvetica Neue";
     color: white;
     padding: 7px 24px 8px;
@@ -65,10 +65,47 @@
     background: transparent;
 }
 
-.session-button2:hover{
+.session-button2splash:hover{
     cursor: pointer;
     transition: 0.5s;
     /* background-color: white; */
     color: black;
     background-color: white;
+}
+
+.session-button1other_pages{
+    font-family: "Open Sans", "Helvetica Neue", Helvetica;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(72, 72, 72);
+    border: 1px solid grey;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    height: 40px;
+    /* width: 80px; */
+}
+
+.session-button1other_pages:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+    transition: 00.5s;
+}
+
+.session-button2other_pages{
+    font-family: "Open Sans", "Helvetica Neue", Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    background-color: #F43939;
+    width: 90px;
+}
+
+.session-button2other_pages:hover{
+    cursor: pointer;
+    background-color: red;
+    transition: 0.5s;
 }
