@@ -3,7 +3,11 @@ class Business < ApplicationRecord
     validates :phone_num, :price_range, presence: true 
     validates :longitude, :latitude, presence: true
     validates :phone_num, uniqueness: true
+<<<<<<< HEAD
     #has_many_attached :photos
+=======
+    has_many_attached :photos
+>>>>>>> businesses
 
     # has_many :reviews,
     #     primary_key: :id,
