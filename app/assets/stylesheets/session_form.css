@@ -133,10 +133,13 @@
     box-sizing: border-box;
     margin-left: 5px;
     width: 100%;
+    outline: none;
 }
 
 .submit:hover {
     cursor: pointer;
+    background-color: #d54b4b;
+    transition: 0.5s;
 }
 .session-form-main-box{
     display: flex;
@@ -221,4 +224,6 @@
 
 .demo-user-submit:hover{
     cursor: pointer;
+    background-color: #d54b4b;
+    transition: 0.5s;
 }

@@ -1,4 +1,4 @@
-.about-title{
+.footer-title{
     font: bold 21px Arial, Helvetica, "Helvetica Neue";
     color: #d32323;
     text-align: center;
@@ -9,19 +9,41 @@
     text-align: center;
     margin: 10px;
 }
-
 .about-link{
     margin: 10px;
+}
+.about-link p{
     font: 14px Arial, Helvetica, "Helvetica Neue";
     text-decoration: none;    
-    color: black;
+    color: #0073BB
+}
+
+.about-link a{
+    font: 14px Arial, Helvetica, "Helvetica Neue";
+    text-decoration: none;    
+    color: #0073BB
+}
+.about-link a:hover{
+    text-decoration: underline;
 }
 
 .about-link:visited{
     text-decoration: none;
-    color:black
+    color: #0073BB
 }
 
 .bottom-image{
-    margin: 50px;
+    width: 100%;
+    min-width: 900px;
 }
+
+.footer-stuff{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-about{
+    margin: 10px 50px 10px 50px;
+    min-width: 150px;
+}
+
