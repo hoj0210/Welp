@@ -30,19 +30,21 @@
 }
 
 .logout-buttonsplash{
-    font: bold 14px Arial, Helvetica, "Helvetica Neue";
-    color: white;
-    padding: 7px 24px 8px;
+    font: 14px Arial, Helvetica, "Helvetica Neue";
+    color: #0073BB;
+    /* padding: 7px 24px 8px; */
     border: white solid 2px;
     border-radius: 4px;
     background: transparent;
+    outline: none;
+    margin: 4px;
 }
 
 .logout-buttonsplash:hover{
     background-color: white;
     transition: 0.5s;
     cursor: pointer;
-    color: black;
+    text-decoration: underline;
 }
 
 .login-signup :first-child{
@@ -157,7 +159,9 @@
     cursor: pointer;
 }
 .profile-inner{
-    width: 40px;
+    width: 60px;
+    margin: 12px 12px 12px 0;
+    border-radius: 3px;
 }
 
 .dropdown{
@@ -166,15 +170,21 @@
     right: 94px;
 }
 
-.dropdown:hover{
+/* .dropdown:hover{
     cursor: pointer;
-}
+} */
 
 .dropdown-content{
     display: none;
     position: absolute;
     min-width: 60px;
     z-index: 1;
+    background-color: white;
+    width: 218px;
+    right: 6px;
+    top: 41px;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px darkgrey;
 }
 
 /* .dropdown:hover .dropdown-content{
@@ -187,10 +197,31 @@
     outline: none;
 }
 
-.signed-on-button:hover{
+/* .signed-on-button:hover{
     cursor: pointer;
-}
+} */
 
 .show {
     display: block;
+}
+
+.dropdown-profile{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    margin: 0 12px;
+}
+.dropdown-profile-name{
+    color: #0073BB;
+    font-size: 14px;
+    font-family: Arial, Helvetica, "Helvetica Neue";
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.dropdown-profile-addy{
+    color: #333333;
+    font-size: 12px;
+    font-family: Arial, Helvetica, "Helvetica Neue";
+    font-weight: bold;
 }
