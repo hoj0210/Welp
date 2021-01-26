@@ -18,8 +18,9 @@
     color: rgb(99, 98, 98);
     font-weight: bolder;
     background-color: white;
-    padding: 13px 13px;
+    padding: 13px 12px;
     border-radius: 4px 0px 0px 4px;
+    border-right: 1px solid rgb(142, 140, 140);
 }
 
 .search-word2splash{
