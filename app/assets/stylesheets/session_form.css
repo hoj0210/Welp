@@ -19,7 +19,7 @@
 }
 .session-errors-box-login{
     display: flex;
-    height: 40px;
+    height: 60px;
     background-color: #FCD6D3;
     width: 960px;
     border-radius: 4px;
@@ -31,29 +31,37 @@
     font-family: Arial, Helvetica, "Helvetica Neue";
     color: #333333;
 }
+.session-errors-box-login :first-child{
+    margin: 12px;
+}
 
 .session-errors-box-signup{
     display: flex;
-    height: 40px;
+    height: 100%;
     background-color: #FCD6D3;
     width: 960px;
-    /* border-radius: 4px; */
+    border-radius: 4px;
     min-width: 960px;
     position: relative;
     left: 220px;
+    top: 60px;
     font-size: 16px;
     font-family: Arial, Helvetica, "Helvetica Neue";
     color: #333333;
 }
 
-.session-errors-container :first-child{
-    margin-top: 50px;
-    border-radius: 4px 4px 0 0;
+.session-errors-box-signup li{
+    margin: 12px;
 }
 
-.session-errors-container :last-child{
+/* .session-errors-container :first-child{
+    margin-top: 50px;
+    border-radius: 4px 4px 0 0;
+} */
+
+/* .session-errors-container :last-child{
     border-radius: 0 0 4px 4px;
-}
+} */
 /* 
 .session-errors-box li{
     font-size: 16px;

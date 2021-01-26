@@ -35,7 +35,7 @@ class SignupForm extends React.Component {
         return (
             <ul>
                 {this.props.errors.map((error, i) => (
-                    <li className="session-errors-box-signup" key={i}>{error}</li>
+                    <li key={i}>{error}</li>
                 ))}
             </ul>
         )
@@ -43,16 +43,20 @@ class SignupForm extends React.Component {
 
 
     render() {
+        const classNameErrors = (this.props.errors.length !== 0) ? "session-errors-box-signup" : ""
         // const errors = this.renderErrors();
         // const className = this.props.errors ? "session-errors-box" : ""
         return(
+            
             <div id="wrapper">
                 <div className="session-form">
                     <div className="session-form-top">
                         <Link to="/"><img className="welplogo" src="https://vivalajaiba.com/wp-content/uploads/2018/07/yelp-logo.png"/></Link>
                     </div>
                     <div className="session-errors-container">
+                        <div className={classNameErrors}>
                             {this.renderErrors()}  
+                        </div>
                     </div>
                     <div className="session-form-main">
                         <div className="session-form-main-box">
