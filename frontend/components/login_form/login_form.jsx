@@ -43,7 +43,7 @@ class LoginForm extends React.Component {
 
     render(){
         const errors = this.renderErrors();
-        console.log(errors)
+        //console.log(errors)
         return(
             <div id="wrapper">
                 <div className="session-form">

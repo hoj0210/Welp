@@ -132,3 +132,65 @@
     border-radius: 4px;
     background: transparent;
 }
+
+.profile{
+    width: 40px;
+    border-radius: 4px 0 0 4px;
+}
+
+.profile:hover{
+    cursor: pointer;
+}
+
+.down-arrow{
+    height: 40px;
+    background-color: black;
+    opacity: 0.5;
+    width: 20px;
+    border-radius: 0 4px 4px 0;
+}
+
+.down-arrow:hover{
+    background-color: black;
+    opacity: 0.7;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.profile-inner{
+    width: 40px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    right: 94px;
+}
+
+.dropdown:hover{
+    cursor: pointer;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 60px;
+    z-index: 1;
+}
+
+/* .dropdown:hover .dropdown-content{
+    display: block;
+} */
+
+.signed-on-button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.signed-on-button:hover{
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
