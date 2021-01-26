@@ -270,7 +270,7 @@ class SignupForm extends React.Component {
                                         </div>
                                     </div>
                                     <input type="submit" value="Sign Up" className="submit"/>
-                                    <p className="session-form-bottom">Already on Welp? <Link to='/login'>Log in</Link></p>
+                                    <p className="session-form-bottom">Already on Welp? <Link to='/login' className="session-text">Log in</Link></p>
                                 </form>
                             </div>
                             <img className="graphics" src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" />

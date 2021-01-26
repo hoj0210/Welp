@@ -11,7 +11,7 @@
     left: 490px;
     position: relative;
     width: 180px;
-    top: 120px;
+    /* top: 120px; */
 }
 
 .splash-logo{
@@ -24,8 +24,8 @@
 .search-box-container-splash{
     z-index: 5;
     position: relative;
-    top: 60px;
-    left: 59px;
+    top: 230px;
+    left: 140px;
 }
 
 .background-pic-container{
@@ -35,6 +35,7 @@
     z-index: -1;
     min-width: 1024px;
     height: 600px;
+    position: relative;
 }
 
 .background-pic{

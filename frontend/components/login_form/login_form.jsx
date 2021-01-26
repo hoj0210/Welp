@@ -57,7 +57,7 @@ class LoginForm extends React.Component {
                                     <p className="session-form-header">Log in to Welp</p>
                                     {this.renderErrors()}
                                     <p className="session-form-header-2">New to Welp? 
-                                        <Link to='/signup'>Sign up</Link> 
+                                        <Link to='/signup' className="session-text">Sign up</Link> 
                                     </p>
                                     <input 
                                         type="text" 
@@ -76,7 +76,7 @@ class LoginForm extends React.Component {
                                     <input type="submit" value="Log In" className="submit"/>
                                 </form>
                                 <button className="demo-user-submit"onClick={() => this.props.processForm(this.demo).then(() => this.props.history.push(`/`))}>Demo User</button>
-                                <p className="session-form-bottom">New to Welp? <Link to='/signup'>Sign up</Link></p>
+                                <p className="session-form-bottom">New to Welp? <Link to='/signup' className="session-text">Sign up</Link></p>
                             </div>
                             <img className="graphics" src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" />
                         </div>

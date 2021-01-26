@@ -20,13 +20,14 @@ class Splash extends React.Component {
                     <div className="splash-main-top">
                         <div className="nav-bar-container">
                             <SplashNavBarContainer />
+                            <SplashSearchBoxContainer />
                         </div>
                         <div className="splash-logo-container">
                             <Link to="/"><img className="splash-logo"src="https://vivalajaiba.com/wp-content/uploads/2018/07/yelp-logo.png" /></Link>
                         </div>
-                        <div className="search-box-container-splash">
+                        {/* <div className="search-box-container-splash">
                             <SplashSearchBoxContainer />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="popular-searches">

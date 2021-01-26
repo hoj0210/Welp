@@ -4,9 +4,10 @@
     position: relative;
     z-index: 1;
     top: 16px;
-    float: right;
+    /* float: right; */
     display: flex;
     justify-content: flex-end;
+    right: 93px;
 }
 
 .login-signupother_pages{
@@ -53,8 +54,10 @@
     color: white;
     padding: 10px 10px;
     background: transparent;
-    border: none;
+    border-color: transparent;
     outline: none;
+    margin-right: 10px;
+    height: 35px;
 }
 
 .session-button1splash:active{

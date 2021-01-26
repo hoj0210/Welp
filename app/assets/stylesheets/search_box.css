@@ -9,6 +9,10 @@
     width: 360px;
 }
 
+.search-textssplash{
+    width: 968px;
+}
+
 .search-word1splash{
     font: bold 18px Arial, Helvetica, "Helvetica Neue";
     color: rgb(99, 98, 98);
@@ -40,6 +44,8 @@
 
 .search-icon-buttonsplash:hover{
     cursor: pointer;
+    background-color: #b61f1f;
+    transition: 0.7s;
 }
 
 

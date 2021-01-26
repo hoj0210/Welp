@@ -106,8 +106,18 @@
     font: 12px Arial, Helvetica, "Helvetica Neue";
     color: grey;
     text-align: right;
-    margin: 3px 0 0 0;
+    margin: 14px 0 0 0;
 }
+.session-form-bottom:visited{
+    color: rgb(0, 106, 198);
+    text-decoration: none;
+}
+
+.session-text{
+    text-decoration: none;
+    color: rgb(0, 106, 198);
+}
+
 
 .first-last-name{
     display: flex;
