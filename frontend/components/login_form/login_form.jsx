@@ -43,6 +43,7 @@ class LoginForm extends React.Component {
 
     render(){
         const errors = this.renderErrors();
+        const className = errors ? "session-errors-box" : ""
         //console.log(errors)
         return(
             <div id="wrapper">
@@ -50,12 +51,16 @@ class LoginForm extends React.Component {
                     <div className="session-form-top">
                         <Link to="/"><img className="welplogo" src="https://vivalajaiba.com/wp-content/uploads/2018/07/yelp-logo.png"/></Link>
                     </div>
+                    <div className="session-errors-container">
+                        <div className={className}>
+                            {this.renderErrors()}
+                        </div>
+                    </div>
                     <div className="session-form-main">
                         <div className = "session-form-main-box">
                             <div className="session-form-fillout">
                                 <form onSubmit={this.handleSubmit}>
                                     <p className="session-form-header">Log in to Welp</p>
-                                    {this.renderErrors()}
                                     <p className="session-form-header-2">New to Welp? 
                                         <Link to='/signup' className="session-text">Sign up</Link> 
                                     </p>
