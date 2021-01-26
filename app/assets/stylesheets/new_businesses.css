@@ -1,0 +1,139 @@
+.splash-box-title-hotandnew{
+    font: bold 16px Arial, Helvetica, "Helvetica Neue";
+    color: #d32323;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.new-businesses-items-box{
+    display: flex;
+}
+
+.new-businesses-item{
+    margin: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.new-businesses-container{
+    display: flex;
+    justify-content: center;
+}
+
+.new-businesses-item-info{
+    /* font: bold 14px Arial, Helvetica, "Helvetica Neue"; */
+    text-align: center;
+    border: none;
+    position: relative;
+    bottom: 4px;
+    padding: 12px 0px;
+    border-radius: 0 0 4px 4px;
+    background-color: white;
+    height: 115px;
+}
+
+.new-businesses-item-pic{
+    width: 297.98px;
+    height: 180px;
+    border-radius: 4px 4px 0 0;
+}
+
+.new-business-item-bname-tacos{
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    position: relative;
+    right: 81px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.new-business-item-bname-tacos:visited{
+    color: rgb(0, 106, 198);
+    text-decoration: none;
+}
+
+.new-business-item-bname-tacos:hover{
+    color: rgb(0, 106, 198);
+    text-decoration: underline;
+}
+.new-business-item-bname-sushi{
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    position: relative;
+    right: 88px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.new-business-item-bname-sushi:visited{
+    color: rgb(0, 106, 198);
+    text-decoration: none;
+}
+.new-business-item-bname-sushi:hover{
+    color: rgb(0, 106, 198);
+    text-decoration: underline;
+}
+.new-business-item-bname-kbbq{
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    position: relative;
+    right: 109px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.new-business-item-bname-kbbq:visited{
+    color: rgb(0, 106, 198);
+    text-decoration: none;
+}
+
+.new-business-item-bname-kbbq:hover{
+    color: rgb(0, 106, 198);
+    text-decoration: underline;
+}
+
+.splash-star{
+    width: 102px;
+    position: relative;
+    right: 91px;
+}
+
+.splash-star-three{
+    width: 102px;
+    position: relative;
+    right: 89px;
+}
+
+.splash-review-text{
+    color: #666666;
+    font-size: 14px;
+    font-family: Arial, Helvetica, "Helvetica Neue";
+    position: relative;
+    bottom: 21px;
+    right: 5px;
+}
+
+.category-city-state{
+    color: #333333;
+    font-size: 14px;
+    font-family: Arial, Helvetica, "Helvetica Neue";
+    margin: 0 0 8px 10px;
+    text-align: left;
+}
+
+.fire{
+    width: 16px;
+    margin: 0 3px 0 12px;
+    position: relative;
+    top: 4px;
+}
+
+.opened-recent{
+    color: #F15C00;
+    font-size: 14px;
+    font-family: Arial, Helvetica, "Helvetica Neue";
+    text-align: left;
+    position: relative;
+    bottom: 7px;
+}
