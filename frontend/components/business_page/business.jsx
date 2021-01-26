@@ -44,7 +44,7 @@ class Business extends React.Component {
                     </div>
                     <div className="business-intro-container">
                         <div className="business-img-container">
-                            <p>images go here</p>
+                            <input type="bile" onChange={e => this.setState({photos: e.target.files})} multiple/>
                         </div>
                         <div className="business-intro">
                             <p className="business-logo">image of the business logo</p>

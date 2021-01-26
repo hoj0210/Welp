@@ -20,7 +20,8 @@ class Api::BusinessesController < ApplicationController
             :phone_num,
             :price_range,
             :longitude,
-            :latitude
+            :latitude,
+            photos: []
         )
     end
 end
