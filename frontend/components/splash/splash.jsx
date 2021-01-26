@@ -14,9 +14,9 @@ class Splash extends React.Component {
 
     render(){
         return(
-            <div id="wrapper">
-                <div className="background-pic-container">
-                    <img className="background-pic" src={window.backgroundPic}/>
+            <>
+                <div className="splash-top-container">
+                    {/* <img className="background-pic" src={window.backgroundPic}/> */}
                     <div className="splash-main-top">
                         <div className="nav-bar-container">
                             <SplashNavBarContainer />
@@ -42,7 +42,7 @@ class Splash extends React.Component {
                 <div className="splash-about">
                     <About/>
                 </div>
-            </div>
+            </>
             
         )
     }

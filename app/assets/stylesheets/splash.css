@@ -28,14 +28,15 @@
     left: 140px;
 }
 
-.background-pic-container{
+.splash-top-container{
     top: 0;
     left: 0;
     width: 100%;
     z-index: -1;
     min-width: 1024px;
     height: 600px;
-    position: relative;
+    background-color: #cccccc;
+    background-image: url('https://anakjajan.files.wordpress.com/2018/07/dscf7131.jpg?w=1344&h=744&crop=1');
 }
 
 .background-pic{
