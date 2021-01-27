@@ -10,7 +10,7 @@ class NavBar extends React.Component {
     }
 
     handleClick(){
-        debugger
+        //debugger
         document.getElementById("myDropdown").classList.toggle("show");
     }
 

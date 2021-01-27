@@ -1,7 +1,7 @@
 class Api::BusinessesController < ApplicationController
 
     def show 
-        debugger
+        #debugger
         @business = Business.with_attached_photos.find_by(id: params[:id])
     end
 
