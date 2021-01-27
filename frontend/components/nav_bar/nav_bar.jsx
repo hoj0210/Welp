@@ -25,7 +25,7 @@ class NavBar extends React.Component {
 
     inSession(){
         return(
-            <div className="nav-loggedin">
+            <div className={`nav-loggedin-${this.type}`}>
                 {/* <button className={`logout-button${this.type}`} onClick={() => props.logout()}>Log Out</button> */}
                 <div className={`dropdown-${this.type}`}>
                     <div className="drpbtwn">

@@ -9,10 +9,10 @@ const NewBusinesses = props => (
             <div className="new-businesses-items-box">
                 <div className="new-businesses-item">
                     <div className="new-businesses-item-pic-c">
-                        <Link to=""><img className="new-businesses-item-pic" src={window.tacoPlace} /></Link>
+                        <Link to="/businesses/9"><img className="new-businesses-item-pic" src={window.tacoPlace} /></Link>
                     </div>
                     <div className="new-businesses-item-info">
-                        <Link to="" className="new-business-item-bname-tacos">Tacos El Gordo</Link>
+                        <Link to="/businesses/9" className="new-business-item-bname-tacos">Tacos El Gordo</Link>
                         <br/>
                         <img src={window.fiveStar} className="splash-star"/>
                         <div className="splash-review-text">3 reviews</div>
@@ -23,10 +23,10 @@ const NewBusinesses = props => (
                 </div>
                 <div className="new-businesses-item">
                     <div className="new-businesses-item-pic-c">
-                        <Link to=""><img className="new-businesses-item-pic" src={window.sushiPlace} /></Link>
+                        <Link to="/businesses/10"><img className="new-businesses-item-pic" src={window.sushiPlace} /></Link>
                     </div>
                     <div className="new-businesses-item-info">
-                        <Link to="" className="new-business-item-bname-sushi">I Heart Sushi</Link>
+                        <Link to="/businesses/10" className="new-business-item-bname-sushi">I Heart Sushi</Link>
                         <br/>
                         <img src={window.threeStar} className="splash-star-three" />
                         <div className="splash-review-text">3 reviews</div>
@@ -37,10 +37,10 @@ const NewBusinesses = props => (
                 </div>
                 <div className="new-businesses-item">
                     <div className="new-businesses-item-pic-c">
-                        <Link to=""><img className="new-businesses-item-pic" src={window.kbbqPlace} /></Link>
+                        <Link to="/businesses/11"><img className="new-businesses-item-pic" src={window.kbbqPlace} /></Link>
                     </div>
                     <div className="new-businesses-item-info">
-                        <Link to="" className="new-business-item-bname-kbbq">JongRo</Link>
+                        <Link to="/businesses/11q" className="new-business-item-bname-kbbq">JongRo</Link>
                         <br/>
                         <img src={window.fiveStar} className="splash-star" />
                         <div className="splash-review-text">2 reviews</div>

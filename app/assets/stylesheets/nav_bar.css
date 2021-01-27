@@ -11,16 +11,23 @@
 }
 
 .login-signupother_pages{
-    position: relative;
-    z-index: 1;
-    bottom: 57px;
-    left: 1000px;
-    display: flex;
     /* justify-content: flex-end;  */
     width: 200px;
+    position: relative;
+    top: 26px;
+    left: 200px;
+}
+.nav-loggedin-splash{
+    position: relative;
+    z-index: 1;
+    top: 24px;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    left: 6px;
 }
 
-.nav-loggedin{
+.nav-loggedin-other_pages{
     position: relative;
     z-index: 1;
     top: 24px;
@@ -65,11 +72,13 @@
 
 .session-button1splash:active{
     color: rgb(180, 180, 180);
+    outline: none;
 }
 
 .session-button1splash:hover{
     border-bottom: 2px solid white;
     cursor: pointer;
+    outline: none;
 }
 
 .session-button2splash{
@@ -89,10 +98,13 @@
     background-color: white;
 }
 
+.session-button2splash:active{
+    outline: none;
+}
+
 .session-button1other_pages{
     font-family: "Open Sans", "Helvetica Neue", Helvetica;
     font-size: 16px;
-    font-weight: bold;
     color: rgb(72, 72, 72);
     border: 1px solid grey;
     background-color: white;
@@ -101,12 +113,14 @@
     height: 40px;
     margin-right: 10px;
     /* width: 80px; */
+    outline: none;
 }
 
 .session-button1other_pages:hover{
     cursor: pointer;
     background-color: lightgrey;
     transition: 00.5s;
+    outline: none;
 }
 
 .session-button2other_pages{
@@ -119,12 +133,14 @@
     height: 40px;
     background-color: #F43939;
     width: 90px;
+    outline: none;
 }
 
 .session-button2other_pages:hover{
     cursor: pointer;
     background-color: red;
     transition: 0.5s;
+    outline: none;
 }
 
 .logout-buttonother_pages{
