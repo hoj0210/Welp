@@ -189,7 +189,7 @@
 }
 
 .first-last-name :first-child{
-    margin-right: 11px;
+    margin-right: 1px;
 }
 
 /* #wrapper{
@@ -229,4 +229,8 @@
     cursor: pointer;
     background-color: #d54b4b;
     transition: 0.5s;
+}
+
+.sign-up-name{
+    padding: 0px 0px 0px 9px;
 }

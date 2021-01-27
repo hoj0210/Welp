@@ -67,11 +67,13 @@ class SignupForm extends React.Component {
                                     <div className="first-last-name">
                                         <input 
                                             type="text" 
+                                            className="sign-up-name"
                                             value={this.state.fname}
                                             placeholder="First Name" 
                                             onChange={this.handleChange('fname')} />
                                         <input 
                                             type="text" 
+                                            className="sign-up-name"
                                             value={this.state.lname} 
                                             placeholder="Last Name"
                                             onChange={this.handleChange('lname')} /> 
