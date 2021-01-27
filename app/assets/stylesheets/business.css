@@ -15,10 +15,11 @@
 
 .business-location-hour-container{
     height: 400px;
+    background-color:#F5F5F5;
 }
 
 .business-reviews-container{
-    height: 800px;
+    height: 400px;
 }
 
 .search-box-container-splash{
