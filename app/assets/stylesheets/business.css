@@ -10,7 +10,7 @@
 }
 
 .business-page-link-container{
-    height: 100px;
+    height: 97px;
 }
 
 .business-location-hour-container{
@@ -38,6 +38,7 @@
     height: 100%;
     width: 100%;
     min-width: 400px;
+    opacity: 0.8;
 }
 
 .business-intro-container{
@@ -47,9 +48,9 @@
 .business-intro-text :first-child{
     position: relative;
     bottom: 200px;
-    font-size: 48px;
-    font-weight: bolder;
-    font-family: Helvetica, Poppins, "Helvetica Neue";
+    font-size: 50px;
+    font-weight: 900;
+    font-family:  'Poppins', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     color: #ffffff;
     margin-left: 141px;
 }
@@ -58,7 +59,7 @@
     position: relative;
     bottom: 200px;
     font-size: 24px;
-    font-family: "Poppins",Helvetica,Arial,sans-serif;
+    font-family: "",Helvetica,Arial,sans-serif;
     color: #ffffff;
     margin-left: 141px;
 }
@@ -67,6 +68,7 @@
     height: 100%;
     width: 100%;
     display: inline-flex;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 65%);
 }
 
 .top-header-review-link{
@@ -78,4 +80,17 @@
     position: relative;
     top: 40px;
     left: 142px;
+}
+
+.business-review-button{
+    font-family: "Open Sans", "Helvetica Neue", Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    background-color: #F43939;
+    width: 90px;
+    outline: none;
 }

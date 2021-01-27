@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Link} from 'react-router-dom';
 import OtherSearchBoxContainer from '../search_box/other_search_box_container';
 import OtherNavBarContainer from '../nav_bar/other_nav_bar_container';
@@ -10,16 +10,17 @@ class Business extends React.Component {
     constructor(props) {
         super(props)
     }
-
     componentDidMount(){
         //debugger
         this.props.fetchBusiness(this.props.match.params.businessId)
     }
 
     componentDidUpdate(prevProps){
+        //debugger
         if (prevProps.match.params.businessId !== this.props.match.params.businessId) {
             this.props.fetchBusiness(this.props.match.params.businessId)
         }
+        window.scrollTo(0, 0)
     }
     formSubmissionHandler(){
         const { name, photos } = this.state;
@@ -63,15 +64,14 @@ class Business extends React.Component {
                                 <p>{this.props.business.name}</p>
                                 <p>this is where the avg rating goes</p>
                                 <p>{this.props.business.price_range}</p>
-                                <p>{this.props.business.categories}</p>
+                                <p>categories</p>
                                 <p>this is where TODAY's schedule goes in</p>
                             </div>
                         </div>
                     </div>
                     <div className="business-page-link-container">
                         <div className="business-user-upload-links">
-                            <Link to="" className="business-review-button">Write a Review</Link>
-                            <Link to="" className="business-add-photo">Add photo</Link>
+                            <button className="business-review-button"><img src={window.star} alt=""/>Write a Review</button>
                         </div>
                     </div>
                     <div className="business-location-hour-container">

@@ -27,7 +27,10 @@ business1 = Business.create!(
     longitude: 64.543211,
     latitude: 56.43222
 )
-business1.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/taco_maggies/taco2.png'), filename: "taco2.png")
+business1.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/tacos_el_gordo/tacos2.jpg'), filename: "tacos2.jpg")
+business1.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/tacos_el_gordo/tacos3.jpg'), filename: "tacos3.jpg")
+business1.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/tacos_el_gordo/tacos4.jpg'), filename: "tacos4.jpg")
+business1.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/tacos_el_gordo/tacos5.jpg'), filename: "tacos5.jpg")
 
 business2 = Business.create!(
     name: "I Heart Sushi",
@@ -58,4 +61,7 @@ business3 = Business.create!(
     latitude: 49.1234
 )
 
-business3.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/jongro/jongro1.jpg'), filename: "jongro1.jpg")
+business3.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/jongro/jongro1.jpg'), filename: "jongro_new1.jpg")
+business3.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/jongro/jongro2.jpg'), filename: "jongro_new2.jpg")
+business3.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/jongro/jongro3.jpg'), filename: "jongro_new3.jpg")
+business3.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/jongro/jongro4.jpg'), filename: "jongro_new4.jpg")
