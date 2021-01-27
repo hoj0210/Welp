@@ -25,6 +25,10 @@
     min-width: 1000px;
 }
 
-.top-content-container{
+/* .top-content-container{
     /* display: flex; */
+
+
+.top-header-container{
+    display: flex;
 }

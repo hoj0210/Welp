@@ -27,7 +27,7 @@ class NavBar extends React.Component {
         return(
             <div className="nav-loggedin">
                 {/* <button className={`logout-button${this.type}`} onClick={() => props.logout()}>Log Out</button> */}
-                <div className="dropdown">
+                <div className={`dropdown-${this.type}`}>
                     <div className="drpbtwn">
                         <button onClick={() => this.handleClick()}className="signed-on-button">
                             <img className="profile" src={window.defaultProfile} />

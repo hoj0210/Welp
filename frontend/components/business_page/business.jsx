@@ -42,7 +42,7 @@ class Business extends React.Component {
                 <div>
                     <div className="business-page-top">
                         <div className="top-header-container">
-                            <img className="top-logo-sign" src={window.mainLogo} />
+                            <Link to="/"><img className="top-logo-sign" src={window.mainLogo} /></Link>
                             <OtherSearchBoxContainer/>
                             <OtherNavBarContainer/>
                         </div>    

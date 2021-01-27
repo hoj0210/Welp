@@ -23,10 +23,11 @@
 .nav-loggedin{
     position: relative;
     z-index: 1;
-    top: 16px;
+    top: 24px;
     float: right;
     display: flex;
     justify-content: flex-end;
+    left: 200px;
 }
 
 .logout-buttonsplash{
@@ -127,12 +128,21 @@
 }
 
 .logout-buttonother_pages{
-    font: bold 14px Arial, Helvetica, "Helvetica Neue";
-    color: black;
-    padding: 7px 24px 8px;
+    font: 14px Arial, Helvetica, "Helvetica Neue";
+    color: #0073BB;
+    /* padding: 7px 24px 8px; */
     border: white solid 2px;
     border-radius: 4px;
     background: transparent;
+    outline: none;
+    margin: 4px;
+}
+
+.logout-buttonother_pages:hover{
+    background-color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .profile{
@@ -164,10 +174,14 @@
     border-radius: 3px;
 }
 
-.dropdown{
+.dropdown-splash{
     position: relative;
     display: inline-block;
     right: 94px;
+}
+
+.dropdown-other_pages{
+    display: inline-block;
 }
 
 /* .dropdown:hover{

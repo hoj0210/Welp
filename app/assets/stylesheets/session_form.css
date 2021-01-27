@@ -1,14 +1,17 @@
 .session-form-top {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     background-color: #d32323;
     padding: 10px 0px 10px 0px;
     display: grid;
+    height: 45px;
 }
 
 .welplogo {
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
+    position: relative;
+    bottom: 22px;
 }
 
 .session-form-main {
