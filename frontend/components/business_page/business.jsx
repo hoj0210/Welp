@@ -44,6 +44,7 @@ class Business extends React.Component {
                         <div className="top-header-container">
                             <Link to="/"><img className="top-logo-sign" src={window.mainLogo} /></Link>
                             <OtherSearchBoxContainer/>
+                            <Link to=""className="top-header-review-link">Write a Review</Link>
                             <OtherNavBarContainer/>
                         </div>    
                     </div>
@@ -51,7 +52,12 @@ class Business extends React.Component {
                         {/* <div className="business-img-container">
                             <input type="file" onChange={e => this.setState({photos: e.target.files})} multiple/>
                         </div> */}
-                        <img className="business-pictures"src={this.props.business.photoUrls} alt=""/>      
+                        <div className="business-pictures-container">
+                            {this.props.business.photoUrls.map((photoUrl, i) => (
+                                <img className="business-pictures" key={i} src={photoUrl} alt=""/>
+                            ))}
+                        </div>
+                             
                         <div className="business-intro">
                             <div className="business-intro-text">
                                 <p>{this.props.business.name}</p>

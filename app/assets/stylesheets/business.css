@@ -36,6 +36,8 @@
 
 .business-pictures{
     height: 100%;
+    width: 100%;
+    min-width: 400px;
 }
 
 .business-intro-container{
@@ -49,6 +51,7 @@
     font-weight: bolder;
     font-family: Helvetica, Poppins, "Helvetica Neue";
     color: #ffffff;
+    margin-left: 141px;
 }
 
 .business-intro-text p{
@@ -57,4 +60,22 @@
     font-size: 24px;
     font-family: "Poppins",Helvetica,Arial,sans-serif;
     color: #ffffff;
+    margin-left: 141px;
+}
+
+.business-pictures-container{
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+}
+
+.top-header-review-link{
+    text-decoration: none;
+    color: #2B273C;
+    font-size: 14px;
+    font-family: "Open Sans",Helvetica,"Helvetica Neue";
+    font-weight:800;
+    position: relative;
+    top: 40px;
+    left: 142px;
 }

@@ -94,6 +94,8 @@
 
 .search-icon-buttonother:hover{
     cursor: pointer;
+    transition: 0.5s;
+    background-color: #ff0000;
 }
 
 .search-textsother{
@@ -103,6 +105,6 @@
 
 .search-boxother{
     position: relative;
-    left: 96px;
-    top: 22px;
+    left: 73px;
+    top: 25px;
 }
