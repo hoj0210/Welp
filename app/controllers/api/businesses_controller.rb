@@ -1,9 +1,8 @@
 class Api::BusinessesController < ApplicationController
 
     def show 
-        #debugger
-        @business = Business.find_by(id: params[:id])
-        render :show
+        debugger
+        @business = Business.with_attached_photos.find_by(id: params[:id])
     end
 
     def index 

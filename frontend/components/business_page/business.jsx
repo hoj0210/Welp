@@ -21,7 +21,15 @@ class Business extends React.Component {
             this.props.fetchBusiness(this.props.match.params.businessId)
         }
     }
-    
+    formSubmissionHandler(){
+        const { name, photos } = this.state;
+        const formData = new FormData();
+        formData.append("business[name]", name);
+        for (let i = 0; i < business.length; i++ ) {
+            formData.append("business[photos][]", photos[i])
+        }
+        this.props.myThunkActionCreator(formData);
+    }
     render(){
         if (!this.props.business) {
             //debugger
@@ -40,12 +48,11 @@ class Business extends React.Component {
                         </div>    
                     </div>
                     <div className="business-intro-container">
-                        <div className="business-img-container">
-
+                        {/* <div className="business-img-container">
                             <input type="file" onChange={e => this.setState({photos: e.target.files})} multiple/>
-
-
-                        </div>
+                        </div> */}
+                        <img src={this.props.business.photoUrls} alt=""/>
+                        
                         <div className="business-intro">
                             <p className="business-logo">image of the business logo</p>
                             <div className="business-intro-text">
