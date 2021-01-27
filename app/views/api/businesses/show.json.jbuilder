@@ -11,15 +11,8 @@ json.extract! @business,
             :website,
             :price_range,
             :latitude,
-<<<<<<< HEAD
-            :longitude
-            #:reviews,
-
-#json.photoUrls @business.photos.map {|file| url_for(file)}
-=======
             :longitude,
             #:reviews,
 
 
 json.photoUrls @business.photos.map {|file| url_for(file) }
->>>>>>> businesses
