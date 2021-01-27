@@ -29,19 +29,10 @@ business1 = Business.create!(
 )
 business1.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/taco_maggies/taco2.png'), filename: "taco2.png")
 
-<<<<<<< HEAD
-business1.photos.attach()
-
-business2 = Business.create!(
-    name: "IloveSushi",
-    address: "3 Bright Road",
-    city: "Cerritos",
-=======
 business2 = Business.create!(
     name: "I Heart Sushi",
     address: "3 Bright Way",
     city: "Cypress",
->>>>>>> businesses
     state: "CA",
     b_zip_code: 90702,
     phone_num: "714-999-9090",
@@ -49,10 +40,6 @@ business2 = Business.create!(
     longitude: 60.2113,
     latitude: 51.4555
 )
-<<<<<<< HEAD
-
-business2.photos.attach()
-=======
 business2.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/i_heart_sushi/sushi1.jpg'), filename: "sushi1.jpg")
 
 business3 = Business.create!(
@@ -68,4 +55,3 @@ business3 = Business.create!(
 )
 
 business3.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/jongro/jongro1.jpg'), filename: "jongro1.jpg")
->>>>>>> businesses
