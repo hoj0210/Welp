@@ -9,6 +9,7 @@ import About from '../about/about';
 class Business extends React.Component {
     constructor(props) {
         super(props)
+        this.todayDate = new Date
     }
     componentDidMount(){
         //debugger
@@ -31,6 +32,10 @@ class Business extends React.Component {
         }
         this.props.myThunkActionCreator(formData);
     }
+    
+    open(){
+        const todayDate = new Date().split(" ")
+    }
     render(){
         if (!this.props.business) {
             //debugger
@@ -38,6 +43,7 @@ class Business extends React.Component {
                 <div>Loading..</div>
             )
         } else {
+            //debugger
             return (
                 <div>
                     <div className="business-page-top">
@@ -86,19 +92,30 @@ class Business extends React.Component {
                         </div>
                     </div>
                     <div className="business-location-hour-container">
-                        <p>Location and Hours </p>
+                        <p className="location-hours-text">Location and Hours </p>
                         <div className="business-location-hour-box">
                             <div className="business-location">
-                                <p>Map....=[</p>
-                                <li>{this.props.business.address}</li>
-                                <li>
+                                <img className="sample-map"src={window.sampleMap} alt=""/>
+
+                                <ul className="business-street">{this.props.business.address}</ul>
+                                <ul className="business-addy">
                                     {this.props.business.city}
                                     {this.props.business.state}
                                     {this.props.business.b_zip_code}
-                                </li>
+                                </ul>
                             </div>
-                            <div className="business-operation-hr">
-                                {/* <OperationHoursContainer /> */}
+                            <div className="business-schedule">
+                                <div className="schedule-day">
+                                    {this.props.business.schedules.map(schedule => (
+                                        <div className="each-schedule-day">{schedule.day}</div>     
+                                    ))}
+                                </div>
+                                <div className="schedule-hours">
+                                    {this.props.business.schedules.map(schedule => (
+                                            <div className="each-schedule-hours">{schedule.open} - {schedule.close}</div>
+                                    ))}
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
