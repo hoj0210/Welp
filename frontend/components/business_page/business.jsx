@@ -71,7 +71,7 @@ class Business extends React.Component {
                     </div>
                     <div className="business-page-link-container">
                         <div className="business-user-upload-links">
-                            <button className="business-review-button"><img src={window.star} alt=""/>Write a Review</button>
+                            <button className="business-review-button" onClick={() => this.props.history.push('/')}><img className="star-icon"src={window.star} alt=""/>Write a Review</button>
                         </div>
                     </div>
                     <div className="business-location-hour-container">

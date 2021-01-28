@@ -5,6 +5,14 @@ class Business < ApplicationRecord
     validates :phone_num, uniqueness: true
     has_many_attached :photos
 
+    has_many :businesses_categories,
+        primary_key: :id,
+        foreign_key: :business_id,
+        class_name: :BusinessesCategory
+
+    has_many :categories,
+        through: :businesses_categories,
+        source: :category
     # has_many :reviews,
     #     primary_key: :id,
     #     foreign_key: :review_id,
