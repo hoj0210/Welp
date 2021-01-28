@@ -37,7 +37,7 @@ class Business extends React.Component {
         const todayDate = new Date().toDateString().split(" ")[0];
         for (let i = 0; i < this.props.business.schedules.length; i++) {
             if (this.props.business.schedules[i].day === todayDate) {
-                return ``
+                return `${this.props.business.schedules[i].day}: ${this.props.business.schedules[i].open} - ${this.props.business.schedules[i].close}`
             }
         }
     }
@@ -87,7 +87,7 @@ class Business extends React.Component {
                                     }
                                     )}
                                 </div>
-                                <p>this is where TODAY's schedule goes in</p>
+                                <p>{this.open()}</p>
                             </div>
                         </div>
                     </div>
