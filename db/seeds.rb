@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'open-uri'
+
 User.destroy_all
 Business.destroy_all
 BusinessesCategory.destroy_all
@@ -28,10 +30,10 @@ business1 = Business.create!(
     longitude: 64.543211,
     latitude: 56.43222
 )
-business1.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/tacos_el_gordo/tacos2.jpg'), filename: "tacos2.jpg")
-business1.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/tacos_el_gordo/tacos3.jpg'), filename: "tacos3.jpg")
-business1.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/tacos_el_gordo/tacos4.jpg'), filename: "tacos4.jpg")
-business1.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/tacos_el_gordo/tacos5.jpg'), filename: "tacos5.jpg")
+business1.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/1aSbr6Tfod1G8o72wqJoTiA1'), filename: "tacos_gordo1.jpg")
+business1.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/1P2wsgRyiNxCKidHeMjvHV9d'), filename: "tacos_gordo2.jpg")
+business1.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/1z67S4fzuSGZngusaseLWZq2'), filename: "tacos_gordo3.jpg")
+business1.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/2BWzrb44szPbRa2PaBwuV5n3'), filename: "tacos_gordo4.jpg")
 
 schedule1m = Schedule.create!(
     day: 'Mon',
@@ -88,10 +90,10 @@ business2 = Business.create!(
     longitude: 60.2113,
     latitude: 51.4555
 )
-business2.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/i_heart_sushi/sushi1.jpg'), filename: "sushi1.jpg")
-business2.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/i_heart_sushi/sushi2.jpg'), filename: "sushi2.jpg")
-business2.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/i_heart_sushi/sushi3.jpg'), filename: "sushi3.jpg")
-business2.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/i_heart_sushi/sushi4.jpg'), filename: "sushi4.jpg")
+business2.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/2oSYDE6T6qDH29UUGd5fBp6M'), filename: "i_heart_sushi1.jpg")
+business2.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/2vzFR7jMncJDT7NacnhoUmXQ'), filename: "i_heart_sushi2.jpg")
+business2.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/36wJdVFUGeEVH3SG6uhVbxUu'), filename: "i_heart_sushi3.jpg")
+business2.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/38WhdT7Jt7kFwbfp2E5cCJtq'), filename: "i_heart_sushi4.jpg")
 
 schedule2m = Schedule.create!(
     day: 'Mon',
@@ -149,10 +151,10 @@ business3 = Business.create!(
     latitude: 49.1234
 )
 
-business3.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/jongro/jongro1.jpg'), filename: "jongro_new1.jpg")
-business3.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/jongro/jongro2.jpg'), filename: "jongro_new2.jpg")
-business3.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/jongro/jongro3.jpg'), filename: "jongro_new3.jpg")
-business3.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/jongro/jongro4.jpg'), filename: "jongro_new4.jpg")
+business3.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/391k7jdTL33tMSSkMdyWZuLF'), filename: "jongro_jip1.jpg")
+business3.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/3BQv8tuTS39BKG7KrsYYRD3V'), filename: "jongro_jip2.jpg")
+business3.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/3h6sbBuVPHTsKcDeiAe3JfNn'), filename: "jongro_jip3.jpg")
+business3.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/3ha7ovBBzsuqR7Y2tbszYfCV'), filename: "jongro_jip4.jpg")
 
 schedule3m = Schedule.create!(
     day: 'Mon',
@@ -210,10 +212,10 @@ business4 = Business.create!(
     latitude: 89.1234
 )
 
-business4.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/taco_maggie/taco_maggie1.jpg'), filename: "taco_maggie1.jpg")
-business4.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/taco_maggie/taco_maggie2.jpg'), filename: "taco_maggie2.jpg")
-business4.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/taco_maggie/taco_maggie3.jpg'), filename: "taco_maggie3.jpg")
-business4.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/taco_maggie/taco_maggie4.jpg'), filename: "taco_maggie4.jpg")
+business4.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/3R84BXak62K2ofkDyqSKtpTp'), filename: "taco_maggie5.jpg")
+business4.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/3rBPgaGravkgMtUnieM2V3Jv'), filename: "taco_maggie6.jpg")
+business4.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/3um1pUo7UxEiHMiUeBKBDBPk'), filename: "taco_maggie7.jpg")
+business4.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/47YQngB8FBiv8WCPGH5jeyZg'), filename: "taco_maggie8.jpg")
 
 schedule4m = Schedule.create!(
     day: 'Mon',
@@ -271,10 +273,10 @@ business5 = Business.create!(
     latitude: 169.1234
 )
 
-business5.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/blue_bottle/blue_bottle1.jpg'), filename: "blue_bottle1.jpg")
-business5.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/blue_bottle/blue_bottle2.jpg'), filename: "blue_bottle2.jpg")
-business5.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/blue_bottle/blue_bottle3.jpg'), filename: "blue_bottle3.jpg")
-business5.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/blue_bottle/blue_bottle4.jpg'), filename: "blue_bottle4.jpg")
+business5.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/497yWXaB7BpKZyFQ7ZoVNSRN'), filename: "blue_bottle_coffee1.jpg")
+business5.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/49e9Li6PED528W3FVaQBNP5X'), filename: "blue_bottle_coffee2.jpg")
+business5.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/49zkxMTRxxfa78XPHg2boiSf'), filename: "blue_bottle_coffee3.jpg")
+business5.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/4mN1TKLvxaMFGq4ju6sV2Xmp'), filename: "blue_bottle_coffee4.jpg")
 
 schedule5m = Schedule.create!(
     day: 'Mon',
@@ -332,10 +334,10 @@ business6 = Business.create!(
     latitude: 80.1234
 )
 
-business6.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/innout/innout1.jpg'), filename: "innout1.jpg")
-business6.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/innout/innout2.jpg'), filename: "innout2.jpg")
-business6.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/innout/innout3.jpg'), filename: "innout3.jpg")
-business6.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/innout/innout4.jpg'), filename: "innout4.jpg")
+business6.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/4NmZFqPfLHXAPxZaw5qdTkuR'), filename: "innout_1.jpg")
+business6.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/4S32mckEWDA37ULLmjVGUNcg'), filename: "innout_2.jpg")
+business6.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/5Qtv2czJjtch82u7eQATDsGd'), filename: "innout_3.jpg")
+business6.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/61s67N6BLubxRyh8aNtUCoKX'), filename: "innout_4.jpg")
 
 schedule6m = Schedule.create!(
     day: 'Mon',
@@ -394,10 +396,10 @@ business7 = Business.create!(
     latitude: 33.1345
 )
 
-business7.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/off_street/off_street1.jpg'), filename: "off_street1.jpg")
-business7.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/off_street/off_street2.jpg'), filename: "off_street2.jpg")
-business7.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/off_street/off_street3.jpg'), filename: "off_street3.jpg")
-business7.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/off_street/off_street4.jpg'), filename: "off_street4.jpg")
+business7.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/6NHv7n22R2jRw3Wrpbzjfmpq'), filename: "off_street_cafe1.jpg")
+business7.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/6ppXBwCxdzyosbKtBJeREUEK'), filename: "off_street_cafe2.jpg")
+business7.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/6rY6GdEoy2o5h5FqLXgaFGNu'), filename: "off_street_cafe3.jpg")
+business7.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/6w9Wgzw9yxMbHRtzVqvUXA7X'), filename: "off_street_cafe4.jpg")
 
 schedule7m = Schedule.create!(
     day: 'Mon',
@@ -454,12 +456,12 @@ business8 = Business.create!(
     price_range: "$$",
     longitude: 175.2113,
     latitude: 121.1234
-)
+)https://welp-aa-dev.s3-us-west-1.amazonaws.com/6Zr2PwCrVaCu2bjVbiJureVU
 
-business8.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/ozen/ozen1.jpg'), filename: "ozen1.jpg")
-business8.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/ozen/ozen2.jpg'), filename: "ozen2.jpg")
-business8.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/ozen/ozen3.jpg'), filename: "ozen3.jpg")
-business8.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/ozen/ozen4.jpg'), filename: "ozen4.jpg")
+business8.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/6xCUp6SPeKSoo4AA3EmajPHW'), filename: "ozen_sushi1.jpg")
+business8.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/6Zr2PwCrVaCu2bjVbiJureVU'), filename: "ozen_sushi2.jpg")
+business8.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/7FNmY5atGDzACtc56LyaYmy2'), filename: "ozen_sushi3.jpg")
+business8.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/7GFWXf7S8kzvHCLFsAkXeN1u'), filename: "ozen_sushi4.jpg")
 
 schedule8m = Schedule.create!(
     day: 'Mon',
@@ -518,10 +520,10 @@ business9 = Business.create!(
     latitude: 189.6734
 )
 
-business9.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/chodang/chodang1.jpg'), filename: "chodang1.jpg")
-business9.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/chodang/chodang2.jpg'), filename: "chodang2.jpg")
-business9.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/chodang/chodang3.jpg'), filename: "chodang3.jpg")
-business9.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/chodang/chodang4.jpg'), filename: "chodang4.jpg")
+business9.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/7ifWqB7BaJrTyRx9f65anhww'), filename: "chodang_tofu1.jpg")
+business9.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/7Jhu7B9xN7Jv5Mhy2fWto7Vw'), filename: "chodang_tofu2.jpg")
+business9.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/7LRrAtD74sNK9KvoDPMVjQki'), filename: "chodang_tofu3.jpg")
+business9.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/7war8BMnCiGTSKxpBvLxfZyb'), filename: "chodang_tofu4.jpg")
 
 schedule9m = Schedule.create!(
     day: 'Mon',
@@ -580,10 +582,10 @@ business10 = Business.create!(
     latitude: 119.6734
 )
 
-business10.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/phils/phils1.jpg'), filename: "phils1.jpg")
-business10.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/phils/phils2.jpg'), filename: "phils2.jpg")
-business10.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/phils/phils3.jpg'), filename: "phils3.jpg")
-business10.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/phils/phils4.jpg'), filename: "phils4.jpg")
+business10.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/8JsdmQ2RQKjAGDYGj2JFHcmS'), filename: "phils1.jpg")
+business10.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/8mKQxUj9LJREJMkwyceBK645'), filename: "phils2.jpg")
+business10.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/8swpcDxy5RT7qEDUuJiKc9Qr'), filename: "phils3.jpg")
+business10.photos.attach(io: URI.open('https://welp-aa-dev.s3-us-west-1.amazonaws.com/92iDP9b7Acqi9nqLkSpEZxZS'), filename: "phils4.jpg")
 
 schedule10m = Schedule.create!(
     day: 'Mon',
