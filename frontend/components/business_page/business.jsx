@@ -38,7 +38,6 @@ class Business extends React.Component {
                 <div>Loading..</div>
             )
         } else {
-            debugger
             return (
                 <div>
                     <div className="business-page-top">
@@ -62,12 +61,20 @@ class Business extends React.Component {
                         <div className="business-intro">
                             <div className="business-intro-text">
                                 <p>{this.props.business.name}</p>
-                                <p>this is where the avg rating goes</p>
-                                <p>{this.props.business.price_range}</p>
+                                <span>this is where the avg rating goes</span>
                                 <div className="business-categories">
-                                    {this.props.business.categories.map((category, i) => (
-                                        <ul className="category-name"key={i}>{category.category}</ul>
-                                    ))}
+                                    <span className="claimed"><img className="claimed-icon"src={window.verified} alt=""/>Claimed</span>
+                                    <span>&#8226;</span>
+                                    <span className="dollar-sign">{this.props.business.price_range}</span>
+                                    <span className="bullet-2">&#8226;</span>
+                                    {this.props.business.categories.map((category, i) => {
+                                        if(i === this.props.business.categories.length - 1) {
+                                            return <span className="category-name" key={i}>{category.category} </span>
+                                        } else {
+                                            return <span className="category-name" key={i}>{category.category}, </span>
+                                        }
+                                    }
+                                    )}
                                 </div>
                                 <p>this is where TODAY's schedule goes in</p>
                             </div>

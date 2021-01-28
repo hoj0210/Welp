@@ -56,14 +56,15 @@
     font-weight: lighter;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    margin-left: 141px;
+    /* margin-left: 141px; */
 }
 
 .business-intro-text p{
-    font-size: 24px;
+    font-size: 18px;
     font-family: "",Helvetica,Arial,sans-serif;
     color: #ffffff;
     margin-left: 141px;
+    margin-bottom: 10px;
 }
 
 .business-pictures-container{
@@ -111,4 +112,53 @@
     position: relative;
     right: 8px;
     top: 3px;
+}
+.claimed{
+    margin-right: 10px;
+    margin-left: 3px;
+}
+.claimed-icon{
+    margin-right: 3px;
+    position: relative;
+    top: 4px;
+}
+.category-name{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif, "Open Sans", "Helvetica";
+    color: white;
+    font-weight: bold;
+}
+.business-categories{
+    position: relative;
+    right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.business-categories :first-child{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif, "Open Sans", "Helvetica";
+    color: rgb(32, 184, 174);
+    font-weight: bold;
+}
+
+.business-intro-text span{
+    color: white;
+    position: relative;
+    left: 141px;
+    font-family: Arial, Helvetica, sans-serif, "Open Sans", "Helvetica";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.category-name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.dollar-sign{
+    margin: 10px;
+}
+
+.bullet-2{
+    margin-right: 6px;
 }
