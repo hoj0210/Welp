@@ -33,6 +33,50 @@ business1.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/ta
 business1.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/tacos_el_gordo/tacos4.jpg'), filename: "tacos4.jpg")
 business1.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/tacos_el_gordo/tacos5.jpg'), filename: "tacos5.jpg")
 
+schedule1m = Schedule.create!(
+    day: 'Monday',
+    open: "11:00 AM",
+    close: "1:00 AM",
+    business_id: business1.id
+)
+schedule1t = Schedule.create!(
+    day: 'Tuesday',
+    open: "11:00 AM",
+    close: "1:00 AM",
+    business_id: business1.id
+)
+schedule1w = Schedule.create!(
+    day: 'Wednesday',
+    open: "11:00 AM",
+    close: "1:00 AM",
+    business_id: business1.id
+)
+schedule1th = Schedule.create!(
+    day: 'Thursday',
+    open: "11:00 AM",
+    close: "1:00 AM",
+    business_id: business1.id
+)
+schedule1f = Schedule.create!(
+    day: 'Friday',
+    open: "11:00 AM",
+    close: "3:00 AM",
+    business_id: business1.id
+)
+schedule1s = Schedule.create!(
+    day: 'Saturday',
+    open: "11:00 AM",
+    close: "3:00 AM",
+    business_id: business1.id
+)
+schedule1ss = Schedule.create!(
+    day: 'Sunday',
+    open: "11:00 AM",
+    close: "1:00 AM",
+    business_id: business1.id
+)
+
+
 business2 = Business.create!(
     name: "I Heart Sushi",
     address: "3 Bright Way",
@@ -48,6 +92,49 @@ business2.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/i_
 business2.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/i_heart_sushi/sushi2.jpg'), filename: "sushi2.jpg")
 business2.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/i_heart_sushi/sushi3.jpg'), filename: "sushi3.jpg")
 business2.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/i_heart_sushi/sushi4.jpg'), filename: "sushi4.jpg")
+
+schedule2m = Schedule.create!(
+    day: 'Monday',
+    open: "11:00 AM",
+    close: "10:00 PM",
+    business_id: business2.id
+)
+schedule2t = Schedule.create!(
+    day: 'Tuesday',
+    open: "11:00 AM",
+    close: "10:00 PM",
+    business_id: business2.id
+)
+schedule2w = Schedule.create!(
+    day: 'Wednesday',
+    open: "11:00 AM",
+    close: "10:00 PM",
+    business_id: business2.id
+)
+schedule2th = Schedule.create!(
+    day: 'Thursday',
+    open: "11:00 AM",
+    close: "10:00 PM",
+    business_id: business2.id
+)
+schedule2f = Schedule.create!(
+    day: 'Friday',
+    open: "11:00 AM",
+    close: "11:00 PM",
+    business_id: business2.id
+)
+schedule2s = Schedule.create!(
+    day: 'Saturday',
+    open: "11:00 AM",
+    close: "11:00 PM",
+    business_id: business2.id
+)
+schedule2ss = Schedule.create!(
+    day: 'Sunday',
+    open: "11:00 AM",
+    close: "10:00 PM",
+    business_id: business2.id
+)
 
 
 business3 = Business.create!(
@@ -67,6 +154,50 @@ business3.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/jo
 business3.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/jongro/jongro3.jpg'), filename: "jongro_new3.jpg")
 business3.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/jongro/jongro4.jpg'), filename: "jongro_new4.jpg")
 
+schedule3m = Schedule.create!(
+    day: 'Monday',
+    open: "11:00 AM",
+    close: "12:00 AM",
+    business_id: business3.id
+)
+schedule3t = Schedule.create!(
+    day: 'Tuesday',
+    open: "11:00 AM",
+    close: "12:00 AM",
+    business_id: business3.id
+)
+schedule3w = Schedule.create!(
+    day: 'Wednesday',
+    open: "11:00 AM",
+    close: "12:00 AM",
+    business_id: business3.id
+)
+schedule3th = Schedule.create!(
+    day: 'Thursday',
+    open: "11:00 AM",
+    close: "12:00 AM",
+    business_id: business3.id
+)
+schedule3f = Schedule.create!(
+    day: 'Friday',
+    open: "11:00 AM",
+    close: "2:00 AM",
+    business_id: business3.id
+)
+schedule3s = Schedule.create!(
+    day: 'Saturday',
+    open: "11:00 AM",
+    close: "2:00 AM",
+    business_id: business3.id
+)
+schedule3ss = Schedule.create!(
+    day: 'Sunday',
+    open: "11:00 AM",
+    close: "2:00 AM",
+    business_id: business3.id
+)
+
+
 business4 = Business.create!(
     name: "Taco Maggie",
     address: "111 Beach Blvd.",
@@ -83,6 +214,49 @@ business4.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/ta
 business4.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/taco_maggie/taco_maggie2.jpg'), filename: "taco_maggie2.jpg")
 business4.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/taco_maggie/taco_maggie3.jpg'), filename: "taco_maggie3.jpg")
 business4.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/taco_maggie/taco_maggie4.jpg'), filename: "taco_maggie4.jpg")
+
+schedule4m = Schedule.create!(
+    day: 'Monday',
+    open: "7:00 PM",
+    close: "3:00 AM",
+    business_id: business4.id
+)
+schedule4t = Schedule.create!(
+    day: 'Tuesday',
+    open: "7:00 PM",
+    close: "3:00 AM",
+    business_id: business4.id
+)
+schedule4w = Schedule.create!(
+    day: 'Wednesday',
+    open: "7:00 PM",
+    close: "3:00 AM",
+    business_id: business4.id
+)
+schedule4th = Schedule.create!(
+    day: 'Thursday',
+    open: "7:00 PM",
+    close: "3:00 AM",
+    business_id: business4.id
+)
+schedule4f = Schedule.create!(
+    day: 'Friday',
+    open: "7:00 PM",
+    close: "3:00 AM",
+    business_id: business4.id
+)
+schedule4s = Schedule.create!(
+    day: 'Saturday',
+    open: "7:00 PM",
+    close: "3:00 AM",
+    business_id: business4.id
+)
+schedule4ss = Schedule.create!(
+    day: 'Sunday',
+    open: "7:00 PM",
+    close: "3:00 AM",
+    business_id: business4.id
+)
 
 
 business5 = Business.create!(
@@ -102,6 +276,50 @@ business5.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/bl
 business5.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/blue_bottle/blue_bottle3.jpg'), filename: "blue_bottle3.jpg")
 business5.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/blue_bottle/blue_bottle4.jpg'), filename: "blue_bottle4.jpg")
 
+schedule5m = Schedule.create!(
+    day: 'Monday',
+    open: "7:00 AM",
+    close: "3:00 PM",
+    business_id: business5.id
+)
+schedule5t = Schedule.create!(
+    day: 'Tuesday',
+    open: "7:00 AM",
+    close: "3:00 PM",
+    business_id: business5.id
+)
+schedule5w = Schedule.create!(
+    day: 'Wednesday',
+    open: "7:00 AM",
+    close: "3:00 PM",
+    business_id: business5.id
+)
+schedule5th = Schedule.create!(
+    day: 'Thursday',
+    open: "7:00 AM",
+    close: "3:00 PM",
+    business_id: business5.id
+)
+schedule5f = Schedule.create!(
+    day: 'Friday',
+    open: "7:00 AM",
+    close: "3:00 PM",
+    business_id: business5.id
+)
+schedule5s = Schedule.create!(
+    day: 'Saturday',
+    open: "7:00 AM",
+    close: "3:00 PM",
+    business_id: business5.id
+)
+schedule5ss = Schedule.create!(
+    day: 'Sunday',
+    open: "7:00 AM",
+    close: "3:00 PM",
+    business_id: business5.id
+)
+
+
 business6 = Business.create!(
     name: "In N Out",
     address: "2 Beach Blvd.",
@@ -118,6 +336,51 @@ business6.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/in
 business6.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/innout/innout2.jpg'), filename: "innout2.jpg")
 business6.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/innout/innout3.jpg'), filename: "innout3.jpg")
 business6.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/innout/innout4.jpg'), filename: "innout4.jpg")
+
+schedule6m = Schedule.create!(
+    day: 'Monday',
+    open: "10:30 AM",
+    close: "1:30 AM",
+    business_id: business6.id
+)
+schedule6t = Schedule.create!(
+    day: 'Tuesday',
+    open: "10:30 AM",
+    close: "1:30 AM",
+    business_id: business6.id
+)
+schedule6w = Schedule.create!(
+    day: 'Wednesday',
+    open: "10:30 AM",
+    close: "1:30 AM",
+    business_id: business6.id
+)
+schedule6th = Schedule.create!(
+    day: 'Thursday',
+    open: "10:30 AM",
+    close: "1:30 AM",
+    business_id: business6.id
+)
+schedule6f = Schedule.create!(
+    day: 'Friday',
+    open: "10:30 AM",
+    close: "2:00 AM",
+    business_id: business6.id
+)
+schedule6s = Schedule.create!(
+    day: 'Saturday',
+    open: "10:30 AM",
+    close: "2:00 AM",
+    business_id: business6.id
+)
+schedule6ss = Schedule.create!(
+    day: 'Sunday',
+    open: "10:30 AM",
+    close: "1:30 AM",
+    business_id: business6.id
+)
+
+
 
 business7 = Business.create!(
     name: "Off Street Cafe",
@@ -136,6 +399,51 @@ business7.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/of
 business7.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/off_street/off_street3.jpg'), filename: "off_street3.jpg")
 business7.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/off_street/off_street4.jpg'), filename: "off_street4.jpg")
 
+schedule7m = Schedule.create!(
+    day: 'Monday',
+    open: "7:30 AM",
+    close: "4:30 PM",
+    business_id: 7
+)
+schedule7t = Schedule.create!(
+    day: 'Tuesday',
+    open: "7:30 AM",
+    close: "4:30 PM",
+    business_id: business7.id
+)
+schedule7w = Schedule.create!(
+    day: 'Wednesday',
+    open: "7:30 AM",
+    close: "4:30 PM",
+    business_id: business7.id
+)
+schedule7th = Schedule.create!(
+    day: 'Thursday',
+    open: "7:30 AM",
+    close: "4:30 PM",
+    business_id: business7.id
+)
+schedule7f = Schedule.create!(
+    day: 'Friday',
+    open: "7:30 AM",
+    close: "4:00 PM",
+    business_id: business7.id
+)
+schedule7s = Schedule.create!(
+    day: 'Saturday',
+    open: "7:30 AM",
+    close: "4:00 PM",
+    business_id: business7.id
+)
+schedule7ss = Schedule.create!(
+    day: 'Sunday',
+    open: "7:30 AM",
+    close: "4:30 PM",
+    business_id: business7.id
+)
+
+
+
 business8 = Business.create!(
     name: "Ozen Sushi",
     address: "22 183rd St.",
@@ -152,6 +460,51 @@ business8.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/oz
 business8.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/ozen/ozen2.jpg'), filename: "ozen2.jpg")
 business8.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/ozen/ozen3.jpg'), filename: "ozen3.jpg")
 business8.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/ozen/ozen4.jpg'), filename: "ozen4.jpg")
+
+schedule8m = Schedule.create!(
+    day: 'Monday',
+    open: "10:30 AM",
+    close: "11:00 PM",
+    business_id: business8.id
+)
+schedule8t = Schedule.create!(
+    day: 'Tuesday',
+    open: "10:30 AM",
+    close: "11:00 PM",
+    business_id: business8.id
+)
+schedule8w = Schedule.create!(
+    day: 'Wednesday',
+    open: "10:30 AM",
+    close: "11:00 PM",
+    business_id: business8.id
+)
+schedule8th = Schedule.create!(
+    day: 'Thursday',
+    open: "10:30 AM",
+    close: "11:00 PM",
+    business_id: business8.id
+)
+schedule8f = Schedule.create!(
+    day: 'Friday',
+    open: "10:30 AM",
+    close: "11:30 PM",
+    business_id: business8.id
+)
+schedule8s = Schedule.create!(
+    day: 'Saturday',
+    open: "10:30 AM",
+    close: "11:30 PM",
+    business_id: business8.id
+)
+schedule8ss = Schedule.create!(
+    day: 'Sunday',
+    open: "10:30 AM",
+    close: "11:00 PM",
+    business_id: business8.id
+)
+
+
 
 business9 = Business.create!(
     name: "Chodang",
@@ -170,6 +523,51 @@ business9.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/ch
 business9.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/chodang/chodang3.jpg'), filename: "chodang3.jpg")
 business9.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/chodang/chodang4.jpg'), filename: "chodang4.jpg")
 
+schedule9m = Schedule.create!(
+    day: 'Monday',
+    open: "9:30 AM",
+    close: "9:30 PM",
+    business_id: business9.id
+)
+schedule9t = Schedule.create!(
+    day: 'Tuesday',
+    open: "9:30 AM",
+    close: "9:30 PM",
+    business_id: business9.id
+)
+schedule9w = Schedule.create!(
+    day: 'Wednesday',
+    open: "9:30 AM",
+    close: "9:30 PM",
+    business_id: business9.id
+)
+schedule9th = Schedule.create!(
+    day: 'Thursday',
+    open: "9:30 AM",
+    close: "9:30 PM",
+    business_id: business9.id
+)
+schedule9f = Schedule.create!(
+    day: 'Friday',
+    open: "9:30 AM",
+    close: "9:30 PM",
+    business_id: business9.id
+)
+schedule9s = Schedule.create!(
+    day: 'Saturday',
+    open: "9:30 AM",
+    close: "9:30 PM",
+    business_id: business9.id
+)
+schedule9ss = Schedule.create!(
+    day: 'Sunday',
+    open: "9:30 AM",
+    close: "9:30 PM",
+    business_id: business9.id
+)
+
+
+
 business10 = Business.create!(
     name: "Phils BBQ",
     address: "1123 South St.",
@@ -186,6 +584,50 @@ business10.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/p
 business10.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/phils/phils2.jpg'), filename: "phils2.jpg")
 business10.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/phils/phils3.jpg'), filename: "phils3.jpg")
 business10.photos.attach(io: File.open('/Users/hojungcha/Desktop/business_pics/phils/phils4.jpg'), filename: "phils4.jpg")
+
+schedule10m = Schedule.create!(
+    day: 'Monday',
+    open: "11:30 AM",
+    close: "9:30 PM",
+    business_id: business10.id
+)
+schedule10t = Schedule.create!(
+    day: 'Tuesday',
+    open: "11:30 AM",
+    close: "9:30 PM",
+    business_id: business10.id
+)
+schedule10w = Schedule.create!(
+    day: 'Wednesday',
+    open: "11:30 AM",
+    close: "9:30 PM",
+    business_id: business10.id
+)
+schedule10th = Schedule.create!(
+    day: 'Thursday',
+    open: "11:30 AM",
+    close: "9:30 PM",
+    business_id: business10.id
+)
+schedule10f = Schedule.create!(
+    day: 'Friday',
+    open: "11:30 AM",
+    close: "11:00 PM",
+    business_id: business10.id
+)
+schedule10s = Schedule.create!(
+    day: 'Saturday',
+    open: "11:30 AM",
+    close: "11:00 PM",
+    business_id: business10.id
+)
+schedule10ss = Schedule.create!(
+    day: 'Sunday',
+    open: "11:30 AM",
+    close: "9:30 PM",
+    business_id: business10.id
+)
+
 
 category1 = Category.create!(category: "Tacos")
 category2 = Category.create!(category: "Sushi")

@@ -6,6 +6,11 @@
             json.extract! category, :category
         end
     end
+    json.schedules do 
+        json.array! @business.schedules do |schedule|
+            json.extract! schedule, :open, :close, :day
+        end
+    end
 # json.extract! @business,
 #             :id,
 #             :name,
