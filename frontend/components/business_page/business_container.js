@@ -5,7 +5,8 @@ import {withRouter} from 'react-router-dom'
 
 const msp = (state, ownProps) => (
     {
-        business: state.entities.businesses[ownProps.match.params.businessId]
+        business: state.entities.businesses[ownProps.match.params.businessId],
+        categoryId: ownProps.match.params.categoryId
     }
 )
 

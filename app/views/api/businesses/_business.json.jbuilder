@@ -9,5 +9,4 @@ json.extract! business,
             :website,
             :price_range,
             :latitude,
-            :longitude,
-            :reviews,
+            :longitude

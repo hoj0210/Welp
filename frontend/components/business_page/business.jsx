@@ -38,7 +38,7 @@ class Business extends React.Component {
                 <div>Loading..</div>
             )
         } else {
-            //debugger
+            debugger
             return (
                 <div>
                     <div className="business-page-top">
@@ -64,7 +64,11 @@ class Business extends React.Component {
                                 <p>{this.props.business.name}</p>
                                 <p>this is where the avg rating goes</p>
                                 <p>{this.props.business.price_range}</p>
-                                <p>categories</p>
+                                <div className="business-categories">
+                                    {this.props.business.categories.map((category, i) => (
+                                        <ul className="category-name"key={i}>{category.category}</ul>
+                                    ))}
+                                </div>
                                 <p>this is where TODAY's schedule goes in</p>
                             </div>
                         </div>
