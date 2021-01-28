@@ -34,7 +34,12 @@ class Business extends React.Component {
     }
     
     open(){
-        const todayDate = new Date().split(" ")
+        const todayDate = new Date().toDateString().split(" ")[0];
+        for (let i = 0; i < this.props.business.schedules.length; i++) {
+            if (this.props.business.schedules[i].day === todayDate) {
+                return ``
+            }
+        }
     }
     render(){
         if (!this.props.business) {
