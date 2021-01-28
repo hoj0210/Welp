@@ -13,6 +13,12 @@ class Business < ApplicationRecord
     has_many :categories,
         through: :businesses_categories,
         source: :category
+
+    has_many :schedules,
+        primary_key: :id,
+        foreign_key: :business_id,
+        class_name: :Schedule 
+        
     # has_many :reviews,
     #     primary_key: :id,
     #     foreign_key: :review_id,

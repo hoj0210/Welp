@@ -240,3 +240,4 @@ b_c29 = BusinessesCategory.create!(business_id: business10.id, category_id: cate
 b_c30 = BusinessesCategory.create!(business_id: business10.id, category_id: category10.id)
 
 
+
