@@ -1,7 +1,7 @@
 class Api::ReviewsController < ApplicationController
     def index 
         @reviews = Review.all.where(business_id: params[:business_id])
-        render: index
+        render :index
     end
 
     def show 
@@ -12,7 +12,7 @@ class Api::ReviewsController < ApplicationController
     def create 
         @review = Review.new(review_params)
         if @review.save 
-            render: show 
+            render :show 
         else
             render json: @review.errors.full_messages, status: 422
         end
@@ -21,7 +21,7 @@ class Api::ReviewsController < ApplicationController
     def update 
         @review = Review.find(params[:id])
         if @review.update(review_params)
-            render: show 
+            render :show 
         else
             render json: ["something went wrong!!"], status: 422
         end
