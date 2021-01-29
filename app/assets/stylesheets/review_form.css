@@ -38,7 +38,7 @@
     font-family: "Open Sans", Helvetica, "Helvetica Neue";
     font-size: 14px;
     color: #00838F;
-    margin-left: 245px;
+    margin-left: 241px;
 }
 
 .review-form-guide:hover{
@@ -66,13 +66,39 @@ textarea {
     border: rgb(189, 189, 189) solid 1px;
     border-radius: 4px;
     height: 450px;
+    width: 631px;
 }
 
 .attach-picture{
     border: rgb(189, 189, 189) solid 1px;
     border-radius: 4px;
-    width: 555px;
+    width: 633px;
     height: 110px;
+    position: fixed;
+}
+
+.attach-picture:hover{
+    border: rgb(167, 167, 167) solid 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.review-post-button{
+    position: relative;
+    top: 140px;
+    height: 45px;
+    width: 200px;
+    background-color: #F43939;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, "Helvetica Neue";
+    border: none;
+    border-radius: 4px;
+}
+.review-post-button:hover{
+    cursor: pointer;
+    box-shadow: rgb(228, 228, 228) 2px 2px;
 }
 
 .review-form-attach-photos{
@@ -83,4 +109,30 @@ textarea {
     margin-top: 30px;
     margin-bottom: 24px;
     margin-left: 5px;
+}
+
+.text-area-text{
+    color: black(237, 237, 237);
+    font-family: "Open Sans", Helvetica, "Helvetica Neue";
+    font-size: 18px;
+}
+
+.text-area-text::-webkit-input-placeholder{
+    color: black;
+    opacity: 0.25;
+}
+
+.select-rating-text{
+    color: black;
+    font-family: "Open Sans", Helvetica, "Helvetica Neue";
+    font-size: 14px;
+    position: relative;
+    left: 100px;
+    top: 46px;
+}
+
+.add-photo-icon{
+    position: relative;
+    left: 300px;
+    top: 44px;
 }

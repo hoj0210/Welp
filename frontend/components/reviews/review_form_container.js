@@ -5,12 +5,8 @@ import { fetchBusiness } from '../../actions/business_actions'
 const msp = (state, ownProps) => {
     //debugger
     return {
-        review: {
-            message: "",
-            rating: ""
-        },
         business: state.entities.businesses[ownProps.match.params.businessId],
-        currentUser: state.entities.users[state.session.id],
+        user_id: state.session.id,
         formType: "Create Review"
     }
 }

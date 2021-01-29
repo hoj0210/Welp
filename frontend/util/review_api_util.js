@@ -9,7 +9,7 @@ export const createReview = (review, businessId) => (
     $.ajax({
         method: "POST",
         url: `/api/businesses/${businessId}/reviews`,
-        review
+        data: {review}
     })
 )
 
@@ -17,6 +17,6 @@ export const updateReview = (review, businessId) => (
     $.ajax({
         method: "PATCH",
         url: `/api/businesses/${businessId}/reviews/${review.id}`,
-        review 
+        data: {review} 
     })
 )

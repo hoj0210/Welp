@@ -162,6 +162,24 @@
     text-decoration: none;
 }
 
+.logout-buttonreview_pages{
+    font: 14px Arial, Helvetica, "Helvetica Neue";
+    color: #0073BB;
+    /* padding: 7px 24px 8px; */
+    border: white solid 2px;
+    border-radius: 4px;
+    background: transparent;
+    outline: none;
+    margin: 4px;
+}
+
+.logout-buttonreview_pages:hover{
+    background-color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .profile{
     width: 40px;
     border-radius: 4px 0 0 4px;
@@ -212,7 +230,7 @@
     z-index: 1;
     background-color: white;
     width: 218px;
-    right: 6px;
+    right: 20px;
     top: 41px;
     border-radius: 3px;
     box-shadow: 0 3px 3px darkgrey;
@@ -225,7 +243,7 @@
     z-index: 1;
     background-color: white;
     width: 218px;
-    right: 6px;
+    right: 20px;
     top: 41px;
     border-radius: 3px;
     box-shadow: 0 3px 3px darkgrey;
@@ -290,4 +308,9 @@
     position: relative;
     /* left: 1000px; */
     top: 27px;
+}
+
+.dropdown-content-review_pages{
+    position: absolute;
+    right: 20px;
 }
