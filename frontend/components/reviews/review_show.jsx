@@ -1,7 +1,21 @@
 import React from 'react';
 
 const ReviewShow = props => {
-    debugger
+    let ratingStar = "";
+    if (props.review.rating === 1) {
+        ratingStar = window.oneStar;
+    } else if (props.review.rating === 2) {
+        ratingStar = window.twoStar; 
+    } else if (props.review.rating === 3) {
+        ratingStar = window.threeStar;
+    } else if (props.review.rating === 4) {
+        ratingStar = window.fourStar;
+    } else {
+        ratingStar = window.fiveStar;
+    }
+
+    let date = new Date(props.review.created_at);
+    const realDate = date.getMonth() + "1" + "/" + date.getDate() + "/" + date.getFullYear();
     return (
         <div>
             <div>
@@ -13,16 +27,18 @@ const ReviewShow = props => {
                     </div>
                 </div>
                 <div className="rating-date-box">
-                    <span className="review-rating">Rating: {props.review.rating}</span>
-                    <span className="review-created-time">{props.review.created_at}</span>
+                    <span className="review-rating">
+                        <img src={ratingStar} alt=""/>
+                    </span>
+                    <span className="review-created-time">{realDate}</span>
                 </div>
                 <div className="review-main-box">
                     {props.review.message}
                 </div>
                 <div className="review-rxn-buttons">
-                    <li>Useful</li>
-                    <li>Funny</li>
-                    <li>Cool</li>
+                    <li className="reaction-button">Useful</li>
+                    <li className="reaction-button">Funny</li>
+                    <li className="reaction-button">Cool</li>
                 </div>
             </div>
         </div>

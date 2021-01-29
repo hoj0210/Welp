@@ -7,4 +7,9 @@
 
 .review-created-time{
     margin-left: 20px;
+    position: relative;
+    bottom: 6px;
+    font-size: 14px;
+    color: #757280;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica;
 }

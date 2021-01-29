@@ -18,10 +18,6 @@
     background-color:#F5F5F5;
 }
 
-.business-reviews-container{
-    height: 400px;
-}
-
 .search-box-container-splash{
     min-width: 1000px;
 }
@@ -238,4 +234,14 @@
 
 .today-hours{
     font-weight: 600;
+}
+
+.recommend-reviews{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica;
+    color: #2B273C;
+    margin-left: 43px;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }

@@ -1,0 +1,27 @@
+.review-boxes-container{
+    margin-left: 50px;
+}
+
+.review-boxes-container:last-child{
+    margin-bottom: 25px;
+}
+
+.review-rxn-buttons{
+    display: flex;
+}
+
+.reaction-button{
+    margin-right: 5px;
+    padding: 6px 12px;
+    color: #757280;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica;
+    font-size: 12px;
+    border: 1px rgb(225, 225, 225) solid;
+    border-radius: 4px;
+}
+
+.reaction-button:hover{
+    cursor: pointer;
+    transition: 1s;
+    background-color: rgb(249, 235, 237);
+}

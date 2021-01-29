@@ -16,7 +16,7 @@ class ReviewIndex extends React.Component {
         debugger
         return(
             <div>
-                <ul>
+                <ul className="review-boxes-container">
                     {Object.values(this.props.reviews).map(review => (
                         <div key={review.id}>
                             <ReviewShow review={review}/>

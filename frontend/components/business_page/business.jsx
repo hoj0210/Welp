@@ -126,6 +126,7 @@ class Business extends React.Component {
                         </div>
                     </div>
                     <div className="business-reviews-container">
+                        <h4 className="recommend-reviews">Recommended Reviews</h4>
                         <ReviewIndexContainer business={this.props.business} />
                     </div>
                     <div className="splash-about">
