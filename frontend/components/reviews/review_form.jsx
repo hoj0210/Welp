@@ -41,11 +41,11 @@ class ReviewForm extends React.Component {
                     <div className="review-form-main">
                         <form onSubmit={this.handleSubmit}>
                             <div className="review-form-box">
-                                <div>
+                                <div className="review-form-texts">
                                     <span className="review-form-business-name">{this.props.business.name}</span>
                                     <span className="review-form-guide">Review our review guidelines</span>
                                 </div>
-                                <div>
+                                <div className="review-content-box">
                                     <input type="number" min="1" max="5" className="rating-number"value={this.state.rating} onChange={this.handleChange("rating")}/>
                                     <textarea value={this.state.message} onChange={this.handleChange("message")}></textarea>
                                 </div>

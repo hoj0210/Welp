@@ -17,3 +17,70 @@
 .review-nav-spacefill{
     min-width: 700px;
 }
+
+.review-form-business-name{
+    font-family: "Montserrat";
+    font-size: 28px;
+}
+
+.review-form-texts{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+.review-form-main{
+    display: flex;
+    justify-content: center;
+}
+
+.review-form-guide{
+    font-family: "Open Sans", Helvetica, "Helvetica Neue";
+    font-size: 14px;
+    color: #00838F;
+    margin-left: 245px;
+}
+
+.review-form-guide:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+textarea {
+    resize: none;
+    width: 500px;
+    height: 300px;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 120px;
+}
+
+.rating-number{
+    position: relative;
+    left: 40px;
+    bottom: 260px;
+}
+
+.review-content-box{
+    border: rgb(189, 189, 189) solid 1px;
+    border-radius: 4px;
+    height: 450px;
+}
+
+.attach-picture{
+    border: rgb(189, 189, 189) solid 1px;
+    border-radius: 4px;
+    width: 555px;
+    height: 110px;
+}
+
+.review-form-attach-photos{
+    font-size: 20px;
+    color: #2B273C;
+    font-family: "Open Sans", Helvetica, "Helvetica Neue";
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 24px;
+    margin-left: 5px;
+}
