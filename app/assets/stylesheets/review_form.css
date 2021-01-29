@@ -32,6 +32,7 @@
 .review-form-main{
     display: flex;
     justify-content: center;
+    height: 900px;
 }
 
 .review-form-guide{
@@ -74,7 +75,7 @@ textarea {
     border-radius: 4px;
     width: 633px;
     height: 110px;
-    position: fixed;
+    
 }
 
 .attach-picture:hover{
@@ -85,7 +86,7 @@ textarea {
 
 .review-post-button{
     position: relative;
-    top: 140px;
+    top: 40px;
     height: 45px;
     width: 200px;
     background-color: #F43939;
@@ -95,6 +96,7 @@ textarea {
     font-family: Arial, Helvetica, "Helvetica Neue";
     border: none;
     border-radius: 4px;
+    margin-bottom: 40px;
 }
 .review-post-button:hover{
     cursor: pointer;
