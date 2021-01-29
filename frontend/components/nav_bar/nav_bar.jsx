@@ -6,7 +6,13 @@ import { LOGOUT_CURRENT_USER } from '../../actions/session_actions';
 class NavBar extends React.Component {
     constructor(props){
         super(props)
-        this.type = (this.props.formType === "splash") ? "splash" : "other_pages";
+        if (this.props.formType === "splash") {
+            this.type = "splash"
+        } else if (this.props.formType === "other_pages") {
+            this.type = "other_pages"
+        } else if (this.props.formType === "review_pages") {
+            this.type = "review_pages"
+        }
     }
 
     handleClick(){
@@ -34,7 +40,7 @@ class NavBar extends React.Component {
                             <img className="down-arrow" src={window.downArrow} />
                         </button>
                     </div>
-                    <div id="myDropdown" className="dropdown-content">
+                    <div id="myDropdown" className={`dropdown-content-${this.type}`}>
                         <div className="dropdown-profile">
                             <img className="profile-inner" src={window.defaultProfile} />
                             <div className="dropdown-profile-text">

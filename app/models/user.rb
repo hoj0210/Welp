@@ -7,7 +7,7 @@ class User < ApplicationRecord
         primary_key: :id,
         foreign_key: :user_id,
         class_name: :Review
-         
+
     has_one_attached :profile
     attr_reader :password 
     after_initialize :ensure_session_token 
