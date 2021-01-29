@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import OtherSearchBoxContainer from '../search_box/other_search_box_container';
 import OtherNavBarContainer from '../nav_bar/other_nav_bar_container';
 import About from '../about/about';
+import ReviewIndexContainer from '../reviews/review_index_container'
 // import ReviewsContainer from '../reviews/reviews_container'
 // import OperationHoursContainer from '../operation_hours/operation_hours_container'
 
@@ -125,7 +126,7 @@ class Business extends React.Component {
                         </div>
                     </div>
                     <div className="business-reviews-container">
-                        {/* <ReviewsContainer /> */}
+                        <ReviewIndexContainer business={this.props.business} />
                     </div>
                     <div className="splash-about">
                         <About />
