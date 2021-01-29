@@ -3,7 +3,6 @@ import ReviewIndex from './review_index';
 import {fetchReviews } from '../../actions/review_actions'
 
 const msp = (state, ownProps) => {
-    debugger
     return(
         {
             reviews: state.entities.reviews,

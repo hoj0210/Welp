@@ -36,9 +36,12 @@ const ReviewShow = props => {
                     {props.review.message}
                 </div>
                 <div className="review-rxn-buttons">
-                    <li className="reaction-button">Useful</li>
-                    <li className="reaction-button">Funny</li>
-                    <li className="reaction-button">Cool</li>
+                    <li className="reaction-button"><img src={window.useful} alt=""/> 
+                        <span className="reaction-text">Useful</span></li>
+                    <li className="reaction-button"><img src={window.funny} alt="" /> 
+                        <span className="reaction-text">Funny</span></li>
+                    <li className="reaction-button"><img src={window.cool} alt="" /> 
+                        <span className="reaction-text">Cool</span></li>
                 </div>
             </div>
         </div>

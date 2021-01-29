@@ -13,3 +13,9 @@
     color: #757280;
     font-family: "Open Sans", "Helvetica Neue", Helvetica;
 }
+
+.reaction-text{
+    margin-left: 5px;
+    position: relative;
+    bottom: 3px;
+}
