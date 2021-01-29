@@ -1,0 +1,19 @@
+.review-form-navbar{
+    height: 96px;
+    width: 100%;
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.review-logo{
+    height: 40px;
+    margin: 27px;
+}
+
+.review-form-navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-nav-spacefill{
+    min-width: 700px;
+}

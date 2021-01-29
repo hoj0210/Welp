@@ -37,7 +37,7 @@ class Business extends React.Component {
         const todayDate = new Date().toDateString().split(" ")[0];
         for (let i = 0; i < this.props.business.schedules.length; i++) {
             if (this.props.business.schedules[i].day === todayDate) {
-                return ``
+                return `${this.props.business.schedules[i].day}: ${this.props.business.schedules[i].open} - ${this.props.business.schedules[i].close}`
             }
         }
     }
@@ -87,13 +87,13 @@ class Business extends React.Component {
                                     }
                                     )}
                                 </div>
-                                <p>this is where TODAY's schedule goes in</p>
+                                <p className="today-hours">{this.open()}</p>
                             </div>
                         </div>
                     </div>
                     <div className="business-page-link-container">
                         <div className="business-user-upload-links">
-                            <button className="business-review-button" onClick={() => this.props.history.push('/')}><img className="star-icon"src={window.star} alt=""/>Write a Review</button>
+                            <button className="business-review-button" onClick={() => this.props.history.push(`/businesses/${this.props.business.id}/reviews/create`)}><img className="star-icon"src={window.star} alt=""/>Write a Review</button>
                         </div>
                     </div>
                     <div className="business-location-hour-container">
@@ -111,13 +111,13 @@ class Business extends React.Component {
                             </div>
                             <div className="business-schedule">
                                 <div className="schedule-day">
-                                    {this.props.business.schedules.map(schedule => (
-                                        <div className="each-schedule-day">{schedule.day}</div>     
+                                    {this.props.business.schedules.map((schedule, i) => (
+                                        <div className="each-schedule-day" key={i}>{schedule.day}</div>     
                                     ))}
                                 </div>
                                 <div className="schedule-hours">
-                                    {this.props.business.schedules.map(schedule => (
-                                            <div className="each-schedule-hours">{schedule.open} - {schedule.close}</div>
+                                    {this.props.business.schedules.map((schedule, i) => (
+                                            <div className="each-schedule-hours" key={i}>{schedule.open} - {schedule.close}</div>
                                     ))}
                                 </div>
                                 

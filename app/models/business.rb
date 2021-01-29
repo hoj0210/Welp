@@ -18,6 +18,11 @@ class Business < ApplicationRecord
         primary_key: :id,
         foreign_key: :business_id,
         class_name: :Schedule 
+    
+    has_many :reviews,
+        primary_key: :id,
+        foreign_key: :business_id,
+        class_name: :Review 
         
     # has_many :reviews,
     #     primary_key: :id,

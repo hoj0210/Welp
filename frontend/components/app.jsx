@@ -6,6 +6,7 @@ import Splash from './splash/splash';
 import NavBarContainer from './nav_bar/splash_nav_bar_container'
 import {AuthRoute, ProtectedRoute} from '../util/route_util'
 import BusinessContainer from './business_page/business_container'
+import ReviewFormContainer from './reviews/review_form_container'
 
 const App = () => (
     <div>
@@ -17,6 +18,7 @@ const App = () => (
                 <AuthRoute exact path="/login" component={LoginFormContainer} />
                 <Route exact path="/" component={Splash}/>
                 <Route exact path="/businesses/:businessId" component={BusinessContainer} />
+                <ProtectedRoute exact path="/businesses/:businessId/reviews/create" component={ReviewFormContainer}/>
             </Switch>
     </div>
 )

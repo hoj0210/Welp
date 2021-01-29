@@ -37,6 +37,7 @@
     left: 200px;
 }
 
+
 .logout-buttonsplash{
     font: 14px Arial, Helvetica, "Helvetica Neue";
     color: #0073BB;
@@ -204,7 +205,7 @@
     cursor: pointer;
 } */
 
-.dropdown-content{
+.dropdown-content-splash{
     display: none;
     position: absolute;
     min-width: 60px;
@@ -217,6 +218,34 @@
     box-shadow: 0 3px 3px darkgrey;
 }
 
+.dropdown-content-other_pages{
+    display: none;
+    position: absolute;
+    min-width: 60px;
+    z-index: 1;
+    background-color: white;
+    width: 218px;
+    right: 6px;
+    top: 41px;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px darkgrey;
+}
+
+.dropdown-content-review_pages{
+    display: none;
+    /* position: absolute; */
+    min-width: 60px;
+    z-index: 1;
+    background-color: white;
+    width: 218px;
+    right: 6px;
+    top: 41px;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px darkgrey;
+}
+
+
+
 /* .dropdown:hover .dropdown-content{
     display: block;
 } */
@@ -225,6 +254,7 @@
     background-color: transparent;
     border: none;
     outline: none;
+    min-width: 100px;
 }
 
 /* .signed-on-button:hover{
@@ -254,4 +284,10 @@
     font-size: 12px;
     font-family: Arial, Helvetica, "Helvetica Neue";
     font-weight: bold;
+}
+
+.dropdown-review_pages{
+    position: relative;
+    /* left: 1000px; */
+    top: 27px;
 }
