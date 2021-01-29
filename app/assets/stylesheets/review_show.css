@@ -1,0 +1,10 @@
+.review-main-box{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica;
+}
+
+.review-created-time{
+    margin-left: 20px;
+}

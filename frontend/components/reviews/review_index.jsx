@@ -1,4 +1,5 @@
 import React from 'react';
+import ReviewShow from './review_show'
 
 class ReviewIndex extends React.Component {
     componentDidMount(){
@@ -12,13 +13,13 @@ class ReviewIndex extends React.Component {
     }
 
     render(){
+        debugger
         return(
             <div>
                 <ul>
                     {Object.values(this.props.reviews).map(review => (
-                        <div>
-                            <li key={review.id}>{review.message}</li>
-                            <li key={review.id}>{review.rating}</li>
+                        <div key={review.id}>
+                            <ReviewShow review={review}/>
                         </div>
                     ))}
                 </ul>

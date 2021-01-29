@@ -53,11 +53,11 @@
 
 
 .search-textother{
-    padding: 4px 13px;
+    /* padding: 4px 13px; */
     font: 18px Arial, Helvetica, "Helvetica Neue";
     border: none;
     outline: none;
-    width: 300px;
+    width: 320px;
     
 }
 
