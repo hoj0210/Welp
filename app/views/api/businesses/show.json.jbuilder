@@ -30,4 +30,4 @@
 #             :longitude
 #             @business.categories.id 
 
-json.photoUrls @business.photos.map {|file| url_for(file) }
+# json.photoUrls @business.photos.map {|file| url_for(file) }
