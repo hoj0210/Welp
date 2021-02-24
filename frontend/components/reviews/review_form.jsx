@@ -56,6 +56,19 @@ class ReviewForm extends React.Component {
         this.props.createReview(this.state).then(()=> this.props.history.push(`/businesses/${this.state.business_id}`))
     }
 
+    reviewModal(){
+        const regulation = document.getElementById("regulation");
+        return(
+            regulation.style.display = "block"
+        )
+    }
+
+    removeModal(e){
+        return(
+            e.currentTarget.style.display = "none"
+        )
+    }
+    
     render(){
         if (!this.props.business) {
             return (
@@ -75,7 +88,14 @@ class ReviewForm extends React.Component {
                             <div className="review-form-box">
                                 <div className="review-form-texts">
                                     <span className="review-form-business-name">{this.props.business.name}</span>
-                                    <span className="review-form-guide">Review our review guidelines</span>
+                                    <span className="review-form-guide" onClick={() => this.reviewModal()}>Review our review guidelines</span>
+                                    <div id="regulation"className="regulation-background" onClick={this.removeModal}>
+                                        <div className="regulation-container-top" onClick={e => e.stopPropagation()}>
+                                            <div className="regulation-text">
+                                                DOn't do stuff.
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="review-content-box">
                                     <p id="rating-text"className="select-rating-text">Select your rating</p>
