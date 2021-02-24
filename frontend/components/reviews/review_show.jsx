@@ -15,7 +15,7 @@ const ReviewShow = props => {
     }
 
     let date = new Date(props.review.created_at);
-    const realDate = date.getMonth() + "1" + "/" + date.getDate() + "/" + date.getFullYear();
+    const realDate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
     return (
         <div>
             <div>
