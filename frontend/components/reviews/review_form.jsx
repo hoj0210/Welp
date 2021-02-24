@@ -64,6 +64,7 @@ class ReviewForm extends React.Component {
                                         initialRating={this.state.rating}
                                         fullSymbol="fa fa-star fa-2x"
                                         onChange={this.handleRatingChange}
+                                        className="rating"
                                     />
                                     {/* <input type="number" min="1" max="5" className="rating-number"value={this.state.rating} onChange={this.handleChange("rating")}/> */}
                                     <textarea className="text-area-text"value={this.state.message} onChange={this.handleChange("message")} 
