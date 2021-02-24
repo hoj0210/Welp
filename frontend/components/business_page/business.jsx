@@ -66,7 +66,8 @@ class Business extends React.Component {
                         </div> */}
                         <div className="business-pictures-container">
                             {this.props.business.photoUrls.map((photoUrl, i) => (
-                                <img className="business-pictures" key={i} src={photoUrl} alt=""/>
+                                // <img className="business-pictures" key={i} src={photoUrl} alt=""/>
+                                <img className="business-pictures" key={i} src={"app/assets/images/food_stock.jpg"} alt=""/>
                             ))}
                         </div>
                              
