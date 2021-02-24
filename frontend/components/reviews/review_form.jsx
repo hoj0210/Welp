@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import ReviewNavBarContainer from '../nav_bar/review_nav_bar_container'
+import reviewRating from './review_rating'
 
 class ReviewForm extends React.Component {
     constructor(props){
@@ -53,7 +54,8 @@ class ReviewForm extends React.Component {
                                 </div>
                                 <div className="review-content-box">
                                     <p className="select-rating-text">Select your rating</p>
-                                    <input type="number" min="1" max="5" className="rating-number"value={this.state.rating} onChange={this.handleChange("rating")}/>
+                                    <reviewRating />
+                                    {/* <input type="number" min="1" max="5" className="rating-number"value={this.state.rating} onChange={this.handleChange("rating")}/> */}
                                     <textarea className="text-area-text"value={this.state.message} onChange={this.handleChange("message")} 
                                     placeholder="It's amazing that they've added delivery due to COVID. The delivery wasn't perfert--they forgot one of my side dishes--but I understand this is a new operation for them at this time. Even so, the burrito was delicious and more than made up for it!"></textarea>
                                 </div>
