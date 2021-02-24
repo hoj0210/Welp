@@ -57,7 +57,9 @@ class ReviewForm extends React.Component {
     }
 
     reviewModal(){
+        debugger
         const regulation = document.getElementById("regulation");
+        debugger
         return(
             regulation.style.display = "block"
         )
@@ -68,7 +70,7 @@ class ReviewForm extends React.Component {
             e.currentTarget.style.display = "none"
         )
     }
-    
+
     render(){
         if (!this.props.business) {
             return (
