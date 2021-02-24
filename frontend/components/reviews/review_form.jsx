@@ -14,6 +14,26 @@ class ReviewForm extends React.Component {
         }
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleRatingChange = this.handleRatingChange.bind(this);
+        this.handleHover = this.handleHover.bind(this);
+    }
+
+    handleHover(n){
+        debugger
+        const ratingText = document.getElementById("rating-text");
+        if (n === 1) {
+            debugger
+            ratingText.innerText = "Not good"
+        } else if (n === 2) {
+            ratingText.innerText = "Could've been better"
+        } else if (n === 3) {
+            ratingText.innerText = "OK"
+        } else if (n === 4) {
+            ratingText.innerText = "Good"
+        } else if (n === 5) {
+            ratingText.innerText = "Great"
+        } else {
+            ratingText.innerText = "Select your rating"
+        }
     }
     handleRatingChange(n){
         debugger
@@ -58,13 +78,14 @@ class ReviewForm extends React.Component {
                                     <span className="review-form-guide">Review our review guidelines</span>
                                 </div>
                                 <div className="review-content-box">
-                                    <p className="select-rating-text">Select your rating</p>
+                                    <p id="rating-text"className="select-rating-text">Select your rating</p>
                                     <Rating
                                         emptySymbol="fa fa-star-o fa-2x"
                                         initialRating={this.state.rating}
                                         fullSymbol="fa fa-star fa-2x"
                                         onChange={this.handleRatingChange}
                                         className="rating"
+                                        onHover={this.handleHover}
                                     />
                                     {/* <input type="number" min="1" max="5" className="rating-number"value={this.state.rating} onChange={this.handleChange("rating")}/> */}
                                     <textarea className="text-area-text"value={this.state.message} onChange={this.handleChange("message")} 

@@ -53,7 +53,7 @@ textarea {
     height: 300px;
     border: none;
     outline: none;
-    margin: 20px;
+    margin: 30px;
 }
 
 .rating-number{
@@ -126,12 +126,12 @@ textarea {
 }
 
 .select-rating-text{
-    color: black;
+    color: rgb(117, 117, 117);
     font-family: "Open Sans", Helvetica, "Helvetica Neue";
     font-size: 14px;
     position: relative;
-    left: 180px;
-    top: 25px;
+    left: 190px;
+    top: 35px;
 }
 
 .add-photo-icon{
@@ -141,6 +141,7 @@ textarea {
 }
 
 .rating{
-    margin-left: 20px;
+    margin-left: 30px;
     color: red;
+    margin-top: 10px;
 }
