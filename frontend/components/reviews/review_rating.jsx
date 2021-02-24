@@ -6,6 +6,8 @@ class reviewRating extends React.Component {
         this.state = {
             currentRating: this.props.currentRating
         }
+        this.handleHover = this.handleHover.bind(this);
+        this.ratingHandleClick = this.ratingHandleClick.bind(this);
     }
 
     componentDidMount(){
@@ -13,9 +15,12 @@ class reviewRating extends React.Component {
     }
 
     handleHover(e) {
+        debugger
         const stars = e.target.parentElement.getElementsByClassName("star");
         const hoverValue = e.target.dataset.value;
+        debugger
         Array.from(stars).forEach(star => {
+            debugger
             star.style.color = hoverValue >= star.dataset.value ? "yellow" : "grey"
         })
     }
