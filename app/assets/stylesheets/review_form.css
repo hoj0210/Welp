@@ -142,8 +142,6 @@ textarea {
 
 .rating{
     margin-left: 30px;
-    color: red;
-    margin-top: 10px;
 }
 
 .regulation-background{
@@ -169,4 +167,14 @@ textarea {
    border: 1px solid #25859b;
     box-shadow: 3px 3px 3px grey;
     z-index: 1000;
+}
+
+.filled{
+    color: red;
+    margin-top: 10px;
+}
+
+.un-filled{
+    color: lightgray;
+    margin-top: 10px;
 }

@@ -94,7 +94,16 @@ class ReviewForm extends React.Component {
                                     <div id="regulation"className="regulation-background" onClick={this.removeModal}>
                                         <div className="regulation-container-top" onClick={e => e.stopPropagation()}>
                                             <div className="regulation-text">
-                                                DOn't do stuff.
+                                                <h2>Content Guidelines</h2>
+                                                <div className="regulation-scrollable">
+                                                    <h3>General Guidelines</h3>
+                                                    <p>
+                                                        People come to Yelp to connect with great local businesses. We know that people won’t always agree, but we expect everyone on the site to treat one another and the platform with honesty and respect. We’ve put together these general guidelines to help set the tone for discourse on the site—just in case. Please also read the additional guidelines below for specific types of content that you might contribute to the site.
+                                                    </p>
+                                                    <ul>
+                                                        <li>Relevance: Please make sure your contributions are appropriate to the forum. For example, reviews aren’t the place for rants about political ideologies, a business’s employment practices, extraordinary circumstances, or other matters that don’t address the core of the consumer experience.</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -102,9 +111,9 @@ class ReviewForm extends React.Component {
                                 <div className="review-content-box">
                                     <p id="rating-text"className="select-rating-text">Select your rating</p>
                                     <Rating
-                                        emptySymbol="fa fa-star-o fa-2x"
+                                        emptySymbol="fa fa-star fa-2x un-filled"
                                         initialRating={this.state.rating}
-                                        fullSymbol="fa fa-star fa-2x"
+                                        fullSymbol="fa fa-star fa-2x filled"
                                         onChange={this.handleRatingChange}
                                         className="rating"
                                         onHover={this.handleHover}
