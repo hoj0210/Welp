@@ -142,6 +142,39 @@ textarea {
 
 .rating{
     margin-left: 30px;
+}
+
+.regulation-background{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    display: none;
+}
+
+.regulation-container-top{
+    background-color: white;
+   position: absolute;
+   border-radius: 5px;
+   width: 350px;
+   top: 50%;
+   left: 44%;
+   transform: translate(-50%, -50%); 
+   height: 300px;
+   border: 1px solid #25859b;
+    box-shadow: 3px 3px 3px grey;
+    z-index: 1000;
+}
+
+.filled{
     color: red;
+    margin-top: 10px;
+}
+
+.un-filled{
+    color: lightgray;
     margin-top: 10px;
 }
