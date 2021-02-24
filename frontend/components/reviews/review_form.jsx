@@ -65,9 +65,10 @@ class ReviewForm extends React.Component {
         )
     }
 
-    removeModal(e){
+    removeModal(){
+        const regulation = document.getElementById("regulation");
         return(
-            e.currentTarget.style.display = "none"
+            regulation.style.display = "none"
         )
     }
 
@@ -94,7 +95,10 @@ class ReviewForm extends React.Component {
                                     <div id="regulation"className="regulation-background" onClick={this.removeModal}>
                                         <div className="regulation-container-top" onClick={e => e.stopPropagation()}>
                                             <div className="regulation-text">
-                                                <h2>Content Guidelines</h2>
+                                                <div>
+                                                    <p className="content-guidelines">Content Guidelines</p>
+                                                    <p className="x" onClick={this.removeModal}>X</p>
+                                                </div>
                                                 <div className="regulation-scrollable">
                                                     <h3>General Guidelines</h3>
                                                     <p>
