@@ -35,6 +35,7 @@
     width: 100%;
     min-width: 400px;
     opacity: 0.8;
+    object-fit: cover;
 }
 .business-intro{
     position: relative;
@@ -65,9 +66,19 @@
 
 .business-pictures-container{
     height: 100%;
+    position: relative;
     width: 100%;
     display: inline-flex;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 65%);
+}
+
+.business-pictures-container::after{
+    background-blend-mode: overlay;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 65%, rgba(0,0,0,1) 100%);
+    content: "";
+    width: 100%;
+    height: 100%;
 }
 
 .top-header-review-link{
