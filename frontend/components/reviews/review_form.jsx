@@ -95,9 +95,11 @@ class ReviewForm extends React.Component {
                                     <div id="regulation"className="regulation-background" onClick={this.removeModal}>
                                         <div className="regulation-container-top" onClick={e => e.stopPropagation()}>
                                             <div className="regulation-text">
-                                                <div>
-                                                    <p className="content-guidelines">Content Guidelines</p>
-                                                    <p className="x" onClick={this.removeModal}>X</p>
+                                                <div className="content-guidelines">
+                                                    <p>Content Guidelines</p>
+                                                    <p className="x" onClick={this.removeModal}>
+                                                        <i class="fas fa-times"></i>
+                                                    </p>
                                                 </div>
                                                 <div className="regulation-scrollable">
                                                     <h3>General Guidelines</h3>
