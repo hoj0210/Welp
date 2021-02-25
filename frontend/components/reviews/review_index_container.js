@@ -6,6 +6,7 @@ const msp = (state, ownProps) => {
     return(
         {
             reviews: state.entities.reviews,
+            currentUser: state.entities.users[state.session.id]
             // business_id: ownProps.match.params.businessId
         }
     )
