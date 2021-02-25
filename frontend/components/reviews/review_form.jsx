@@ -102,12 +102,24 @@ class ReviewForm extends React.Component {
                                                     </p>
                                                 </div>
                                                 <div className="regulation-scrollable">
-                                                    <h3>General Guidelines</h3>
+                                                    <p className="gen-guide">General Guidelines</p>
+                                                    <br/>
                                                     <p>
                                                         People come to Yelp to connect with great local businesses. We know that people won’t always agree, but we expect everyone on the site to treat one another and the platform with honesty and respect. We’ve put together these general guidelines to help set the tone for discourse on the site—just in case. Please also read the additional guidelines below for specific types of content that you might contribute to the site.
                                                     </p>
+                                                    <br/>
                                                     <ul>
-                                                        <li>Relevance: Please make sure your contributions are appropriate to the forum. For example, reviews aren’t the place for rants about political ideologies, a business’s employment practices, extraordinary circumstances, or other matters that don’t address the core of the consumer experience.</li>
+                                                        <li><span>Relevance:</span> Please make sure your contributions are appropriate to the forum. For example, reviews aren’t the place for rants about political ideologies, a business’s employment practices, extraordinary circumstances, or other matters that don’t address the core of the consumer experience.</li>
+                                                        <br/>
+                                                        <li><span>Inappropriate content:</span> Colorful language and imagery are fine, but there's no place for threats, harassment, lewdness, hate speech, or other display sof bigotry.</li>
+                                                        <br/>
+                                                        <li><span>Conflicts of interest:</span> Your contributions to Yelp should be unbiased and objective. For example, you shouldn’t write reviews of your own business or employer, your friends’ or relatives’ business, your peers or competitors in your industry, or businesses in your networking group. Businesses should never ask customers to write reviews.</li>
+                                                        <br/>
+                                                        <li><span>Privacy:</span> Don’t publicize people’s private information. For instance, please don’t post close-up photos or videos of other patrons without their permission, and don’t post other people’s full names unless you’re referring to someone who is commonly referred to by their full name.</li> 
+                                                        <br/>
+                                                        <li><span>Promotional content:</span> Don’t post promotional material unless it’s in connection with a Yelp advertising product and through a Business Account. Let’s keep the site useful for consumers and not overrun with commercial noise from every user.</li>
+                                                        <br/>
+                                                        <li><span>Intellectual property:</span> Don’t swipe content from other sites, users, or businesses. You’re a smart cookie, so write your own copy and share your own photos and videos.</li>                                                   
                                                     </ul>
                                                 </div>
                                             </div>

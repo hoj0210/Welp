@@ -183,7 +183,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif, "Helvetica Neue";
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
     color: #2B273C;
     margin-top: 30px;
@@ -202,4 +202,33 @@ textarea {
 
 .x:hover{
     cursor: pointer;
+}
+
+.gen-guide{
+    color: #2B273C;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif, "Helvetica Neue";
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+.regulation-scrollable{
+    height: 518px;
+    width: 483px;
+    overflow-y: auto;
+    position: relative;
+    left: 28px;
+    font-family: Arial, Helvetica, sans-serif, "Helvetica Neue", "Open Sans";
+    font-size: 15px;
+    line-height: 20px;
+    display: list-item;
+}
+
+li span{
+    font-weight: bold;
+}
+
+li{
+    display: list-item;
 }
