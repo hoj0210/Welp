@@ -33,12 +33,12 @@ class Splash extends React.Component {
                 <div className="popular-searches">
                     <PopularSearchesContainer/>
                 </div>
-                <div className="new-businesses">
+                {/* <div className="new-businesses">
                     <NewBusinessesContainer/>
                 </div>
                 <div className="splash-browse-category">
                     <Categories/>
-                </div>
+                </div> */}
                 <div className="splash-about">
                     <About/>
                 </div>
