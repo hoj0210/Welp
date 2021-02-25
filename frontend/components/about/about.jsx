@@ -11,13 +11,10 @@ const About = props => (
                         <a href="https://github.com/hoj0210">Github</a>
                     </div>
                     <div className="about-link">
-                        <a href="https://www.facebook.com/hoj0210">Facebook</a>
+                        <a href="https://angel.co/u/hojung-cha">AngelList</a>
                     </div>
                     <div className="about-link">
-                        <a href="">LinkedIn</a>
-                    </div>
-                    <div className="about-link">
-                        <a href="">Instagram</a>
+                        <a href="https://www.linkedin.com/in/hojung-cha-4b613b206/">LinkedIn</a>
                     </div>
                 </div>  
             </div>
@@ -25,33 +22,27 @@ const About = props => (
                 <p className="footer-title">Projects</p>
                 <div className="about-links">
                     <div className="about-link">
-                        <p>AA-Welp</p>
+                        <a href="https://hoj0210.github.io/space_escape/">Space Escape</a>
                     </div>
                     <div className="about-link">
-                        <p>Widgets</p>
+                        <a href="https://fit2me.herokuapp.com/#/">Fit2Me</a>
                     </div>
                     <div className="about-link">
-                        <p>Knights Travail</p>
-                    </div>
-                    <div className="about-link">
-                        <p>Tic Tac Toe</p>
+                        <a href="https://welp-aa.herokuapp.com/#/">Welp</a>
                     </div>
                 </div>
             </div>
             <div className="footer-about">
-                <p className="footer-title">Relax</p>
+                <p className="footer-title">Interests</p>
                 <div className="about-links">
                     <div className="about-link">
-                        <p>Friends</p>
+                        <a href="https://www.imdb.com/">IMDB</a>
                     </div>
                     <div className="about-link">
-                        <p>Harry Potter</p>
+                        <a href="https://www.facebook.com/hoj0210/">Facebook</a>
                     </div>
                     <div className="about-link">
-                        <p>Cello</p>
-                    </div>
-                    <div className="about-link">
-                        <p>IMDB</p>
+                        <a href="https://www.appacademy.io/course/software-engineer-in-person?utm_campaign=9733787911&utm_adgroup=99332832893&utm_matchtype=e&utm_device=c&utm_gclid=Cj0KCQiAj9iBBhCJARIsAE9qRtAjEIXtG4MZmrTV7MDRko-6j5-uzsaQPZuD6vf4dkIEnTTtefxTZPQaAkelEALw_wcB&utm_creative=428112103662&utm_keyword=app%20academy&utm_source=google&utm_medium=ppc&utm_adposition=&utm_placement=&utm_location=9031067&utm_network=g&gclid=Cj0KCQiAj9iBBhCJARIsAE9qRtAjEIXtG4MZmrTV7MDRko-6j5-uzsaQPZuD6vf4dkIEnTTtefxTZPQaAkelEALw_wcB">App Academy</a>
                     </div>
                 </div>
             </div>
