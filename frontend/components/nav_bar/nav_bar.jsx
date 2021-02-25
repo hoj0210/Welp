@@ -13,8 +13,24 @@ class NavBar extends React.Component {
         } else if (this.props.formType === "review_pages") {
             this.type = "review_pages"
         }
+        this.chooseProfilePic = this.chooseProfilePic.bind(this);
     }
-
+    chooseProfilePic(){
+        debugger
+        if (this.props.currentUser.profile === "Ross") {
+            return window.ross
+        } else if (this.props.currentUser.profile === "Chandler") {
+            return window.chandler
+        } else if (this.props.currentUser.profile === "Joey") {
+            return window.joey
+        } else if (this.props.currentUser.profile === "Rachel") {
+            return window.rachel
+        } else if (this.props.currentUser.profile === "Monica") {
+            return window.monica
+        } else if (this.props.currentUser.profile === "Phoebe") {
+            return window.phoebe
+        }
+    }
     handleClick(){
         //debugger
         document.getElementById("myDropdown").classList.toggle("show");
@@ -30,6 +46,7 @@ class NavBar extends React.Component {
     }
 
     inSession(){
+        debugger
         return(
             <div className={`nav-loggedin-${this.type}`}>
                 {/* <button className={`logout-button${this.type}`} onClick={() => props.logout()}>Log Out</button> */}
@@ -42,7 +59,7 @@ class NavBar extends React.Component {
                     </div>
                     <div id="myDropdown" className={`dropdown-content-${this.type}`}>
                         <div className="dropdown-profile">
-                            <img className="profile-inner" src={window.defaultProfile} />
+                            <img className="profile-inner" src={this.chooseProfilePic()} />
                             <div className="dropdown-profile-text">
                                 <div className="dropdown-profile-name">{`${this.props.currentUser.fname} ${this.props.currentUser.lname.slice(0, 1)}.`}</div>
                                 <div className="dropdown-profile-addy">{`${this.props.currentUser.zip_code}`}</div>

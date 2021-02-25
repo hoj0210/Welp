@@ -4,6 +4,9 @@ import About from '../about/about'
 
 class SignupForm extends React.Component {
     constructor(props){
+
+        const profilePics = ["Chandler", "Joey", "Ross", "Monica", "Rachel", "Phoebe"];
+
         super(props);
         this.state = {
             fname: "",
@@ -12,7 +15,7 @@ class SignupForm extends React.Component {
             password: "",
             zip_code: "",
             birthday: "",
-            profile: ""
+            profile: profilePics[Math.floor(Math.random() * profilePics.length)]
         };
         this.handleSubmit = this.handleSubmit.bind(this)
     }
@@ -25,6 +28,7 @@ class SignupForm extends React.Component {
 
     handleSubmit(e){
         e.preventDefault();
+        debugger
         this.props.processForm(this.state).then(() => this.props.history.push('/'))
     }
 
