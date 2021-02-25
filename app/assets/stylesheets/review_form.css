@@ -183,7 +183,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif, "Helvetica Neue";
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
     color: #2B273C;
     margin-top: 30px;
@@ -206,8 +206,10 @@ textarea {
 
 .gen-guide{
     color: #2B273C;
-    margin-top: 30px;
-    margin-left: 25px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif, "Helvetica Neue";
+    font-size: 17px;
+    font-weight: bold;
 
 }
 
@@ -217,4 +219,16 @@ textarea {
     overflow-y: auto;
     position: relative;
     left: 28px;
+    font-family: Arial, Helvetica, sans-serif, "Helvetica Neue", "Open Sans";
+    font-size: 15px;
+    line-height: 20px;
+    display: list-item;
+}
+
+li span{
+    font-weight: bold;
+}
+
+li{
+    display: list-item;
 }
