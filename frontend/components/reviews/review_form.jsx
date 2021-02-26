@@ -18,7 +18,57 @@ class ReviewForm extends React.Component {
     }
 
     handleHover(n){
+        // debugger
+        if (this.state.rating === '') {
+            const ratingText = document.getElementById("rating-text");
+            if (n === 1) {
+                // debugger
+                ratingText.innerText = "Not good"
+            } else if (n === 2) {
+                ratingText.innerText = "Could've been better"
+            } else if (n === 3) {
+                ratingText.innerText = "OK"
+            } else if (n === 4) {
+                ratingText.innerText = "Good"
+            } else if (n === 5) {
+                ratingText.innerText = "Great"
+            } else {
+                ratingText.innerText = "Select your rating"
+            }
+            
+        } else {
+            const ratingText = document.getElementById("rating-text");
+            if (n === 1) {
+                // debugger
+                ratingText.innerText = "Not good"
+            } else if (n === 2) {
+                ratingText.innerText = "Could've been better"
+            } else if (n === 3) {
+                ratingText.innerText = "OK"
+            } else if (n === 4) {
+                ratingText.innerText = "Good"
+            } else if (n === 5) {
+                ratingText.innerText = "Great"
+            } else {
+                if (this.state.rating === 1) {
+                    // debugger
+                    ratingText.innerText = "Not good"
+                } else if (this.state.rating === 2) {
+                    ratingText.innerText = "Could've been better"
+                } else if (this.state.rating === 3) {
+                    ratingText.innerText = "OK"
+                } else if (this.state.rating === 4) {
+                    ratingText.innerText = "Good"
+                } else if (this.state.rating === 5) {
+                    ratingText.innerText = "Great"
+                }
+            }
+        }
+        
+    }
+    handleRatingChange(n){
         debugger
+        this.setState({rating: n})
         const ratingText = document.getElementById("rating-text");
         if (n === 1) {
             debugger
@@ -30,15 +80,14 @@ class ReviewForm extends React.Component {
         } else if (n === 4) {
             ratingText.innerText = "Good"
         } else if (n === 5) {
+            debugger
             ratingText.innerText = "Great"
         } else {
+            debugger
             ratingText.innerText = "Select your rating"
         }
     }
-    handleRatingChange(n){
-        debugger
-        this.setState({rating: n})
-    }
+
     handleChange(type){
         return(e) => (
             this.setState({[type]: e.currentTarget.value})
