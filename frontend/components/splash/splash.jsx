@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SplashNavBarContainer from '../nav_bar/splash_nav_bar_container'
-import SplashSearchBoxContainer from '../search_box/splash_search_box_container'
+import NavBar from '../nav_bar/nav_bar'
+// import SplashSearchBoxContainer from '../search_box/splash_search_box_container'
 import PopularSearchesContainer from '../popular_searches/popular_searches_container'
 import Categories from '../categories/categories'
 import About from '../about/about'
 import NewBusinessesContainer from '../new_businesses/new_businesses_container'
+import SearchBox from '../search_box/search_box';
 
 class Splash extends React.Component {
     constructor(props){
@@ -19,8 +20,8 @@ class Splash extends React.Component {
                     {/* <img className="background-pic" src={window.backgroundPic}/> */}
                     <div className="splash-main-top">
                         <div className="nav-bar-container">
-                            <SplashNavBarContainer />
-                            <SplashSearchBoxContainer />
+                            <NavBar formType={this.props.formType} currentUser={this.props.currentUser} logout={this.props.logout} />
+                            <SearchBox formType={this.props.formType} />
                         </div>
                         <div className="splash-logo-container">
                             <Link to="/"><img className="splash-logo"src="https://vivalajaiba.com/wp-content/uploads/2018/07/yelp-logo.png" /></Link>

@@ -7,6 +7,7 @@ class NavBar extends React.Component {
     constructor(props){
         super(props)
         if (this.props.formType === "splash") {
+            debugger
             this.type = "splash"
         } else if (this.props.formType === "other_pages") {
             this.type = "other_pages"
@@ -21,9 +22,11 @@ class NavBar extends React.Component {
     }
 
     notInSession(){
+        debugger
         return(
             <nav className={`login-signup${this.type}`}>
                 <Link to="/login"><button className={`session-button1${this.type}`}>Log In</button></Link>
+                {/* <button className={`session-button1${this.type}`} onClick={() => this.props.history.push('/login')}>Log In</button> */}
                 <Link to="/signup"><button className={`session-button2${this.type}`}>Sign Up</button></Link>
             </nav>
         )
@@ -56,6 +59,7 @@ class NavBar extends React.Component {
     }
 
     render(){
+        debugger
         return (
             <div>
                 {this.props.currentUser ? this.inSession() : this.notInSession()}
