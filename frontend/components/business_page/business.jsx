@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import {Link} from 'react-router-dom';
 import SearchBox from '../search_box/search_box';
-import OtherNavBarContainer from '../nav_bar/other_nav_bar_container';
+import NavBar from '../nav_bar/nav_bar';
 import About from '../about/about';
 import ReviewIndexContainer from '../reviews/review_index_container'
-import Rating from 'react-rating';
+// import Rating from 'react-rating';
 
 // import ReviewsContainer from '../reviews/reviews_container'
 // import OperationHoursContainer from '../operation_hours/operation_hours_container'
@@ -59,7 +59,7 @@ class Business extends React.Component {
                             <Link to="/"><img className="top-logo-sign" src={window.mainLogo} /></Link>
                             <SearchBox formType={this.props.formType}/>
                             <Link to=""className="top-header-review-link">Write a Review</Link>
-                            <OtherNavBarContainer/>
+                            <NavBar formType={this.props.formType} currentUser={this.props.currentUser} logout={this.props.logout}/>
                         </div>    
                     </div>
                     <div className="business-intro-container">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import ReviewNavBarContainer from '../nav_bar/review_nav_bar_container'
+import NavBar from '../nav_bar/nav_bar'
 import Rating from 'react-rating';
 
 class ReviewForm extends React.Component {
@@ -133,7 +133,7 @@ class ReviewForm extends React.Component {
                         <Link to="/"><img className="review-logo" src={window.mainLogo} alt=""/></Link>
                         
                         <div className="review-nav-spacefill"></div>
-                        <ReviewNavBarContainer/>
+                        <NavBar formType={this.props.formType} currentUser={this.props.currentUser} logout={this.props.logout}/>
                     </div>
                     <div className="review-form-main">
                         <form onSubmit={this.handleSubmit}>
