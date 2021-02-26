@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from '../nav_bar/nav_bar'
 // import SplashSearchBoxContainer from '../search_box/splash_search_box_container'
-import PopularSearchesContainer from '../popular_searches/popular_searches_container'
-import Categories from '../categories/categories'
+import PopularSearches from '../popular_searches/popular_searches'
+// import Categories from '../categories/categories'
 import About from '../about/about'
-import NewBusinessesContainer from '../new_businesses/new_businesses_container'
+// import NewBusinessesContainer from '../new_businesses/new_businesses_container'
 import SearchBox from '../search_box/search_box';
 
 class Splash extends React.Component {
@@ -32,7 +32,7 @@ class Splash extends React.Component {
                     </div>
                 </div>
                 <div className="popular-searches">
-                    <PopularSearchesContainer/>
+                    <PopularSearches/>
                 </div>
                 {/* <div className="new-businesses">
                     <NewBusinessesContainer/>

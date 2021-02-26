@@ -3,7 +3,7 @@ import { Route, Switch, Link } from 'react-router-dom'
 import LoginFormContainer from './login_form/login_form_container';
 import SignupFormContainer from './signup_form/signup_form_container';
 import SplashContainer from './splash/splash_container';
-import NavBarContainer from './nav_bar/splash_nav_bar_container'
+// import NavBarContainer from './nav_bar/splash_nav_bar_container'
 import {AuthRoute, ProtectedRoute} from '../util/route_util'
 import BusinessContainer from './business_page/business_container'
 import ReviewFormContainer from './reviews/review_form_container'
