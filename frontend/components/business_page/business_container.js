@@ -6,7 +6,8 @@ import {withRouter} from 'react-router-dom'
 const msp = (state, ownProps) => (
     {
         business: state.entities.businesses[ownProps.match.params.businessId],
-        categoryId: ownProps.match.params.categoryId
+        categoryId: ownProps.match.params.categoryId,
+        formType: "otherpages"
     }
 )
 

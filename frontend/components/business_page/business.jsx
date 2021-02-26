@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import {Link} from 'react-router-dom';
-import OtherSearchBoxContainer from '../search_box/other_search_box_container';
+import SearchBox from '../search_box/search_box';
 import OtherNavBarContainer from '../nav_bar/other_nav_bar_container';
 import About from '../about/about';
 import ReviewIndexContainer from '../reviews/review_index_container'
@@ -57,7 +57,7 @@ class Business extends React.Component {
                     <div className="business-page-top">
                         <div className="top-header-container">
                             <Link to="/"><img className="top-logo-sign" src={window.mainLogo} /></Link>
-                            <OtherSearchBoxContainer/>
+                            <SearchBox formType={this.props.formType}/>
                             <Link to=""className="top-header-review-link">Write a Review</Link>
                             <OtherNavBarContainer/>
                         </div>    
