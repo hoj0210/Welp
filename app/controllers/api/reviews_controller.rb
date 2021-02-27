@@ -27,6 +27,10 @@ class Api::ReviewsController < ApplicationController
         end
     end
 
+    def delete
+        
+    end
+
     private
     def review_params
         params.require(:review).permit(:message, :rating, :user_id, :business_id)
