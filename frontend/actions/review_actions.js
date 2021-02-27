@@ -45,25 +45,17 @@ export const fetchReview = (businessId, reviewId) => dispatch => (
 
 export const createReview = (review, businessId) => dispatch => {
     return ReviewApiUtil.createReview(review, businessId)
-        .then(review => dispatch(receiveReview(review))),
-        err => (
-            dispatch(receiveErrors(err.responseJSON))
-        )
+        .then(review => dispatch(receiveReview(review)))
 
 }
 
 export const updateReview = (review, businessId) => dispatch => (
     ReviewApiUtil.updateReview(review, businessId)
-        .then(review => dispatch(receiveReview(review))),
-        err => (
-            dispatch(receiveErrors(err.responseJSON))
-        )
+        .then(review => dispatch(receiveReview(review)))
+        
 )
 
 export const deleteReview = (review, businessId) => dispatch => (
     ReviewApiUtil.deleteReview(review, businessId)
-        .then(() => dispatch(removeReview(review))),
-        err => (
-            dispatch(receiveErrors(err.responseJSON))
-        )
+        .then(() => dispatch(removeReview(review)))
 )

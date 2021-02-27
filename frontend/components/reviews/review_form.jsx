@@ -147,7 +147,7 @@ class ReviewForm extends React.Component {
                                                 <div className="content-guidelines">
                                                     <p>Content Guidelines</p>
                                                     <p className="x" onClick={this.removeModal}>
-                                                        <i class="fas fa-times"></i>
+                                                        <i className="fas fa-times"></i>
                                                     </p>
                                                 </div>
                                                 <div className="regulation-scrollable">
