@@ -27,8 +27,10 @@ class Api::ReviewsController < ApplicationController
         end
     end
 
-    def delete
-        
+    def destroy
+        @review = Review.find_by(id: params[:id])
+        if @review && @review.destroy
+        end
     end
 
     private
