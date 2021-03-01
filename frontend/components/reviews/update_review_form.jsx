@@ -10,7 +10,9 @@ class UpdateReviewForm extends React.Component {
             message: this.props.review.message,
             rating: this.props.review.rating,
             user_id: this.props.user_id,
-            business_id: this.props.match.params.businessId
+            //match.params will always give back string.
+            business_id: parseInt(this.props.match.params.businessId),
+            id: parseInt(this.props.match.params.reviewId)
         }
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleRatingChange = this.handleRatingChange.bind(this);
@@ -102,7 +104,7 @@ class UpdateReviewForm extends React.Component {
     handleSubmit(e){
         debugger
         e.preventDefault(); 
-        this.props.createReview(this.state).then(()=> this.props.history.push(`/businesses/${this.state.business_id}`))
+        this.props.updateReview(this.state).then(()=> this.props.history.push(`/businesses/${this.state.business_id}`))
     }
 
     reviewModal(){
@@ -127,6 +129,7 @@ class UpdateReviewForm extends React.Component {
                 <div>Loading..</div>
             )
         } else {
+            debugger
             return(
                 <div>
                     <div className="review-form-navbar">
@@ -186,8 +189,7 @@ class UpdateReviewForm extends React.Component {
                                         onHover={this.handleHover}
                                     />
                                     {/* <input type="number" min="1" max="5" className="rating-number"value={this.state.rating} onChange={this.handleChange("rating")}/> */}
-                                    <textarea className="text-area-text"value={this.state.message} onChange={this.handleChange("message")} 
-                                    placeholder="It's amazing that they've added delivery due to COVID. The delivery wasn't perfert--they forgot one of my side dishes--but I understand this is a new operation for them at this time. Even so, the burrito was delicious and more than made up for it!"></textarea>
+                                    <textarea className="text-area-text"value={this.state.message} onChange={this.handleChange("message")} ></textarea>
                                 </div>
                                 <div>
                                     <h1 className="review-form-attach-photos">Attach Photos</h1>
