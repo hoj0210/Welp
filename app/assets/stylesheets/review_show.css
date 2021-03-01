@@ -198,3 +198,9 @@
     font-size: 18px;
 
 }
+
+.profile-pic-user{
+    width: 65px;
+    border-radius: 32px;
+    margin-bottom: 10px;
+}

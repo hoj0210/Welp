@@ -109,6 +109,21 @@ class ReviewShow extends React.Component {
         }
     }
 
+    chooseProfile(){
+        if (this.props.users[this.props.review.user_id].profile_pic === "ross") {
+            return window.ross
+        } else if (this.props.users[this.props.review.user_id].profile_pic === "chandler") {
+            return window.chandler
+        } else if (this.props.users[this.props.review.user_id].profile_pic === "joey") {
+            return window.joey
+        } else if (this.props.users[this.props.review.user_id].profile_pic === "phoebe") {
+            return window.phoebe
+        } else if (this.props.users[this.props.review.user_id].profile_pic === "rachel") {
+            return window.rachel
+        } else if (this.props.users[this.props.review.user_id].profile_pic === "monica") {
+            return window.monica
+        }
+    }
 
     render(){
         return(
@@ -117,10 +132,10 @@ class ReviewShow extends React.Component {
                     <div className="review-top">
                         <div className="important-info-container">
                             <div className="profile-box">
-                                <img src="" alt=""/>
+                                <img className="profile-pic-user"src={this.chooseProfile()} alt=""/>
                                 <div className="user-info">
-                                    {/* <li>{props.review.user.fname} {props.review.user.lname.slice(0,1)}</li>
-                                    <li>{props.review.user.zip_code}</li> */}
+                                    <li>{this.props.users[this.props.review.user_id].fname} {this.props.users[this.props.review.user_id].lname.slice(0,1)}</li>
+                                    <li>{this.props.users[this.props.review.user_id].zip_code}</li>
                                 </div>
                             </div>
                             <div className="rating-date-box">
