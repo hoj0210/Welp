@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 import NavBar from '../nav_bar/nav_bar'
 import Rating from 'react-rating';
 
-class ReviewForm extends React.Component {
+class UpdateReviewForm extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            message: '',
-            rating: '',
+            message: this.props.review.message,
+            rating: this.props.review.rating,
             user_id: this.props.user_id,
             business_id: this.props.match.params.businessId
         }
@@ -209,4 +209,4 @@ class ReviewForm extends React.Component {
     }
 }
 
-export default ReviewForm
+export default UpdateReviewForm
