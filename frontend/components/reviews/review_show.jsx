@@ -39,7 +39,9 @@ class ReviewShow extends React.Component {
             deleteContainer.style.display = "block"
         )
     }
-
+    componentDidMount(){
+        this.props.fetchUsers()
+    }
     removeModal(e) {
         return(
             e.currentTarget.style.display = "none"
@@ -110,6 +112,7 @@ class ReviewShow extends React.Component {
     }
 
     chooseProfile(){
+        debugger
         if (this.props.users[this.props.review.user_id].profile_pic === "ross") {
             return window.ross
         } else if (this.props.users[this.props.review.user_id].profile_pic === "chandler") {
@@ -126,44 +129,51 @@ class ReviewShow extends React.Component {
     }
 
     render(){
-        return(
-            <div className="review-container">
-                <div className="review-box">
-                    <div className="review-top">
-                        <div className="important-info-container">
-                            <div className="profile-box">
-                                <img className="profile-pic-user"src={this.chooseProfile()} alt=""/>
-                                <div className="user-info">
-                                    <li>{this.props.users[this.props.review.user_id].fname} {this.props.users[this.props.review.user_id].lname.slice(0,1)}</li>
-                                    <li>{this.props.users[this.props.review.user_id].zip_code}</li>
+        if (this.props.users[this.props.review.user_id] === undefined) {
+            return (
+                <div>Loading..</div>
+            )
+        } else {
+            return(
+
+                <div className="review-container">
+                    <div className="review-box">
+                        <div className="review-top">
+                            <div className="important-info-container">
+                                <div className="profile-box">
+                                    <img className="profile-pic-user"src={this.chooseProfile()} alt=""/>
+                                    <div className="user-info">
+                                        <li className="user-name">{this.props.users[this.props.review.user_id].fname.slice(0, 1).toUpperCase() + this.props.users[this.props.review.user_id].fname.slice(1)} {this.props.users[this.props.review.user_id].lname.slice(0,1).toUpperCase()}.</li>
+                                        <li>{this.props.users[this.props.review.user_id].zip_code}</li>
+                                    </div>
+                                </div>
+                                <div className="rating-date-box">
+                                    <span className="review-rating">
+                                        <img src={this.ratingStar} alt=""/>
+                                    </span>
+                                    <span className="review-created-time">{this.realDate}</span>
                                 </div>
                             </div>
-                            <div className="rating-date-box">
-                                <span className="review-rating">
-                                    <img src={this.ratingStar} alt=""/>
-                                </span>
-                                <span className="review-created-time">{this.realDate}</span>
+                            {this.editandDelete()}
+                        </div>
+                        <div className="review-main">
+                            <div className="review-main-box">
+                                {this.props.review.message}
                             </div>
+                            {/* <div className="review-rxn-buttons">
+                                <li className="reaction-button"><img src={window.useful} alt=""/> 
+                                    <span className="reaction-text">Useful</span></li>
+                                <li className="reaction-button"><img src={window.funny} alt="" /> 
+                                    <span className="reaction-text">Funny</span></li>
+                                <li className="reaction-button"><img src={window.cool} alt="" /> 
+                                    <span className="reaction-text">Cool</span></li>
+                            </div> */}
                         </div>
-                        {this.editandDelete()}
                     </div>
-                    <div className="review-main">
-                        <div className="review-main-box">
-                            {this.props.review.message}
-                        </div>
-                        {/* <div className="review-rxn-buttons">
-                            <li className="reaction-button"><img src={window.useful} alt=""/> 
-                                <span className="reaction-text">Useful</span></li>
-                            <li className="reaction-button"><img src={window.funny} alt="" /> 
-                                <span className="reaction-text">Funny</span></li>
-                            <li className="reaction-button"><img src={window.cool} alt="" /> 
-                                <span className="reaction-text">Cool</span></li>
-                        </div> */}
-                    </div>
+                    
                 </div>
-                
-            </div>
-        )
+            )
+        }
     }
 }
 // const ReviewShow = props => {
