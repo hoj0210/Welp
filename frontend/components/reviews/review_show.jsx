@@ -27,7 +27,18 @@ class ReviewShow extends React.Component {
             document.getElementById(`myReviewDropdown${id}`).style.display = "block";
         }
     }
+    deleteModal(id){
+        const deleteContainer = document.getElementById(`delete${id}`);
+        return(
+            deleteContainer.style.display = "block"
+        )
+    }
 
+    removeModal(e) {
+        return(
+            e.currentTarget.style.display = "none"
+        )
+    }
     editandDelete(){
         if (this.props.currentUser !== null && this.props.currentUser !== undefined) {
             debugger
@@ -42,11 +53,11 @@ class ReviewShow extends React.Component {
                             </div>
                             <div id={`myReviewDropdown${this.props.review.id}`} className='review-dropdown-content'>
                                 <p>Edit review</p>
-                                <p onClick={() => this.deleteModal(this.props.review._id)}>Remove review</p>
+                                <p onClick={() => this.deleteModal(this.props.review.id)}>Remove review</p>
                             </div>
                         </div>
                         {/* <p value="delete" onClick={this.handleDelete}>Delete</p>      */}
-                        <div id={`delete${this.props.review._id}`} className="delete-background" onClick={this.removeModal}>
+                        <div id={`delete${this.props.review.id}`} className="delete-background" onClick={this.removeModal}>
                             <div className="delete-container-top"onClick={e => e.stopPropagation()} >
                                 <div className="delete-text">
                                     <p className="delete-text-q">Are you sure you want to delete the review?</p>
