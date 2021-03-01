@@ -5,7 +5,7 @@ export const LOGOUT_CURRENT_USER = 'LOGOUT_CURRENT_USER';
 export const RECEIVE_ERRORS = 'RECEIVE_ERRORS';
 export const ERASE_ERRORS = 'ERASE_ERRORS';
 
-const receiveCurrentUser = currentUser => (
+export const receiveCurrentUser = currentUser => (
     {
         type: RECEIVE_CURRENT_USER,
         currentUser

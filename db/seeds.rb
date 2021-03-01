@@ -16,7 +16,8 @@ demo_user = User.create!(
     lname: "User",
     email: "demouser@email.com",
     zip_code: 90210,
-    password: "demouser"    
+    password: "demouser",
+    profile_pic: "chandler"
 )
 
 business1 = Business.create!(

@@ -5,6 +5,7 @@ import About from '../about/about'
 class SignupForm extends React.Component {
     constructor(props){
         super(props);
+        this.friends = ["ross", "chandler", "joey", "rachel", "monica", "phoebe"]
         this.state = {
             fname: "",
             lname: "",
@@ -12,7 +13,7 @@ class SignupForm extends React.Component {
             password: "",
             zip_code: "",
             birthday: "",
-            profile: ""
+            profile_pic: this.friends[Math.floor(Math.random() * this.friends.length)]
         };
         this.handleSubmit = this.handleSubmit.bind(this)
     }

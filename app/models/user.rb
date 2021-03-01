@@ -1,5 +1,5 @@
 class User < ApplicationRecord 
-    validates :fname, :lname, :email, :zip_code, :password_digest, :session_token, presence: true
+    validates :fname, :lname, :email, :zip_code, :password_digest, :session_token, :profile_pic, presence: true
     validates :email, uniqueness: true
     validates :password, length: { minimum: 6 }, allow_nil: true
 
@@ -8,7 +8,6 @@ class User < ApplicationRecord
         foreign_key: :user_id,
         class_name: :Review
 
-    has_one_attached :profile
     attr_reader :password 
     after_initialize :ensure_session_token 
 

@@ -15,7 +15,21 @@ class NavBar extends React.Component {
             this.type = "review_pages"
         }
     }
-
+    chooseProfile(){
+        if (this.props.currentUser.profile_pic === "ross") {
+            return window.ross
+        } else if (this.props.currentUser.profile_pic === "chandler") {
+            return window.chandler
+        } else if (this.props.currentUser.profile_pic === "joey") {
+            return window.joey
+        } else if (this.props.currentUser.profile_pic === "phoebe") {
+            return window.phoebe
+        } else if (this.props.currentUser.profile_pic === "rachel") {
+            return window.rachel
+        } else if (this.props.currentUser.profile_pic === "monica") {
+            return window.monica
+        }
+    }
     handleClick(){
         //debugger
         document.getElementById("myDropdown").classList.toggle("show");
@@ -33,6 +47,7 @@ class NavBar extends React.Component {
     }
 
     inSession(){
+        debugger
         return(
             <div className={`nav-loggedin-${this.type}`}>
                 {/* <button className={`logout-button${this.type}`} onClick={() => props.logout()}>Log Out</button> */}
@@ -45,7 +60,7 @@ class NavBar extends React.Component {
                     </div>
                     <div id="myDropdown" className={`dropdown-content-${this.type}`}>
                         <div className="dropdown-profile">
-                            <img className="profile-inner" src={window.defaultProfile} />
+                            <img className="profile-inner" src={this.chooseProfile()} />
                             <div className="dropdown-profile-text">
                                 <div className="dropdown-profile-name">{`${this.props.currentUser.fname} ${this.props.currentUser.lname.slice(0, 1)}.`}</div>
                                 <div className="dropdown-profile-addy">{`${this.props.currentUser.zip_code}`}</div>
