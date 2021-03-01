@@ -21,7 +21,11 @@ class ReviewShow extends React.Component {
 
     handleClick(id){
         //debugger
-        document.getElementById(`myReviewDropdown${id}`).style.display = "block";
+        if (document.getElementById(`myReviewDropdown${id}`).style.display === "block") {
+            document.getElementById(`myReviewDropdown${id}`).style.display = "none";
+        } else {
+            document.getElementById(`myReviewDropdown${id}`).style.display = "block";
+        }
     }
 
     editandDelete(){
@@ -70,36 +74,41 @@ class ReviewShow extends React.Component {
 
     render(){
         return(
-            <div>
-                <div className="review-top">
-                    <div className="profile-box">
-                        <img src="" alt=""/>
-                        <div className="user-info">
-                            {/* <li>{props.review.user.fname} {props.review.user.lname.slice(0,1)}</li>
-                            <li>{props.review.user.zip_code}</li> */}
+            <div className="review-container">
+                <div className="review-box">
+                    <div className="review-top">
+                        <div className="important-info-container">
+                            <div className="profile-box">
+                                <img src="" alt=""/>
+                                <div className="user-info">
+                                    {/* <li>{props.review.user.fname} {props.review.user.lname.slice(0,1)}</li>
+                                    <li>{props.review.user.zip_code}</li> */}
+                                </div>
+                            </div>
+                            <div className="rating-date-box">
+                                <span className="review-rating">
+                                    <img src={this.ratingStar} alt=""/>
+                                </span>
+                                <span className="review-created-time">{this.realDate}</span>
+                            </div>
                         </div>
+                        {this.editandDelete()}
                     </div>
-                    <div className="rating-date-box">
-                        <span className="review-rating">
-                            <img src={this.ratingStar} alt=""/>
-                        </span>
-                        <span className="review-created-time">{this.realDate}</span>
+                    <div className="review-main">
+                        <div className="review-main-box">
+                            {this.props.review.message}
+                        </div>
+                        {/* <div className="review-rxn-buttons">
+                            <li className="reaction-button"><img src={window.useful} alt=""/> 
+                                <span className="reaction-text">Useful</span></li>
+                            <li className="reaction-button"><img src={window.funny} alt="" /> 
+                                <span className="reaction-text">Funny</span></li>
+                            <li className="reaction-button"><img src={window.cool} alt="" /> 
+                                <span className="reaction-text">Cool</span></li>
+                        </div> */}
                     </div>
                 </div>
-                <div className="review-main">
-                    {this.editandDelete()}
-                    <div className="review-main-box">
-                        {this.props.review.message}
-                    </div>
-                    {/* <div className="review-rxn-buttons">
-                        <li className="reaction-button"><img src={window.useful} alt=""/> 
-                            <span className="reaction-text">Useful</span></li>
-                        <li className="reaction-button"><img src={window.funny} alt="" /> 
-                            <span className="reaction-text">Funny</span></li>
-                        <li className="reaction-button"><img src={window.cool} alt="" /> 
-                            <span className="reaction-text">Cool</span></li>
-                    </div> */}
-                </div>
+                
             </div>
         )
     }

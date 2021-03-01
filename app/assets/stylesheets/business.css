@@ -16,6 +16,8 @@
 .business-location-hour-container{
     height: 400px;
     background-color:#F5F5F5;
+    display: flex;
+    justify-content: center;
 }
 
 .search-box-container-splash{
@@ -255,4 +257,9 @@
     margin-left: 43px;
     margin-top: 25px;
     margin-bottom: 10px;
+}
+
+.business-reviews-container{
+    display: flex;
+    justify-content: center;
 }

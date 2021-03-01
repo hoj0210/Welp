@@ -101,36 +101,40 @@ class Business extends React.Component {
                         </div>
                     </div>
                     <div className="business-location-hour-container">
-                        <p className="location-hours-text">Location and Hours </p>
-                        <div className="business-location-hour-box">
-                            <div className="business-location">
-                                <img className="sample-map"src={window.sampleMap} alt=""/>
+                        <div>
+                            <p className="location-hours-text">Location and Hours </p>
+                            <div className="business-location-hour-box">
+                                <div className="business-location">
+                                    <img className="sample-map"src={window.sampleMap} alt=""/>
 
-                                <ul className="business-street">{this.props.business.address}</ul>
-                                <ul className="business-addy">
-                                    {this.props.business.city}
-                                    {this.props.business.state}
-                                    {this.props.business.b_zip_code}
-                                </ul>
-                            </div>
-                            <div className="business-schedule">
-                                <div className="schedule-day">
-                                    {this.props.business.schedules.map((schedule, i) => (
-                                        <div className="each-schedule-day" key={i}>{schedule.day}</div>     
-                                    ))}
+                                    <ul className="business-street">{this.props.business.address}</ul>
+                                    <ul className="business-addy">
+                                        {this.props.business.city}
+                                        {this.props.business.state}
+                                        {this.props.business.b_zip_code}
+                                    </ul>
                                 </div>
-                                <div className="schedule-hours">
-                                    {this.props.business.schedules.map((schedule, i) => (
-                                            <div className="each-schedule-hours" key={i}>{schedule.open} - {schedule.close}</div>
-                                    ))}
+                                <div className="business-schedule">
+                                    <div className="schedule-day">
+                                        {this.props.business.schedules.map((schedule, i) => (
+                                            <div className="each-schedule-day" key={i}>{schedule.day}</div>     
+                                        ))}
+                                    </div>
+                                    <div className="schedule-hours">
+                                        {this.props.business.schedules.map((schedule, i) => (
+                                                <div className="each-schedule-hours" key={i}>{schedule.open} - {schedule.close}</div>
+                                        ))}
+                                    </div>
+                                    
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
                     <div className="business-reviews-container">
-                        <h4 className="recommend-reviews">Recommended Reviews</h4>
-                        <ReviewIndexContainer business={this.props.business} />
+                        <div>
+                            <h4 className="recommend-reviews">Recommended Reviews</h4>
+                            <ReviewIndexContainer business={this.props.business} />
+                        </div>
                     </div>
                     <div className="splash-about">
                         <About />
