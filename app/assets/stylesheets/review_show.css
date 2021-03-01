@@ -39,4 +39,44 @@
     width: 218px;
     border-radius: 3px;
     box-shadow: 0 3px 3px darkgrey;
+    right: 1px;
+}
+
+.delete-background{
+    position: fixed;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   background: rgba(0, 0, 0, 0.35);
+   z-index: 10;
+   display: none;
+}
+
+.delete-container-top{
+    background-color: white;
+   position: absolute;
+   border-radius: 5px;
+   width: 350px;
+   top: 50%;
+   left: 44%;
+   transform: translate(-50%, -50%); 
+   height: 300px;
+   border: 1px solid #25859b;
+    box-shadow: 3px 3px 3px grey;
+    z-index: 1000;
+}
+
+.review-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-container{
+    display: flex;
+    justify-content: center;
+}
+
+.review-box{
+    min-width: 700px;
 }
