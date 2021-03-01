@@ -19,9 +19,9 @@ class ReviewShow extends React.Component {
         this.realDate = (this.date.getMonth() + 1) + "/" + this.date.getDate() + "/" + this.date.getFullYear();
     }
 
-    handleClick(){
+    handleClick(id){
         //debugger
-        document.getElementById("myReviewDropdown").style.display = "block";
+        document.getElementById(`myReviewDropdown${id}`).style.display = "block";
     }
 
     editandDelete(){
@@ -32,11 +32,11 @@ class ReviewShow extends React.Component {
                     <div className="edit-delete-btn">
                          <div className={`dropdown-review`}>
                             <div className="reviewDrpbtwn">
-                                <button onClick={() => this.handleClick()}className="review-options">
+                                <button onClick={() => this.handleClick(this.props.review.id)}className="review-options">
                                     <i class="fas fa-ellipsis-h"></i>
                                 </button>
                             </div>
-                            <div id="myReviewDropdown" className='review-dropdown-content'>
+                            <div id={`myReviewDropdown${this.props.review.id}`} className='review-dropdown-content'>
                                 <p>Edit review</p>
                                 <p onClick={() => this.deleteModal(this.props.review._id)}>Remove review</p>
                             </div>
