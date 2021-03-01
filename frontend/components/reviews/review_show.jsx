@@ -19,10 +19,45 @@ class ReviewShow extends React.Component {
         this.realDate = (this.date.getMonth() + 1) + "/" + this.date.getDate() + "/" + this.date.getFullYear();
     }
 
+    editandDelete(){
+        if (this.props.currentUser !== null && this.props.currentUser !== undefined) {
+            debugger
+            if (this.props.review.user_id === this.props.currentUser.id) {
+                return (
+                    <div className="edit-delete-btn">
+                        <p className="update-btn" onClick={() => this.updateModal(this.props.review._id)}>Update</p>
+                        <p className="delete-btn" onClick={() => this.deleteModal(this.props.review._id)}>Delete</p>
+                        {/* <p value="delete" onClick={this.handleDelete}>Delete</p>      */}
+                        <div id={`delete${this.props.review._id}`} className="delete-background" onClick={this.removeModal}>
+                            <div className="delete-container-top"onClick={e => e.stopPropagation()} >
+                                <div className="delete-text">
+                                    <p className="delete-text-q">Are you sure you want to delete the review?</p>
+                                    <div className="buttons-box">
+                                        <button className="del-yes"onClick={this.handleDelete}>Yes</button>
+                                        <button className="del-no"onClick={() => window.location.reload()}>No</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                )
+            } else {
+                return (
+                    <div className="invisible">
+                        Hey
+                    </div>
+                )
+            }
+        }
+    }
+
+
     render(){
         return(
             <div>
-                <div>
+                <div className="review-top">
                     <div className="profile-box">
                         <img src="" alt=""/>
                         <div className="user-info">
@@ -36,17 +71,20 @@ class ReviewShow extends React.Component {
                         </span>
                         <span className="review-created-time">{this.realDate}</span>
                     </div>
+                </div>
+                <div className="review-main">
+                    {this.editandDelete()}
                     <div className="review-main-box">
                         {this.props.review.message}
                     </div>
-                    <div className="review-rxn-buttons">
+                    {/* <div className="review-rxn-buttons">
                         <li className="reaction-button"><img src={window.useful} alt=""/> 
                             <span className="reaction-text">Useful</span></li>
                         <li className="reaction-button"><img src={window.funny} alt="" /> 
                             <span className="reaction-text">Funny</span></li>
                         <li className="reaction-button"><img src={window.cool} alt="" /> 
                             <span className="reaction-text">Cool</span></li>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         )
