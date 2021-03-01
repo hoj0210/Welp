@@ -82,11 +82,33 @@
 .review-box{
     min-width: 700px;
 }
-
 .del-no{
-    background-color: red;
+    color: #00838F;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+.del-no:hover{
+    cursor: pointer;
+}
+.del-yes{
+    background-color: #F43939;
     color: white;
     border-radius: 4px;
+    width: 155px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin-left: 25px;
+}
+
+.del-yes:hover{
+    cursor: pointer;
+    background-color: #ff0000;
+    transition: 0.7s;
 }
 
 .review-options{
@@ -134,4 +156,39 @@
     background-color: rgb(232, 232, 232);
     cursor: pointer;
     border-radius: 4px;
+}
+
+.delete-review-header{
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.delete-text{
+    padding: 40px;
+}
+
+.delete-text-q{
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 18px;
+}
+
+.delete-reasons{
+    list-style: disc;
+    margin-left: 17px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+
+.buttons-box{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.delete-options{
+    position: relative;
+    top: 100px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 18px;
+
 }

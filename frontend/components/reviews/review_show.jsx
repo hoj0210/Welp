@@ -65,11 +65,31 @@ class ReviewShow extends React.Component {
                         <div id={`delete${this.props.review.id}`} className="delete-background" onClick={this.removeModal}>
                             <div className="delete-container-top"onClick={e => e.stopPropagation()} >
                                 <div className="delete-text">
-                                    <p className="delete-text-q">Are you sure you want to delete the review?</p>
-                                    <div className="buttons-box">
-                                        <button className="del-yes"onClick={this.handleDelete}>Keep Review</button>
-                                        <button className="del-no"onClick={() => window.location.reload()}>Remove Review</button>
+                                    <p className="delete-review-header"><strong>Remove Review</strong></p>
+                                    <br/>
+                                    <p className="delete-text-q">Reasons for removing this review?</p>
+                                    <br/>
+                                    <ul className="delete-reasons">
+                                        <li>I was threatened with leagal action or sued.</li>
+                                        <br/>
+                                        <li>I changed my opinion of this business after a new interaction.</li>
+                                        <br/>
+                                        <li>I was offered a refund or other compensation to remove this.</li>
+                                        <br/>
+                                        <li>I signed a contract with the business that requires me to remove this review.</li>
+                                        <br/>
+                                        <li>Other</li>
+                                        <br/>
+                                    </ul>
+                                    <div className="delete-options">
+                                        <p>Are you sure you want to remove your review?</p>
+                                        <br/>
+                                        <div className="buttons-box">
+                                            <button className="del-no"onClick={() => window.location.reload()}>Keep Review</button>
+                                            <button className="del-yes"onClick={this.handleDelete}>Remove Review</button>
+                                        </div>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
