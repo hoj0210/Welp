@@ -140,6 +140,11 @@
     padding: 15px;
 }
 
+.edit-review-text{
+    text-decoration: none;
+    color: black;
+}
+
 .edit-review:hover{
     background-color: rgb(232, 232, 232);
     cursor: pointer;
