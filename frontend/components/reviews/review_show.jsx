@@ -57,8 +57,8 @@ class ReviewShow extends React.Component {
                                 </button>
                             </div>
                             <div id={`myReviewDropdown${this.props.review.id}`} className='review-dropdown-content'>
-                                <p>Edit review</p>
-                                <p onClick={() => this.deleteModal(this.props.review.id)}>Remove review</p>
+                                <p className="edit-review">Edit review</p>
+                                <p className="delete-review"onClick={() => this.deleteModal(this.props.review.id)}>Remove review</p>
                             </div>
                         </div>
                         {/* <p value="delete" onClick={this.handleDelete}>Delete</p>      */}
@@ -67,8 +67,8 @@ class ReviewShow extends React.Component {
                                 <div className="delete-text">
                                     <p className="delete-text-q">Are you sure you want to delete the review?</p>
                                     <div className="buttons-box">
-                                        <button className="del-yes"onClick={this.handleDelete}>Yes</button>
-                                        <button className="del-no"onClick={() => window.location.reload()}>No</button>
+                                        <button className="del-yes"onClick={this.handleDelete}>Keep Review</button>
+                                        <button className="del-no"onClick={() => window.location.reload()}>Remove Review</button>
                                     </div>
                                 </div>
                             </div>

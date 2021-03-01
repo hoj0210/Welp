@@ -38,8 +38,11 @@
     background-color: white;
     width: 218px;
     border-radius: 3px;
-    box-shadow: 0 3px 3px darkgrey;
+    box-shadow: 0 0 18px rgb(0 0 0 / 15%);
     right: 1px;
+    color: #2B273C;
+    font-size: 14px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .delete-background{
@@ -48,7 +51,7 @@
    bottom: 0;
    right: 0;
    left: 0;
-   background: rgba(0, 0, 0, 0.35);
+   background: rgba(0, 0, 0, 0.75);
    z-index: 10;
    display: none;
 }
@@ -57,13 +60,12 @@
     background-color: white;
    position: absolute;
    border-radius: 5px;
-   width: 350px;
+   width: 560px;
    top: 50%;
    left: 44%;
    transform: translate(-50%, -50%); 
-   height: 300px;
-   border: 1px solid #25859b;
-    box-shadow: 3px 3px 3px grey;
+   height: 575px;
+   border: 1px solid black;
     z-index: 1000;
 }
 
@@ -79,4 +81,57 @@
 
 .review-box{
     min-width: 700px;
+}
+
+.del-no{
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+}
+
+.review-options{
+    background-color: white;
+    border: none;
+    color: rgb(94, 94, 94);
+    outline: none;
+    width: 50px;
+    height: 50px;
+
+}
+.review-options:active{
+    background-color: rgb(177, 177, 177);
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.review-options:hover{
+    background-color: rgb(230, 230, 230);
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.edit-review{
+    margin: 15px;
+    padding: 15px;
+}
+
+.edit-review:hover{
+    background-color: rgb(232, 232, 232);
+    cursor: pointer;
+    border-radius: 4px;
+}
+.delete-review{
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    padding: 15px;
+}
+
+.delete-review:hover{
+    background-color: rgb(232, 232, 232);
+    cursor: pointer;
+    border-radius: 4px;
 }
