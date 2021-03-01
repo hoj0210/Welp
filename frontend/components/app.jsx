@@ -7,7 +7,7 @@ import SplashContainer from './splash/splash_container';
 import {AuthRoute, ProtectedRoute} from '../util/route_util'
 import BusinessContainer from './business_page/business_container'
 import ReviewFormContainer from './reviews/review_form_container'
-
+import UpdateReviewFormContainer from './reviews/r'
 const App = () => (
     <div>
         {/* <header>
@@ -19,6 +19,7 @@ const App = () => (
                 <Route exact path="/" component={SplashContainer}/>
                 <Route exact path="/businesses/:businessId" component={BusinessContainer} />
                 <ProtectedRoute exact path="/businesses/:businessId/reviews/create" component={ReviewFormContainer}/>
+                <ProtectedRoute exact path="/businesses/:businessId/reviews/update" component={UpdateReviewFormContainer}/>
             </Switch>
     </div>
 )
