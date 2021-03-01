@@ -17,6 +17,11 @@ class ReviewShow extends React.Component {
         }
         this.date = new Date(this.props.review.created_at);
         this.realDate = (this.date.getMonth() + 1) + "/" + this.date.getDate() + "/" + this.date.getFullYear();
+        this.handleDelete = this.handleDelete.bind(this);
+    }
+
+    handleDelete() {
+        this.props.deleteReview(this.props.review, this.props.business.id)
     }
 
     handleClick(id){
