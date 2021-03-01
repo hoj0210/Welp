@@ -21,7 +21,7 @@ class ReviewShow extends React.Component {
 
     handleClick(){
         //debugger
-        document.getElementById("myReviewDropdown").classList.toggle("show");
+        document.getElementById("myReviewDropdown").style.display = "block";
     }
 
     editandDelete(){
@@ -30,25 +30,17 @@ class ReviewShow extends React.Component {
             if (this.props.review.user_id === this.props.currentUser.id) {
                 return (
                     <div className="edit-delete-btn">
-                         <div className={`dropdown-${this.type}`}>
+                         <div className={`dropdown-review`}>
                             <div className="reviewDrpbtwn">
                                 <button onClick={() => this.handleClick()}className="review-options">
                                     <i class="fas fa-ellipsis-h"></i>
                                 </button>
                             </div>
                             <div id="myReviewDropdown" className='review-dropdown-content'>
-                                <div className="dropdown-profile">
-                                    <img className="profile-inner" src={window.defaultProfile} />
-                                    <div className="dropdown-profile-text">
-                                        <div className="dropdown-profile-name">{`${this.props.currentUser.fname} ${this.props.currentUser.lname.slice(0, 1)}.`}</div>
-                                        <div className="dropdown-profile-addy">{`${this.props.currentUser.zip_code}`}</div>
-                                    </div>
-                                </div>
-                                <button className={`logout-button${this.type}`} onClick={() => this.props.logout()}>Log Out</button>
+                                <p>Edit review</p>
+                                <p onClick={() => this.deleteModal(this.props.review._id)}>Remove review</p>
                             </div>
                         </div>
-                        <p className="update-btn" onClick={() => this.updateModal(this.props.review._id)}>Update</p>
-                        <p className="delete-btn" onClick={() => this.deleteModal(this.props.review._id)}>Delete</p>
                         {/* <p value="delete" onClick={this.handleDelete}>Delete</p>      */}
                         <div id={`delete${this.props.review._id}`} className="delete-background" onClick={this.removeModal}>
                             <div className="delete-container-top"onClick={e => e.stopPropagation()} >

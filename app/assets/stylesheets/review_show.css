@@ -24,3 +24,19 @@
 .invisible{
     color: transparent;
 }
+
+.dropdown-review{
+    position: relative;
+    display: inline-block;
+}
+
+.review-dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 60px;
+    z-index: 1;
+    background-color: white;
+    width: 218px;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px darkgrey;
+}
