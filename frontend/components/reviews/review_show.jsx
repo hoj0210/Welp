@@ -19,12 +19,34 @@ class ReviewShow extends React.Component {
         this.realDate = (this.date.getMonth() + 1) + "/" + this.date.getDate() + "/" + this.date.getFullYear();
     }
 
+    handleClick(){
+        //debugger
+        document.getElementById("myReviewDropdown").classList.toggle("show");
+    }
+
     editandDelete(){
         if (this.props.currentUser !== null && this.props.currentUser !== undefined) {
             debugger
             if (this.props.review.user_id === this.props.currentUser.id) {
                 return (
                     <div className="edit-delete-btn">
+                         <div className={`dropdown-${this.type}`}>
+                            <div className="reviewDrpbtwn">
+                                <button onClick={() => this.handleClick()}className="review-options">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                            </div>
+                            <div id="myReviewDropdown" className='review-dropdown-content'>
+                                <div className="dropdown-profile">
+                                    <img className="profile-inner" src={window.defaultProfile} />
+                                    <div className="dropdown-profile-text">
+                                        <div className="dropdown-profile-name">{`${this.props.currentUser.fname} ${this.props.currentUser.lname.slice(0, 1)}.`}</div>
+                                        <div className="dropdown-profile-addy">{`${this.props.currentUser.zip_code}`}</div>
+                                    </div>
+                                </div>
+                                <button className={`logout-button${this.type}`} onClick={() => this.props.logout()}>Log Out</button>
+                            </div>
+                        </div>
                         <p className="update-btn" onClick={() => this.updateModal(this.props.review._id)}>Update</p>
                         <p className="delete-btn" onClick={() => this.deleteModal(this.props.review._id)}>Delete</p>
                         {/* <p value="delete" onClick={this.handleDelete}>Delete</p>      */}
