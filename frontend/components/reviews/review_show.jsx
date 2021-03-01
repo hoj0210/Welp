@@ -57,7 +57,7 @@ class ReviewShow extends React.Component {
                                 </button>
                             </div>
                             <div id={`myReviewDropdown${this.props.review.id}`} className='review-dropdown-content'>
-                                <p className="edit-review">Edit review</p>
+                                <p className="edit-review" onClick={() => this.props.history.push(`/businesses/${this.props.business.id}/reviews/update`)}>Edit review</p>
                                 <p className="delete-review"onClick={() => this.deleteModal(this.props.review.id)}>Remove review</p>
                             </div>
                         </div>
