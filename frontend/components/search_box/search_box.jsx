@@ -11,6 +11,12 @@ class SearchBox extends React.Component {
 
         }
     }
+    
+    handleChange(type){
+        return(e) => (
+            this.setState({[type]: e.currentTarget.value})
+        )
+    }
 
     handleSubmit(e){
         e.preventDefault()
