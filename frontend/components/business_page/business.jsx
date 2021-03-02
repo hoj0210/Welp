@@ -13,6 +13,7 @@ class Business extends React.Component {
     constructor(props) {
         super(props)
         this.todayDate = new Date
+        this.avgStar = ''
     }
     componentDidMount(){
         //debugger
@@ -51,7 +52,40 @@ class Business extends React.Component {
                 <div>Loading..</div>
             )
         } else {
-            //debugger
+            debugger
+            let finalRating = 0;
+            if (this.props.business.reviews.length === 0) {
+                finalRating = 5.00.toFixed(2);
+            } else {
+                let sumRating = 0;
+                let avgRating = 0;
+                for (let i = 0; i < this.props.business.reviews.length; i++) {
+                    
+                    sumRating += this.props.business.reviews[i].rating;
+                    
+                }
+                avgRating = sumRating / this.props.business.reviews.length;
+                finalRating = avgRating.toFixed(2);  
+                if (finalRating > 4.9) {
+                    this.avgStar = window.fiveStar
+                } else if (finalRating > 4.40 && finalRating <= 4.9) {
+                    this.avgStar = window.fourHalfStar
+                } else if (finalRating >= 4.0 && finalRating <= 4.4) {
+                    this.avgStar = window.fourStar
+                } else if (finalRating > 3.5 && finalRating < 4) {
+                    this.avgStar = window.threeHalfStar
+                } else if (finalRating >= 3 && finalRating <= 3.5 ) {
+                    this.avgStar = window.threeStar
+                } else if (finalRating > 2.5 && finalRating < 3) {
+                    this.avgStar = window.twoHalfStar
+                } else if (finalRating >= 2 && finalRating <= 2.5 ) {
+                    this.avgStar = window.twoStar
+                } else if (finalRating > 1.5 && finalRating < 2) {
+                    this.avgStar = window.oneHalfStar
+                } else {
+                    this.avgStar = window.oneStar
+                }
+            }
             return (
                 <div>
                     <div className="business-page-top">
@@ -76,7 +110,7 @@ class Business extends React.Component {
                         <div className="business-intro">
                             <div className="business-intro-text">
                                 <p>{this.props.business.name}</p>
-                                <span>this is where the avg rating goes</span>
+                                <span><img src={this.avgStar} alt=""/>this is where the avg rating goes</span>
                                 <div className="business-categories">
                                     <span className="claimed"><img className="claimed-icon"src={window.verified} alt=""/>Claimed</span>
                                     <span>&#8226;</span>
