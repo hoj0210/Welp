@@ -34,8 +34,10 @@ class BusinessIndex extends React.Component{
                     <div>
                         <p className="best-in">Best {} in {}</p>
                         {this.props.businesses.map(business => {
+                            debugger
                             return(
                                 <div>
+                                    <img className="b_index_pic"src={business.photoUrls[0]} alt=""/>
                                     {business.name}
                                 </div>
                             )
