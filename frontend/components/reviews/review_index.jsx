@@ -18,7 +18,6 @@ class ReviewIndex extends React.Component {
     }
 
     render(){
-        debugger
         return(
             <div>
                 <ul className="review-boxes-container">

@@ -49,7 +49,6 @@ class ReviewShow extends React.Component {
     }
     editandDelete(){
         if (this.props.currentUser !== null && this.props.currentUser !== undefined) {
-            debugger
             if (this.props.review.user_id === this.props.currentUser.id) {
                 return (
                     <div className="edit-delete-btn">
@@ -112,7 +111,6 @@ class ReviewShow extends React.Component {
     }
 
     chooseProfile(){
-        debugger
         if (this.props.users[this.props.review.user_id].profile_pic === "ross") {
             return window.ross
         } else if (this.props.users[this.props.review.user_id].profile_pic === "chandler") {
