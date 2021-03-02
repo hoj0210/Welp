@@ -23,13 +23,26 @@ class BusinessIndex extends React.Component{
             debugger
             return(
                 <div>
-                    {this.props.businesses.map(business => {
-                        return(
-                            <div>
-                                {business.name}
-                            </div>
-                        )
-                    })}
+                    <div className="business-page-top">
+                        <div className="top-header-container">
+                            <Link to="/"><img className="top-logo-sign" src={window.mainLogo} /></Link>
+                            <SearchBox formType={this.props.formType}/>
+                            <Link to=""className="top-header-review-link">Write a Review</Link>
+                            <NavBar formType={this.props.formType} currentUser={this.props.currentUser} logout={this.props.logout}/>
+                        </div>    
+                    </div>
+                    <div>
+                        {this.props.businesses.map(business => {
+                            return(
+                                <div>
+                                    {business.name}
+                                </div>
+                            )
+                        })}
+                    </div>
+                    <div className="splash-about">
+                        <About />
+                    </div>
                 </div>
             )
         }
