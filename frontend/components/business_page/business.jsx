@@ -13,12 +13,35 @@ class Business extends React.Component {
         super(props)
         this.todayDate = new Date
         this.avgStar = ''
-        this.oneStar = (<div ><i className="fas fa-star str"></i><i className="fas fa-star str-g"></i><i className="fas fa-star str-g"></i><i className="fas fa-star str-g"></i><i className="fas fa-star str-g"></i></div>)
+        this.oneStar = (<div >
+                        <i id="inv-star"className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="far fa-star str-g fa-xs"></i>
+                        <i className="far fa-star str-g fa-xs"></i>
+                        <i className="far fa-star str-g fa-xs"></i>
+                        <i className="far fa-star str-g fa-xs"></i>
+                        </div>)
+        this.oneHalfStar = (<div >
+                        <i id="inv-star"className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i class="fas fa-star-half-alt str fa-xs"></i>
+                        <i className="far fa-star str-g fa-xs"></i>
+                        <i className="far fa-star str-g fa-xs"></i>
+                        <i className="far fa-star str-g fa-xs"></i>
+                        </div>)
         this.twoStar = (<div>
                         <i id="inv-star" className="fas fa-star str fa-xs"></i>
                         <i className="fas fa-star str fa-xs"></i>
                         <i className="fas fa-star str fa-xs"></i>
                         <i className="far fa-star str-g fa-xs" ></i>
+                        <i className="far fa-star str-g fa-xs"></i>
+                        <i className="far fa-star str-g fa-xs"></i>
+                    </div>);
+        this.twoHalfStar = (<div>
+                        <i id="inv-star" className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i class="fas fa-star-half-alt str fa-xs"></i>
                         <i className="far fa-star str-g fa-xs"></i>
                         <i className="far fa-star str-g fa-xs"></i>
                     </div>);
@@ -30,6 +53,14 @@ class Business extends React.Component {
                         <i className="far fa-star str-g fa-xs"></i>
                         <i className="far fa-star str-g fa-xs"></i>
                     </div>);
+        this.threeHalfStar = (<div>
+                        <i id="inv-star"className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i class="fas fa-star-half-alt str fa-xs"></i>
+                        <i className="far fa-star str-g fa-xs"></i>
+                    </div>);        
         this.fourStar = (<div>
                         <i id="inv-star" className="fas fa-star str fa-xs"></i>
                         <i className="fas fa-star str fa-xs"></i>
@@ -37,6 +68,14 @@ class Business extends React.Component {
                         <i className="fas fa-star str fa-xs"></i>
                         <i className="fas fa-star str fa-xs"></i>
                         <i className="far fa-star str-g fa-xs"></i>
+                    </div>);
+        this.fourHalfStar = (<div>
+                        <i id="inv-star" className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i class="fas fa-star-half-alt str fa-xs"></i>
                     </div>);
         this.fiveStar = (<div>
                         <i id="inv-star"className="fas fa-star str fa-xs"></i>
@@ -99,23 +138,23 @@ class Business extends React.Component {
                 avgRating = sumRating / this.props.business.reviews.length;
                 finalRating = avgRating.toFixed(2);  
                 if (finalRating > 4.9) {
-                    this.avgStar = this.fourStar    
+                    this.avgStar = this.fiveStar    
                 } else if (finalRating > 4.40 && finalRating <= 4.9) {
-                    this.avgStar = this.twoStar
+                    this.avgStar = this.fourHalfStar
                 } else if (finalRating >= 4.0 && finalRating <= 4.4) {
                     this.avgStar = this.fourStar
                 } else if (finalRating > 3.5 && finalRating < 4) {
-                    this.avgStar = this.fiveStar
+                    this.avgStar = this.threeHalfStar
                 } else if (finalRating >= 3 && finalRating <= 3.5 ) {
-                    this.avgStar = this.fiveStar
+                    this.avgStar = this.threeStar
                 } else if (finalRating > 2.5 && finalRating < 3) {
-                    this.avgStar = this.fiveStar
+                    this.avgStar = this.twoHalfStar
                 } else if (finalRating >= 2 && finalRating <= 2.5 ) {
-                    this.avgStar = this.fiveStar
+                    this.avgStar = this.twoStar
                 } else if (finalRating > 1.5 && finalRating < 2) {
-                    this.avgStar = this.fiveStar
+                    this.avgStar = this.oneHalfStar
                 } else {
-                    this.avgStar = this.fiveStar
+                    this.avgStar = this.oneStar
                 }
             }
             return (
