@@ -142,8 +142,10 @@ class Business extends React.Component {
                         <div className="business-intro">
                             <div className="business-intro-text">
                                 <p>{this.props.business.name}</p>
-                                <div>{this.avgStar}</div>
-                                <span>this is where the avg rating goes</span>
+                                <div className="rating-star-box">
+                                    {this.avgStar}
+                                    <span className="num-reviews">{this.props.business.reviews.length} reviews</span>
+                                </div>
                                 <div className="business-categories">
                                     <span className="claimed"><img className="claimed-icon"src={window.verified} alt=""/>Claimed</span>
                                     <span>&#8226;</span>
