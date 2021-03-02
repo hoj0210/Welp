@@ -23,7 +23,7 @@ class BusinessIndex extends React.Component{
             debugger
             return(
                 <div>
-                    <div className="business-page-top">
+                    <div className="business-page-top-index">
                         <div className="top-header-container">
                             <Link to="/"><img className="top-logo-sign" src={window.mainLogo} /></Link>
                             <SearchBox formType={this.props.formType}/>
@@ -32,6 +32,7 @@ class BusinessIndex extends React.Component{
                         </div>    
                     </div>
                     <div>
+                        <p className="best-in">Best {} in {}</p>
                         {this.props.businesses.map(business => {
                             return(
                                 <div>
