@@ -134,28 +134,28 @@ class Business extends React.Component {
                     
                     sumRating += this.props.business.reviews[i].rating;
                     
-                }
+                }      
                 avgRating = sumRating / this.props.business.reviews.length;
                 finalRating = avgRating.toFixed(2);  
-                if (finalRating > 4.9) {
-                    this.avgStar = this.fiveStar    
-                } else if (finalRating > 4.40 && finalRating <= 4.9) {
-                    this.avgStar = this.fourHalfStar
-                } else if (finalRating >= 4.0 && finalRating <= 4.4) {
-                    this.avgStar = this.fourStar
-                } else if (finalRating > 3.5 && finalRating < 4) {
-                    this.avgStar = this.threeHalfStar
-                } else if (finalRating >= 3 && finalRating <= 3.5 ) {
-                    this.avgStar = this.threeStar
-                } else if (finalRating > 2.5 && finalRating < 3) {
-                    this.avgStar = this.twoHalfStar
-                } else if (finalRating >= 2 && finalRating <= 2.5 ) {
-                    this.avgStar = this.twoStar
-                } else if (finalRating > 1.5 && finalRating < 2) {
-                    this.avgStar = this.oneHalfStar
-                } else {
-                    this.avgStar = this.oneStar
-                }
+            }
+            if (finalRating > 4.9) {
+                this.avgStar = this.fiveStar    
+            } else if (finalRating > 4.40 && finalRating <= 4.9) {
+                this.avgStar = this.fourHalfStar
+            } else if (finalRating >= 4.0 && finalRating <= 4.4) {
+                this.avgStar = this.fourStar
+            } else if (finalRating > 3.5 && finalRating < 4) {
+                this.avgStar = this.threeHalfStar
+            } else if (finalRating >= 3 && finalRating <= 3.5 ) {
+                this.avgStar = this.threeStar
+            } else if (finalRating > 2.5 && finalRating < 3) {
+                this.avgStar = this.twoHalfStar
+            } else if (finalRating >= 2 && finalRating <= 2.5 ) {
+                this.avgStar = this.twoStar
+            } else if (finalRating > 1.5 && finalRating < 2) {
+                this.avgStar = this.oneHalfStar
+            } else {
+                this.avgStar = this.oneStar
             }
             return (
                 <div>

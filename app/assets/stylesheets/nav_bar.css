@@ -160,7 +160,7 @@
     background-color: white;
     transition: 0.5s;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .logout-buttonreview_pages{
