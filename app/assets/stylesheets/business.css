@@ -55,7 +55,7 @@
     font-weight: lighter;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    /* margin-left: 141px; */
+    margin-left: 141px;
 }
 
 .business-intro-text p{
@@ -262,4 +262,17 @@
 .business-reviews-container{
     display: flex;
     justify-content: center;
+}
+
+#inv-star{
+    display: none;
+}
+
+.str{
+    color: #F43939;
+}
+
+.str-g{
+    color: white;
+    opacity: 0.5;
 }

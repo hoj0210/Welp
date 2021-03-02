@@ -4,7 +4,6 @@ import SearchBox from '../search_box/search_box';
 import NavBar from '../nav_bar/nav_bar';
 import About from '../about/about';
 import ReviewIndexContainer from '../reviews/review_index_container'
-// import Rating from 'react-rating';
 
 // import ReviewsContainer from '../reviews/reviews_container'
 // import OperationHoursContainer from '../operation_hours/operation_hours_container'
@@ -14,6 +13,39 @@ class Business extends React.Component {
         super(props)
         this.todayDate = new Date
         this.avgStar = ''
+        this.oneStar = (<div ><i className="fas fa-star str"></i><i className="fas fa-star str-g"></i><i className="fas fa-star str-g"></i><i className="fas fa-star str-g"></i><i className="fas fa-star str-g"></i></div>)
+        this.twoStar = (<div>
+                        <i id="inv-star" className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="far fa-star str-g fa-xs" ></i>
+                        <i className="far fa-star str-g fa-xs"></i>
+                        <i className="far fa-star str-g fa-xs"></i>
+                    </div>);
+        this.threeStar = (<div>
+                        <i id="inv-star"className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="far fa-star str-g fa-xs"></i>
+                        <i className="far fa-star str-g fa-xs"></i>
+                    </div>);
+        this.fourStar = (<div>
+                        <i id="inv-star" className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="far fa-star str-g fa-xs"></i>
+                    </div>);
+        this.fiveStar = (<div>
+                        <i id="inv-star"className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                        <i className="fas fa-star str fa-xs"></i>
+                    </div>);
     }
     componentDidMount(){
         //debugger
@@ -67,23 +99,23 @@ class Business extends React.Component {
                 avgRating = sumRating / this.props.business.reviews.length;
                 finalRating = avgRating.toFixed(2);  
                 if (finalRating > 4.9) {
-                    this.avgStar = window.fiveStar
+                    this.avgStar = this.fourStar    
                 } else if (finalRating > 4.40 && finalRating <= 4.9) {
-                    this.avgStar = window.fourHalfStar
+                    this.avgStar = this.twoStar
                 } else if (finalRating >= 4.0 && finalRating <= 4.4) {
-                    this.avgStar = window.fourStar
+                    this.avgStar = this.fourStar
                 } else if (finalRating > 3.5 && finalRating < 4) {
-                    this.avgStar = window.threeHalfStar
+                    this.avgStar = this.fiveStar
                 } else if (finalRating >= 3 && finalRating <= 3.5 ) {
-                    this.avgStar = window.threeStar
+                    this.avgStar = this.fiveStar
                 } else if (finalRating > 2.5 && finalRating < 3) {
-                    this.avgStar = window.twoHalfStar
+                    this.avgStar = this.fiveStar
                 } else if (finalRating >= 2 && finalRating <= 2.5 ) {
-                    this.avgStar = window.twoStar
+                    this.avgStar = this.fiveStar
                 } else if (finalRating > 1.5 && finalRating < 2) {
-                    this.avgStar = window.oneHalfStar
+                    this.avgStar = this.fiveStar
                 } else {
-                    this.avgStar = window.oneStar
+                    this.avgStar = this.fiveStar
                 }
             }
             return (
@@ -110,7 +142,8 @@ class Business extends React.Component {
                         <div className="business-intro">
                             <div className="business-intro-text">
                                 <p>{this.props.business.name}</p>
-                                <span><img src={this.avgStar} alt=""/>this is where the avg rating goes</span>
+                                <div>{this.avgStar}</div>
+                                <span>this is where the avg rating goes</span>
                                 <div className="business-categories">
                                     <span className="claimed"><img className="claimed-icon"src={window.verified} alt=""/>Claimed</span>
                                     <span>&#8226;</span>
