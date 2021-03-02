@@ -7,6 +7,9 @@ class SearchBox extends React.Component {
         this.type = (this.props.formType === "splash") ? "splash" : "other"
         this.find = (this.props.formType === "splash") ? "Find" : ""
         this.near = (this.props.formType === "splash") ? "Near" : ""
+        this.state = {
+
+        }
     }
 
     handleSubmit(e){
@@ -21,10 +24,10 @@ class SearchBox extends React.Component {
                         <div className={`search-texts${this.type}`}>
                             <label className={`search-word1${this.type}`}>
                                 {this.find}
-                                <input className={`search-text${this.type}`}type="text" placeholder="tacos, pizza, burger..." />
+                                <input className={`search-text${this.type}`}type="text" placeholder="tacos, Japanese, Phil's BBQ..." />
                             </label>
                             <label className={`search-word2${this.type}`}>{this.near}
-                                <input className={`search-text${this.type}`}type="text" placeholder="New York, NY" />
+                                <input className={`search-text${this.type}`}type="text" placeholder="New York and Los Angeles ONLY FOR NOW" />
                             </label>
                             <button className={`search-icon-button${this.type}`}>
                                 <img src={window.searchIcon}/>

@@ -217,8 +217,9 @@ class Business extends React.Component {
 
                                     <ul className="business-street">{this.props.business.address}</ul>
                                     <ul className="business-addy">
-                                        {this.props.business.city}
-                                        {this.props.business.state}
+                                        {this.props.business.city},
+                                        {this.props.business.state}. 
+                                        <br/>
                                         {this.props.business.b_zip_code}
                                     </ul>
                                 </div>
