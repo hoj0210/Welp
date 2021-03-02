@@ -4,10 +4,11 @@
     margin-left: 3px;
     font-size: 14px;
     font-family: "Open Sans", "Helvetica Neue", Helvetica;
+    width: 650px;
 }
 
 .review-created-time{
-    margin-left: 20px;
+    margin-left: 10px;
     position: relative;
     bottom: 6px;
     font-size: 14px;
@@ -78,6 +79,7 @@
     display: flex;
     justify-content: center;
     height: 180px;
+    width: 700px;
 }
 
 .review-box{
