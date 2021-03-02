@@ -4,7 +4,6 @@ import Splash from './splash';
 import { logout, receiveCurrentUser } from '../../actions/session_actions';
 
 const msp = (state, ownProps) => {
-    debugger
     return(
         {
             formType: "splash",

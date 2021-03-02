@@ -14,7 +14,6 @@ class Splash extends React.Component {
     }
 
     componentDidMount(){
-        debugger
         this.props.receiveCurrentUser(this.props.currentUser)
     }
 

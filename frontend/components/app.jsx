@@ -8,6 +8,7 @@ import {AuthRoute, ProtectedRoute} from '../util/route_util'
 import BusinessContainer from './business_page/business_container'
 import ReviewFormContainer from './reviews/review_form_container'
 import UpdateReviewFormContainer from './reviews/update_review_form_container'
+import BusinessIndexContainer from './business_page/business_index_container'
 const App = () => (
     <div>
         {/* <header>
@@ -17,6 +18,7 @@ const App = () => (
                 <AuthRoute exact path="/signup" component={SignupFormContainer} />
                 <AuthRoute exact path="/login" component={LoginFormContainer} />
                 <Route exact path="/" component={SplashContainer}/>
+                <Route exact path="/businesses" component={BusinessIndexContainer} />
                 <Route exact path="/businesses/:businessId" component={BusinessContainer} />
                 <ProtectedRoute exact path="/businesses/:businessId/reviews/create" component={ReviewFormContainer}/>
                 <ProtectedRoute exact path="/businesses/:businessId/reviews/:reviewId/update" component={UpdateReviewFormContainer}/>

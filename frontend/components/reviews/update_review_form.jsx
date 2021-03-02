@@ -69,11 +69,9 @@ class UpdateReviewForm extends React.Component {
         
     }
     handleRatingChange(n){
-        debugger
         this.setState({rating: n})
         const ratingText = document.getElementById("rating-text");
         if (n === 1) {
-            debugger
             ratingText.innerText = "Not good"
         } else if (n === 2) {
             ratingText.innerText = "Could've been better"
@@ -82,10 +80,8 @@ class UpdateReviewForm extends React.Component {
         } else if (n === 4) {
             ratingText.innerText = "Good"
         } else if (n === 5) {
-            debugger
             ratingText.innerText = "Great"
         } else {
-            debugger
             ratingText.innerText = "Select your rating"
         }
     }
@@ -102,15 +98,12 @@ class UpdateReviewForm extends React.Component {
     }
 
     handleSubmit(e){
-        debugger
         e.preventDefault(); 
         this.props.updateReview(this.state).then(()=> this.props.history.push(`/businesses/${this.state.business_id}`))
     }
 
     reviewModal(){
-        debugger
         const regulation = document.getElementById("regulation");
-        debugger
         return(
             regulation.style.display = "block"
         )
@@ -129,7 +122,6 @@ class UpdateReviewForm extends React.Component {
                 <div>Loading..</div>
             )
         } else {
-            debugger
             return(
                 <div>
                     <div className="review-form-navbar">

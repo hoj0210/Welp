@@ -12,6 +12,28 @@ class BusinessIndex extends React.Component{
     componentDidMount(){
         this.props.fetchBusinesses();
     }
+
+    render(){
+        if (Object.keys(this.props.businesses).length === 0) {
+            debugger
+            return (
+                <div>Loading..</div>
+            )
+        } else {
+            debugger
+            return(
+                <div>
+                    {this.props.businesses.map(business => {
+                        return(
+                            <div>
+                                {business.name}
+                            </div>
+                        )
+                    })}
+                </div>
+            )
+        }
+    }
 }
 
 export default BusinessIndex

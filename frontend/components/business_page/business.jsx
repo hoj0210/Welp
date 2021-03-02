@@ -98,15 +98,15 @@ class Business extends React.Component {
         }
         window.scrollTo(0, 0)
     }
-    formSubmissionHandler(){
-        const { name, photos } = this.state;
-        const formData = new FormData();
-        formData.append("business[name]", name);
-        for (let i = 0; i < business.length; i++ ) {
-            formData.append("business[photos][]", photos[i])
-        }
-        this.props.myThunkActionCreator(formData);
-    }
+    // formSubmissionHandler(){
+    //     const { name, photos } = this.state;
+    //     const formData = new FormData();
+    //     formData.append("business[name]", name);
+    //     for (let i = 0; i < business.length; i++ ) {
+    //         formData.append("business[photos][]", photos[i])
+    //     }
+    //     this.props.myThunkActionCreator(formData);
+    // }
     
     open(){
         const todayDate = new Date().toDateString().split(" ")[0];
