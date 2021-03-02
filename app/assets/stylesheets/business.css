@@ -55,7 +55,7 @@
     font-weight: lighter;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    margin-left: 141px;
+    /* margin-left: 141px; */
 }
 
 .business-intro-text p{
@@ -275,4 +275,16 @@
 .str-g{
     color: white;
     opacity: 0.5;
+}
+
+.rating-star-box{
+    margin-left: 141px;
+    margin-top: -15px;
+    display: flex;
+}
+
+.num-reviews{
+    position: relative;
+    top: 21px;
+    margin-left: -130px;
 }
