@@ -24,7 +24,7 @@ class Business extends React.Component {
         this.oneHalfStar = (<div >
                         <i id="inv-star"className="fas fa-star str fa-xs"></i>
                         <i className="fas fa-star str fa-xs"></i>
-                        <i class="fas fa-star-half-alt str fa-xs"></i>
+                        <i className="fas fa-star-half-alt str fa-xs"></i>
                         <i className="far fa-star str-g fa-xs"></i>
                         <i className="far fa-star str-g fa-xs"></i>
                         <i className="far fa-star str-g fa-xs"></i>
@@ -41,7 +41,7 @@ class Business extends React.Component {
                         <i id="inv-star" className="fas fa-star str fa-xs"></i>
                         <i className="fas fa-star str fa-xs"></i>
                         <i className="fas fa-star str fa-xs"></i>
-                        <i class="fas fa-star-half-alt str fa-xs"></i>
+                        <i className="fas fa-star-half-alt str fa-xs"></i>
                         <i className="far fa-star str-g fa-xs"></i>
                         <i className="far fa-star str-g fa-xs"></i>
                     </div>);
@@ -58,7 +58,7 @@ class Business extends React.Component {
                         <i className="fas fa-star str fa-xs"></i>
                         <i className="fas fa-star str fa-xs"></i>
                         <i className="fas fa-star str fa-xs"></i>
-                        <i class="fas fa-star-half-alt str fa-xs"></i>
+                        <i className="fas fa-star-half-alt str fa-xs"></i>
                         <i className="far fa-star str-g fa-xs"></i>
                     </div>);        
         this.fourStar = (<div>
@@ -75,7 +75,7 @@ class Business extends React.Component {
                         <i className="fas fa-star str fa-xs"></i>
                         <i className="fas fa-star str fa-xs"></i>
                         <i className="fas fa-star str fa-xs"></i>
-                        <i class="fas fa-star-half-alt str fa-xs"></i>
+                        <i id="half-star"className="fas fa-star-half-alt str fa-xs"></i>
                     </div>);
         this.fiveStar = (<div>
                         <i id="inv-star"className="fas fa-star str fa-xs"></i>
