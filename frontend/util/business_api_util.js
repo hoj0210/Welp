@@ -16,3 +16,12 @@ export const fetchBusinesses = () => {
         })
     )
 }
+
+export const searchBusinesses = (search) => {
+    return(
+        $.ajax({
+            method: "GET",
+            url: `/api/businesses?query=${search}`
+        })
+    )
+}
