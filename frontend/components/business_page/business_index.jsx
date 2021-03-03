@@ -9,9 +9,9 @@ class BusinessIndex extends React.Component{
         super(props);
     }
 
-    componentDidMount(){
-        this.props.fetchBusinesses();
-    }
+    // componentDidMount(){
+    //     this.props.fetchBusinesses();
+    // }
 
     render(){
         if (Object.keys(this.props.businesses).length === 0) {
@@ -37,8 +37,11 @@ class BusinessIndex extends React.Component{
                             debugger
                             return(
                                 <div>
-                                    <img className="b_index_pic"src={business.photoUrls[0]} alt=""/>
-                                    {business.name}
+                                    <Link to={`/businesses/${business.id}`}>
+                                        <img className="b_index_pic"src={business.photoUrls[0]} alt=""/>
+                                        {business.name}
+                                    </Link>
+                                    
                                 </div>
                             )
                         })}

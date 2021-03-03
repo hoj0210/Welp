@@ -13,9 +13,9 @@ class Splash extends React.Component {
         super(props)
     }
 
-    componentDidMount(){
-        this.props.receiveCurrentUser(this.props.currentUser)
-    }
+    // componentDidMount(){
+    //     this.props.receiveCurrentUser(this.props.currentUser)
+    // }
 
     render(){
         return(
@@ -25,7 +25,7 @@ class Splash extends React.Component {
                     <div className="splash-main-top">
                         <div className="nav-bar-container">
                             <NavBar formType={this.props.formType} currentUser={this.props.currentUser} logout={this.props.logout} />
-                            <SearchBox formType={this.props.formType} />
+                            <SearchBox formType={this.props.formType} searchBusinesses={this.props.searchBusinesses} />
                         </div>
                         <div className="splash-logo-container">
                             <Link to="/"><img className="splash-logo"src="https://vivalajaiba.com/wp-content/uploads/2018/07/yelp-logo.png" /></Link>

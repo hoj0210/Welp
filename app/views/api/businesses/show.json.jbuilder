@@ -1,11 +1,11 @@
 # json.partial! 'api/businesses/business', business: @business
 
     json.partial! 'api/businesses/business', business: @business
-    json.categories do 
-        json.array! @business.categories do |category|
-            json.extract! category, :category, :id
-        end
-    end
+    # json.categories do 
+    #     json.array! @business.categories do |category|
+    #         json.extract! category, :category, :id
+    #     end
+    # end
     json.schedules do 
         json.array! @business.schedules do |schedule|
             json.extract! schedule, :open, :close, :day, :id
