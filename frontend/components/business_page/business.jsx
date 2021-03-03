@@ -117,6 +117,7 @@ class Business extends React.Component {
         }
     }
     render(){
+        debugger
         if (!this.props.business) {
             //debugger
             return (
@@ -173,8 +174,8 @@ class Business extends React.Component {
                         </div> */}
                         <div className="business-pictures-container">
                             {this.props.business.photoUrls.map((photoUrl, i) => (
-                                // <img className="business-pictures" key={i} src={photoUrl} alt=""/>
-                                <img className="business-pictures" key={i} src={window.stockPhoto} alt=""/>
+                                <img className="business-pictures" key={i} src={photoUrl} alt=""/>
+                                // <img className="business-pictures" key={i} src={window.stockPhoto} alt=""/>
                             ))}
                         </div>
                              
