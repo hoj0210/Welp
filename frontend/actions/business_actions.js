@@ -42,3 +42,14 @@ export const fetchBusinesses = () => dispatch => {
             })
     )
 }
+
+export const searchBusinesses = (search) => dispatch => {
+    return(
+        BusinessApiUtil.searchBusinesses(search)
+            .then(businesses => {
+                return(
+                    dispatch(receiveBusinesses(businesses))
+                )
+            })
+    )
+}
