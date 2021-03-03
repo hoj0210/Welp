@@ -9,9 +9,9 @@ class BusinessIndex extends React.Component{
         super(props);
     }
 
-    componentDidMount(){
-        this.props.fetchBusinesses();
-    }
+    // componentDidMount(){
+    //     this.props.fetchBusinesses();
+    // }
 
     render(){
         if (Object.keys(this.props.businesses).length === 0) {

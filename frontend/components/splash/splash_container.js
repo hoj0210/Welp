@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Splash from './splash';
 import { logout, receiveCurrentUser } from '../../actions/session_actions';
+import { searchBusinesses } from '../../actions/business_actions'
 
 const msp = (state, ownProps) => {
     return(
@@ -22,7 +23,8 @@ const msp = (state, ownProps) => {
 const mdp = dispatch => (
     {
         logout: () => dispatch(logout()),
-        receiveCurrentUser: (currentUser) => dispatch(receiveCurrentUser(currentUser))
+        receiveCurrentUser: (currentUser) => dispatch(receiveCurrentUser(currentUser)),
+        searchBusinesses: (search) => dispatch(searchBusinesses(search))
     }
 )
 
