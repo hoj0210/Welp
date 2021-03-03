@@ -117,6 +117,7 @@ class Business extends React.Component {
         }
     }
     render(){
+        debugger
         if (!this.props.business) {
             //debugger
             return (

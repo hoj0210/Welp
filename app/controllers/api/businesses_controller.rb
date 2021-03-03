@@ -6,7 +6,13 @@ class Api::BusinessesController < ApplicationController
     end
 
     def index 
-        @businesses = Business.all 
+        # debugger
+        if params[:query]
+            @businesses = Business.all.select{|b| b.name.include?(params[:query])}
+        else
+            @businesses = Business.all
+        end
+         
         render :index
     end
 
