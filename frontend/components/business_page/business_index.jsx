@@ -130,8 +130,8 @@ class BusinessIndex extends React.Component{
                                                         <p className="result-boolean">{business.outdoor ? <img className="result-bool"src={window.yes}/> : <img className="result-bool"src={window.no}/>} Outdoor seating</p>
                                                     </div>
                                                     <div className="result-review">
-                                                        <p></p>
-                                                        <span>more</span>
+                                                        <p className="result-review-text">"{business.reviews.length !== 0 ? `${business.reviews[0].message.split(" ").filter((w, i) => i < 30).join(" ")}` : "Write the first review!"}"<span> more</span></p>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>

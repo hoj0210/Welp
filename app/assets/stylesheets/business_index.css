@@ -147,3 +147,12 @@
 .result-boolean{
     margin-right: 10px;
 }
+
+.result-review-text{
+    margin-top: 20px;
+    padding-right: 20px;
+    font-family: "Open Sans", Helvetica, "Helvetica Neue";
+    font-size: 14px;
+    color: #757280;
+    line-height: 20px;
+}
