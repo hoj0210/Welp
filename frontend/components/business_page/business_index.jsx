@@ -52,6 +52,7 @@ class BusinessIndex extends React.Component{
                     </div>
                     <div>
                         <p className="best-in">Best {this.state.search} in {}</p>
+                        <p className="all-results">All Results</p>
                         {this.props.businesses.map(business => {
                             debugger
                             return(

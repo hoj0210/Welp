@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom'
 import {connect } from 'react-redux'
+
 class PopularSearches extends React.Component {
     constructor(props) {
         super(props)

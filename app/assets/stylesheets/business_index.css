@@ -19,3 +19,9 @@
     width: 200px;
     height: 200px;
 }
+
+.all-results{
+    font-family: "Open Sans", Helvetica, "Helvetica Neue";
+    font-size: 16px;
+    font-weight: bold;
+}
