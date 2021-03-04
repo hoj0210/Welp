@@ -14,6 +14,7 @@ class BusinessIndex extends React.Component{
 
     componentDidMount(){
         debugger
+        // this.setState({search: this.props.location.search.split("=")[1]})
         if (Object.keys(this.props.businesses).length === 0 || !Array.isArray(this.props.businesses)) {
             debugger
             this.props.searchBusinesses(this.state.search)
