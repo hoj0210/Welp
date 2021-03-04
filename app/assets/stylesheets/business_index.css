@@ -141,5 +141,9 @@
 .result-bool{
     position: relative;
     top: 5px;
-    margin-right: 3px;
+    margin-right: 5px;
+}
+
+.result-boolean{
+    margin-right: 10px;
 }
