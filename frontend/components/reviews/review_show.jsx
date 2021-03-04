@@ -134,7 +134,7 @@ class ReviewShow extends React.Component {
         } else {
             return(
 
-                <div className="review-container">
+                <div>
                     <div className="review-box">
                         <div className="review-top">
                             <div className="important-info-container">

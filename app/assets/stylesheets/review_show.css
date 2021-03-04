@@ -79,13 +79,12 @@
 .review-container{
     display: flex;
     justify-content: center;
-    height: 180px;
     width: 700px;
+    margin: 30px;
 }
 
 .review-box{
     min-width: 700px;
-    height: 115px;
 }
 .del-no{
     color: #00838F;
