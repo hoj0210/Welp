@@ -15,6 +15,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .b_index_pic{
@@ -115,6 +116,15 @@
 
 .result-location{
     font-family: "Open Sans", Helvetica, "Helvetica Neue";
-    font-size: 12px;
+    font-size: 13px;
     color: #757280;
+    position: absolute;
+    left: 287px;
+    width: 180px;
+    top: 0px;
+    text-align: right;
+}
+
+.result-num{
+    margin-bottom: 5px;
 }

@@ -105,7 +105,7 @@ class BusinessIndex extends React.Component{
                                                         <p className="result-name-name">{business.name}</p>
                                                     </div>
                                                     <div className="result-location">
-                                                        <p>{business.phone_num}</p>
+                                                        <p className="result-num">{business.phone_num}</p>
                                                         <p>{business.address}</p>
                                                     </div>
                                                     <div className="result-rating">
