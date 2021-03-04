@@ -128,3 +128,18 @@
 .result-num{
     margin-bottom: 5px;
 }
+
+.result-booleans{
+    font-family: "Open Sans", Helvetica, "Helvetica Neue";
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    color: black;
+    margin-top: 10px;
+}
+
+.result-bool{
+    position: relative;
+    top: 5px;
+    margin-right: 3px;
+}
