@@ -1,36 +1,92 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
+import {connect } from 'react-redux'
+class PopularSearches extends React.Component {
+    constructor(props) {
+        super(props)
+        this.handleClick = this.handleClick.bind(this);
+    }
 
-const PopularSearches = props => (
-    <div>
-        <h1 className="splash-box-title">Find the Best Restaurants by Cuisine</h1>
-        <div className="popular-search-container">
-            <div className="popular-search-item">
-                <div className="popular-search-pic-c">
-                    <img className="popular-search-pic" src={window.tacos} alt=""/>
+    handleClick(type) {
+        debugger
+        this.props.history.push(`/businesses?query=${type}`)
+    }
+
+    render(){
+        return(
+            <div>
+                <h1 className="splash-box-title">Find the Best Restaurants by Cuisine</h1>
+                <div className="popular-search-container">
+                    <div className="popular-search-item" onClick={() => this.handleClick("mexican")}>
+                        <div className="popular-search-pic-c">
+                            <img className="popular-search-pic" src={window.tacos} alt=""/>
+                        </div>
+                        <p className="popular-search-text">Mexican</p>
+                    </div>
+                    <div className="popular-search-item" onClick={() => this.handleClick("korean")}>
+                        <div className="popular-search-pic-c">
+                            <img className="popular-search-pic" src={window.koreanCuisine}/>
+                        </div>
+                        <p className="popular-search-text">Korean</p>  
+                    </div>
+                    <div className="popular-search-item" onClick={() => this.handleClick("italian")}>
+                        <div className="popular-search-pic-c">
+                            <img className="popular-search-pic" src={window.italianCuisine}/>
+                        </div>
+                        <p className="popular-search-text">Italian</p>
+                    </div>
+                    <div className="popular-search-item" onClick={() => this.handleClick("american")}>
+                        <div className="popular-search-pic-c">
+                            <img className="popular-search-pic" src={window.americanCuisine}/>
+                        </div>
+                        <p className="popular-search-text">American</p>
+                    </div>
                 </div>
-                <p className="popular-search-text">Mexican</p>
             </div>
-            <div className="popular-search-item">
-                <div className="popular-search-pic-c">
-                    <img className="popular-search-pic" src={window.koreanCuisine}/>
-                </div>
-                <p className="popular-search-text">Korean</p>  
-            </div>
-            <div className="popular-search-item">
-                <div className="popular-search-pic-c">
-                    <img className="popular-search-pic" src={window.italianCuisine}/>
-                </div>
-                <p className="popular-search-text">Italian</p>
-            </div>
-            <div className="popular-search-item">
-                <div className="popular-search-pic-c">
-                    <img className="popular-search-pic" src={window.americanCuisine}/>
-                </div>
-                <p className="popular-search-text">American</p>
-            </div>
-        </div>
-    </div>
+        )
+    }
+}
+// const PopularSearches = props => (
+//     <div>
+//         <h1 className="splash-box-title">Find the Best Restaurants by Cuisine</h1>
+//         <div className="popular-search-container">
+//             <div className="popular-search-item">
+//                 <div className="popular-search-pic-c">
+//                     <img className="popular-search-pic" src={window.tacos} alt=""/>
+//                 </div>
+//                 <p className="popular-search-text">Mexican</p>
+//             </div>
+//             <div className="popular-search-item">
+//                 <div className="popular-search-pic-c">
+//                     <img className="popular-search-pic" src={window.koreanCuisine}/>
+//                 </div>
+//                 <p className="popular-search-text">Korean</p>  
+//             </div>
+//             <div className="popular-search-item">
+//                 <div className="popular-search-pic-c">
+//                     <img className="popular-search-pic" src={window.italianCuisine}/>
+//                 </div>
+//                 <p className="popular-search-text">Italian</p>
+//             </div>
+//             <div className="popular-search-item">
+//                 <div className="popular-search-pic-c">
+//                     <img className="popular-search-pic" src={window.americanCuisine}/>
+//                 </div>
+//                 <p className="popular-search-text">American</p>
+//             </div>
+//         </div>
+//     </div>
+// )
+const msp = (state, ownProps) => (
+    {
+
+    }
 )
 
-export default PopularSearches
+const mdp = dispatch => (
+    {
+
+    }
+)
+
+export default withRouter(connect(msp, mdp)(PopularSearches))
