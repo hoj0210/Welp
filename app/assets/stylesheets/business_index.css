@@ -20,6 +20,8 @@
 .b_index_pic{
     width: 200px;
     height: 200px;
+    border-radius: 4px;
+    margin: 25px;
 }
 
 .all-results{
@@ -37,12 +39,15 @@
     width: 740px;
     height: 300px;
     transition: box-shadow .3s;
-    border: 1px solid #EEEEEF;
+    display: flex;
 
 }
 .each-result-container{
     width: 740px;
     height: 300px;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEF;
+    border-radius: 4px;
 }
 .each-result-link{
     width: 740px;
@@ -51,4 +56,24 @@
 
 .each-result:hover{
 
+}
+
+.result-info{
+    margin-top: 25px;
+}
+
+.result-name{
+    font-family: "Open Sans", Helvetica, "Helvetica Neue";
+    font-size: 20px;
+    font-weight: bold;
+    color: #2B273C;
+    text-decoration: none;
+}
+
+.result-name:hover{
+    text-decoration: underline;
+}
+
+.result-link{
+    text-decoration: none;
 }
