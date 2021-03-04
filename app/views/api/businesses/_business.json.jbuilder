@@ -10,4 +10,7 @@ json.extract! business,
             :price_range,
             :latitude,
             :longitude,
-            :categories
+            :categories,
+            :delivery,
+            :takeout,
+            :outdoor

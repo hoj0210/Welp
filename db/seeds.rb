@@ -29,7 +29,10 @@ business1 = Business.create!(
     phone_num: "213-887-9090",
     price_range: "$",
     longitude: 64.543211,
-    latitude: 56.43222
+    latitude: 56.43222,
+    delivery: false,
+    takeout: false,
+    outdoor: true
 )
 file1_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos2.jpg')
 file1_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos3.jpg')
@@ -93,7 +96,10 @@ business2 = Business.create!(
     phone_num: "714-999-9090",
     price_range: "$$",
     longitude: 60.2113,
-    latitude: 51.4555
+    latitude: 51.4555,
+    delivery: true,
+    takeout: true,
+    outdoor: true
 )
 file2_1 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/i_heart_sushi/sushi1.jpg')
 file2_2 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/i_heart_sushi/sushi2.jpg')
@@ -157,7 +163,10 @@ business3 = Business.create!(
     phone_num: "714-111-1111",
     price_range: "$$",
     longitude: 80.2113,
-    latitude: 49.1234
+    latitude: 49.1234,
+    delivery: false,
+    takeout: true,
+    outdoor: true
 )
 file3_1 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/jongro/jongro1.jpg')
 file3_2 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/jongro/jongro2.jpg')
@@ -221,7 +230,10 @@ business4 = Business.create!(
     phone_num: "714-123-4444",
     price_range: "$",
     longitude: 100.2113,
-    latitude: 89.1234
+    latitude: 89.1234,
+    delivery: false,
+    takeout: true,
+    outdoor: true
 )
 file4_1 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/taco_maggie/taco_maggie1.jpg')
 file4_2 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/taco_maggie/taco_maggie2.jpg')
@@ -285,7 +297,10 @@ business5 = Business.create!(
     phone_num: "562-888-4444",
     price_range: "$",
     longitude: 203.2111,
-    latitude: 169.1234
+    latitude: 169.1234,
+    delivery: false,
+    takeout: true,
+    outdoor: false
 )
 file5_1 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/blue_bottle/blue_bottle1.jpg')
 file5_2 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/blue_bottle/blue_bottle2.jpg')
@@ -349,7 +364,10 @@ business6 = Business.create!(
     phone_num: "714-442-0000",
     price_range: "$",
     longitude: 20.2113,
-    latitude: 80.1234
+    latitude: 80.1234,
+    delivery: false,
+    takeout: true,
+    outdoor: true
 )
 file6_1 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/innout/innout1.jpg')
 file6_2 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/innout/innout2.jpg')
@@ -414,7 +432,10 @@ business7 = Business.create!(
     phone_num: "562-080-2231",
     price_range: "$$",
     longitude: 135.233,
-    latitude: 33.1345
+    latitude: 33.1345,
+    delivery: true,
+    takeout: true,
+    outdoor: true
 )
 file7_1 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/off_street/off_street1.jpg')
 file7_2 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/off_street/off_street2.jpg')
@@ -479,7 +500,10 @@ business8 = Business.create!(
     phone_num: "562-202-3030",
     price_range: "$$",
     longitude: 175.2113,
-    latitude: 121.1234
+    latitude: 121.1234,
+    delivery: true,
+    takeout: true,
+    outdoor: true
 )
 file8_1 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/ozen/ozen1.jpg')
 file8_2 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/ozen/ozen2.jpg')
@@ -544,7 +568,10 @@ business9 = Business.create!(
     phone_num: "562-444-1111",
     price_range: "$$",
     longitude: 160.2345,
-    latitude: 189.6734
+    latitude: 189.6734,
+    delivery: true,
+    takeout: true,
+    outdoor: true
 )
 file9_1 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/chodang/chodang1.jpg')
 file9_2 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/chodang/chodang2.jpg')
@@ -609,7 +636,10 @@ business10 = Business.create!(
     phone_num: "562-098-2534",
     price_range: "$$",
     longitude: 300.2345,
-    latitude: 119.6734
+    latitude: 119.6734,
+    delivery: false,
+    takeout: true,
+    outdoor: true
 )
 file10_1 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/phils/phils1.jpg')
 file10_2 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/phils/phils2.jpg')
