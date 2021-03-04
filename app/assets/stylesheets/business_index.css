@@ -80,3 +80,16 @@
 .result-link{
     text-decoration: none;
 }
+
+.result-categories{
+    font-family: "Open Sans", Helvetica, "Helvetica Neue";
+    font-size: 14px;
+    color: #757280;
+    margin-left: 1px;
+    margin-top: 10px;
+}
+
+.result-bullet{
+    margin-left: 10px;
+    margin-right: 10px;
+}
