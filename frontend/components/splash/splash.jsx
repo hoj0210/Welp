@@ -36,7 +36,7 @@ class Splash extends React.Component {
                     </div>
                 </div>
                 <div className="popular-searches">
-                    <PopularSearches/>
+                    <PopularSearches searchBusinesses={this.props.searchBusinesses}/>
                 </div>
                 {/* <div className="new-businesses">
                     <NewBusinessesContainer/>

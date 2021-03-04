@@ -9,7 +9,7 @@ class PopularSearches extends React.Component {
 
     handleClick(type) {
         debugger
-        this.props.history.push(`/businesses?query=${type}`)
+        this.props.searchBusinesses(type).then(() => this.props.history.push(`/businesses?query=${type}`))
     }
 
     render(){
@@ -29,17 +29,17 @@ class PopularSearches extends React.Component {
                         </div>
                         <p className="popular-search-text">Korean</p>  
                     </div>
-                    <div className="popular-search-item" onClick={() => this.handleClick("italian")}>
-                        <div className="popular-search-pic-c">
-                            <img className="popular-search-pic" src={window.italianCuisine}/>
-                        </div>
-                        <p className="popular-search-text">Italian</p>
-                    </div>
                     <div className="popular-search-item" onClick={() => this.handleClick("american")}>
                         <div className="popular-search-pic-c">
                             <img className="popular-search-pic" src={window.americanCuisine}/>
                         </div>
                         <p className="popular-search-text">American</p>
+                    </div>
+                    <div className="popular-search-item" onClick={() => this.handleClick("japanese")}>
+                        <div className="popular-search-pic-c">
+                            <img className="popular-search-pic" src={window.italianCuisine}/>
+                        </div>
+                        <p className="popular-search-text">Japanese</p>
                     </div>
                 </div>
             </div>
