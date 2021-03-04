@@ -67,10 +67,13 @@
     font-size: 20px;
     font-weight: bold;
     color: #2B273C;
-    text-decoration: none;
+    display: flex;
 }
 
-.result-name:hover{
+.result-name-name{
+    margin-left: 5px;
+}
+.result-name-name:hover{
     text-decoration: underline;
 }
 

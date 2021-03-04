@@ -63,7 +63,11 @@ class BusinessIndex extends React.Component{
                                                 <img className="b_index_pic"src={window.stockPhoto} alt=""/>
                                                 {/* <img className="b_index_pic"src={business.photoUrls[0]} alt=""/> */}
                                                 <div className="result-info">
-                                                    <p className="result-name">{i + 1}. {business.name}</p>
+                                                    <div className="result-name">
+                                                        <p>{i + 1}. </p>
+                                                        <p className="result-name-name">{business.name}</p>
+                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                         </Link>
