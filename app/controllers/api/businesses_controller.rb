@@ -6,13 +6,13 @@ class Api::BusinessesController < ApplicationController
     end
 
     def index 
-        debugger
+        # debugger
         if params[:query]
             @businesses = Business.all.select{|b| b.name.downcase.include?(params[:query].downcase) || b.categories.any?{|c| c.category.downcase == params[:query].downcase}}
         else
             @businesses = Business.all
         end
-        debugger
+        # debugger
         render :index
     end
 
