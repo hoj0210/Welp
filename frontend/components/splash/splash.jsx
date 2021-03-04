@@ -13,9 +13,9 @@ class Splash extends React.Component {
         super(props)
     }
 
-    componentDidMount(){
-        this.props.receiveCurrentUser(this.props.currentUser)
-    }
+    // componentDidMount(){
+    //     this.props.receiveCurrentUser(this.props.currentUser)
+    // }
 
     render(){
         return(

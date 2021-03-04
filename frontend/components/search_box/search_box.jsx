@@ -9,7 +9,7 @@ class SearchBox extends React.Component {
         this.find = (this.props.formType === "splash") ? "Find" : ""
         this.near = (this.props.formType === "splash") ? "Near" : ""
         this.state = {
-            query: ""
+                query: ''
         }
         this.handleSubmit = this.handleSubmit.bind(this)
     }
@@ -23,7 +23,7 @@ class SearchBox extends React.Component {
     handleSubmit(e){
         debugger
         e.preventDefault()
-        this.props.searchBusinesses(this.state.query).then(() => this.props.history.push(`/businesses?query=${this.state.query}`) )
+        this.props.searchBusinesses(this.state.query).then(() => this.props.history.push(`/businesses?query=${this.state.query}`))
     }
 
     render(){
@@ -34,7 +34,7 @@ class SearchBox extends React.Component {
                         <div className={`search-texts${this.type}`}>
                             <label className={`search-word1${this.type}`}>
                                 {this.find}
-                                <input className={`search-text${this.type}`}type="text" placeholder="tacos, Japanese, Phil's BBQ..." onChange={this.handleChange("query")} />
+                                <input className={`search-text${this.type}`}type="text" placeholder="tacos, Japanese, Phil's BBQ..." onChange={this.handleChange('query')}/>
                             </label>
                             <label className={`search-word2${this.type}`}>{this.near}
                                 <input className={`search-text${this.type}`}type="text" placeholder="New York and Los Angeles ONLY FOR NOW" />
@@ -51,11 +51,12 @@ class SearchBox extends React.Component {
     }
 }
 
-const msp = (state, ownProps) => {
-    return {
+const msp = (state, ownProps) => (
+    {
 
     }
-}
+)
+
 
 const mdp = dispatch => (
     {
