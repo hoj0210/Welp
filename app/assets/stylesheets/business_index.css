@@ -37,29 +37,35 @@
 
 .each-result{
     width: 740px;
-    height: 300px;
     transition: box-shadow .3s;
     display: flex;
 
 }
 .each-result-container{
     width: 740px;
-    height: 300px;
     margin-bottom: 30px;
     border: 1px solid #EEEEEF;
     border-radius: 4px;
+    transition: box-shadow .3s;
 }
+
+.each-result-container:hover{
+    box-shadow: #757280;
+}
+
 .each-result-link{
     width: 740px;
     height: 300px;
 }
 
 .each-result:hover{
-
+    transition: 0.3s;
+   box-shadow: 0 0 10px lightgray;
 }
 
 .result-info{
     margin-top: 25px;
+    position: relative;
 }
 
 .result-name{
@@ -92,4 +98,23 @@
 .result-bullet{
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.result-rating{
+    margin-top: 10px;
+    display: flex;
+}
+
+.result-num-reviews{
+    font-family: "Open Sans", Helvetica, "Helvetica Neue";
+    font-size: 14px;
+    color: #757280;
+    margin-left: 5px;
+    margin-top: 4px;
+}
+
+.result-location{
+    font-family: "Open Sans", Helvetica, "Helvetica Neue";
+    font-size: 12px;
+    color: #757280;
 }
