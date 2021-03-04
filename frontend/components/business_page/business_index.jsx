@@ -105,8 +105,7 @@ class BusinessIndex extends React.Component{
                                                         <p className="result-name-name">{business.name}</p>
                                                     </div>
                                                     <div className="result-rating">
-                                                        <img src={numReviews} alt=""/>
-                                                       <p>{avgStar} {numReviews}</p> 
+                                                       <p> <img src={avgStar} alt=""/> {numReviews}</p> 
                                                     </div>
                                                     <div className="result-categories">
                                                         <span className="result-dollar-sign">{business.price_range}</span>
