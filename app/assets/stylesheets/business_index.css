@@ -2,6 +2,8 @@
     font-family: "Open Sans", Helvetica, "Helvetica Neue";
     font-size: 24px;
     font-weight: bold;
+    margin: 40px;
+    margin-left: 80px;
 }
 
 .business-page-top-index{
@@ -24,4 +26,29 @@
     font-family: "Open Sans", Helvetica, "Helvetica Neue";
     font-size: 16px;
     font-weight: bold;
+    margin-bottom: 40px;
+    margin-left: 80px;
+}
+.results{
+    margin-left: 80px;
+}
+
+.each-result{
+    width: 740px;
+    height: 300px;
+    transition: box-shadow .3s;
+    border: 1px solid #EEEEEF;
+
+}
+.each-result-container{
+    width: 740px;
+    height: 300px;
+}
+.each-result-link{
+    width: 740px;
+    height: 300px;
+}
+
+.each-result:hover{
+
 }

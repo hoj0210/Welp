@@ -53,19 +53,24 @@ class BusinessIndex extends React.Component{
                     <div>
                         <p className="best-in">Best {this.state.search} in {}</p>
                         <p className="all-results">All Results</p>
-                        {this.props.businesses.map(business => {
-                            debugger
-                            return(
-                                <div>
-                                    <Link to={`/businesses/${business.id}`}>
-                                        <img className="b_index_pic"src={window.stockPhoto} alt=""/>
-                                        {/* <img className="b_index_pic"src={business.photoUrls[0]} alt=""/> */}
-                                        {business.name}
-                                    </Link>
-                                    
-                                </div>
-                            )
-                        })}
+                        <div className="results">
+                            {this.props.businesses.map(business => {
+                                debugger
+                                return(
+                                    <div className="each-result-container">
+                                        <Link to={`/businesses/${business.id}`}>
+                                            <div className="each-result">
+                                                <img className="b_index_pic"src={window.stockPhoto} alt=""/>
+                                                {/* <img className="b_index_pic"src={business.photoUrls[0]} alt=""/> */}
+                                                {business.name}
+                                            </div>
+                                        </Link>
+                                        
+                                    </div>
+                                )
+                            })}
+                        </div>
+                        
                     </div>
                     <div className="splash-about">
                         <About />
