@@ -22,7 +22,7 @@ class ReviewIndex extends React.Component {
             <div>
                 <ul className="review-boxes-container">
                     {Object.values(this.props.reviews).map(review => (
-                        <div key={review.id}>
+                        <div key={review.id} className="review-container">
                             <ReviewShow fetchUsers={this.props.fetchUsers} currentUser={this.props.currentUser} users={this.props.users}review={review} updateReview={this.props.updateReview} deleteReview={this.props.deleteReview} business={this.props.business}/>
                         </div>
                     ))}
