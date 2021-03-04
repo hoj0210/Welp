@@ -2,9 +2,10 @@
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 3px;
-    font-size: 14px;
+    font-size: 15px;
     font-family: "Open Sans", "Helvetica Neue", Helvetica;
     width: 650px;
+    line-height: 22px;
 }
 
 .review-created-time{
