@@ -12,7 +12,7 @@ class BusinessIndex extends React.Component{
 
     componentDidMount(){
         debugger
-        if (Object.keys(this.props.businesses).length === 0 || !this.props.businesses) {
+        if (Object.keys(this.props.businesses).length === 0 || !Array.isArray(this.props.businesses)) {
             debugger
             this.props.searchBusinesses(this.search)
         }
