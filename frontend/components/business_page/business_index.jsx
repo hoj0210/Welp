@@ -7,14 +7,21 @@ import About from '../about/about';
 class BusinessIndex extends React.Component{
     constructor(props){
         super(props);
+        this.search = this.props.location.search.split("=")[1]
     }
 
-    // componentDidMount(){
-    //     this.props.fetchBusinesses();
-    // }
+    componentDidMount(){
+        debugger
+        if (Object.keys(this.props.businesses).length === 0 || !this.props.businesses) {
+            debugger
+            this.props.searchBusinesses(this.search)
+        }
+        // const search = this.props.location.search.split("=")[1];
+    }
 
     render(){
-        if (Object.keys(this.props.businesses).length === 0) {
+        debugger
+        if (Object.keys(this.props.businesses).length === 0 || !Array.isArray(this.props.businesses)) {
             debugger
             return (
                 <div>Loading..</div>
@@ -38,7 +45,8 @@ class BusinessIndex extends React.Component{
                             return(
                                 <div>
                                     <Link to={`/businesses/${business.id}`}>
-                                        <img className="b_index_pic"src={business.photoUrls[0]} alt=""/>
+                                        <img className="b_index_pic"src={window.stockPhoto} alt=""/>
+                                        {/* <img className="b_index_pic"src={business.photoUrls[0]} alt=""/> */}
                                         {business.name}
                                     </Link>
                                     

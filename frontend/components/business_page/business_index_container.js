@@ -1,8 +1,9 @@
 import { connect } from 'react-redux';
-import {fetchBusinesses} from '../../actions/business_actions';
+// import {fetchBusinesses} from '../../actions/business_actions';
 import BusinessIndex from './business_index'
 import {withRouter} from 'react-router-dom'
 import { logout } from '../../actions/session_actions';
+import { searchBusinesses } from '../../actions/business_actions';
 
 const msp = (state, ownProps) => (
     {
@@ -12,13 +13,11 @@ const msp = (state, ownProps) => (
     }
 )
 
-const mdp = dispatch => {
-    return(
-        {
-            fetchBusinesses: () => dispatch(fetchBusinesses()),
-            logout: () => dispatch(logout())
-        }
-    )
-}
+const mdp = dispatch =>(
+    {
+        searchBusinesses: (search) => dispatch(searchBusinesses(search)),
+        logout: () => dispatch(logout())
+    }
+) 
 
-export default connect(msp, mdp)(BusinessIndex)
+export default withRouter(connect(msp, mdp)(BusinessIndex))

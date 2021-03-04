@@ -5,7 +5,7 @@ import {
 
 const BusinessesReducer = (state = {}, action) => {
     Object.freeze(state);
-    debugger
+    // debugger
     switch(action.type){
         case RECEIVE_BUSINESSES:
             return action.businesses 
