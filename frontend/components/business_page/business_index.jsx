@@ -125,9 +125,9 @@ class BusinessIndex extends React.Component{
                                                         )}
                                                     </div>
                                                     <div className="result-booleans">
-                                                        <p>{business.delivery ? <img className="result-bool" src={window.yes}/> : <img className="result-bool"src={window.no}/>} Delivery</p>
-                                                        <p>{business.takeout ? <img className="result-bool"src={window.yes}/> : <img className="result-bool"src={window.no}/>} Takeout</p>
-                                                        <p>{business.outdoor ? <img className="result-bool"src={window.yes}/> : <img className="result-bool"src={window.no}/>} Outdoor seating</p>
+                                                        <p className="result-boolean">{business.delivery ? <img className="result-bool" src={window.yes}/> : <img className="result-bool"src={window.no}/>} Delivery</p>
+                                                        <p className="result-boolean">{business.takeout ? <img className="result-bool"src={window.yes}/> : <img className="result-bool"src={window.no}/>} Takeout</p>
+                                                        <p className="result-boolean">{business.outdoor ? <img className="result-bool"src={window.yes}/> : <img className="result-bool"src={window.no}/>} Outdoor seating</p>
                                                     </div>
                                                 </div>
                                             </div>
