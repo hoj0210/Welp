@@ -56,6 +56,43 @@ class BusinessIndex extends React.Component{
                         <div className="results">
                             {this.props.businesses.map((business, i) => {
                                 debugger
+                                let finalRating = 0;
+                                let avgStar = "";
+                                let numReviews = ""
+                                if (business.reviews !== undefined) {
+                                    numReviews = business.reviews.length
+                                }
+                                if (numReviews === 0 || numReviews === "") {
+                                    finalRating = 5.00.toFixed(2);
+                                } else {
+                                    let sumRating = 0;
+                                    let avgRating = 0;
+                                    for (let i = 0; i < numReviews; i++) {
+                                        sumRating += business.reviews[i].rating;              
+                                    }      
+                                    avgRating = sumRating / numReviews;
+                                    finalRating = avgRating.toFixed(2);  
+                                }
+                                if (finalRating > 4.9) {
+                                    avgStar = window.fiveStar   
+                                } else if (finalRating > 4.40 && finalRating <= 4.9) {
+                                    avgStar = window.fourHalfStar
+                                } else if (finalRating >= 4.0 && finalRating <= 4.4) {
+                                    avgStar = window.fourStar
+                                } else if (finalRating > 3.5 && finalRating < 4) {
+                                    avgStar = window.threeHalfStar
+                                } else if (finalRating >= 3 && finalRating <= 3.5 ) {
+                                    avgStar = window.threeStar
+                                } else if (finalRating > 2.5 && finalRating < 3) {
+                                    avgStar = window.twoHalfStar
+                                } else if (finalRating >= 2 && finalRating <= 2.5 ) {
+                                    avgStar = window.twoStar
+                                } else if (finalRating > 1.5 && finalRating < 2) {
+                                    avgStar = window.oneHalfStar
+                                } else {
+                                    avgStar = window.oneStar
+                                }
+                                debugger
                                 return(
                                     <div className="each-result-container" key={i}>
                                         <Link className="result-link" to={`/businesses/${business.id}`}>
@@ -67,7 +104,22 @@ class BusinessIndex extends React.Component{
                                                         <p>{i + 1}. </p>
                                                         <p className="result-name-name">{business.name}</p>
                                                     </div>
-                                                    
+                                                    <div className="result-rating">
+                                                        <img src={numReviews} alt=""/>
+                                                       <p>{avgStar} {numReviews}</p> 
+                                                    </div>
+                                                    <div className="result-categories">
+                                                        <span className="result-dollar-sign">{business.price_range}</span>
+                                                        <span className="result-bullet">&#8226;</span>
+                                                        {business.categories.map((category, i) => {
+                                                            if(i === business.categories.length - 1) {
+                                                                return <span className="result-category-name" key={i}>{category.category} </span>
+                                                            } else {
+                                                                return <span className="result-category-name" key={i}>{category.category}, </span>
+                                                            }
+                                                        }
+                                                        )}
+                                                    </div>
                                                 </div>
                                             </div>
                                         </Link>
