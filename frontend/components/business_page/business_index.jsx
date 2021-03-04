@@ -7,18 +7,28 @@ import About from '../about/about';
 class BusinessIndex extends React.Component{
     constructor(props){
         super(props);
-        this.search = this.props.location.search.split("=")[1]
+        this.state = {
+            search: this.props.location.search.split("=")[1]
+        }
     }
 
     componentDidMount(){
         debugger
         if (Object.keys(this.props.businesses).length === 0 || !Array.isArray(this.props.businesses)) {
             debugger
-            this.props.searchBusinesses(this.search)
+            this.props.searchBusinesses(this.state.search)
         }
         // const search = this.props.location.search.split("=")[1];
     }
 
+    componentDidUpdate(prevProps){
+        debugger
+        if (prevProps.location.search.split("=")[1] !== this.props.location.search.split("=")[1]) {
+            debugger
+            this.setState({search: this.props.location.search.split("=")[1]})
+        }
+        window.scrollTo(0, 0)
+    }
 
     render(){
         debugger
@@ -34,13 +44,13 @@ class BusinessIndex extends React.Component{
                     <div className="business-page-top-index">
                         <div className="top-header-container">
                             <Link to="/"><img className="top-logo-sign" src={window.mainLogo} /></Link>
-                            <SearchBox formType={this.props.formType}/>
+                            <SearchBox formType={this.props.formType} searchBusinesses={this.props.searchBusinesses}/>
                             <Link to=""className="top-header-review-link">Write a Review</Link>
                             <NavBar formType={this.props.formType} currentUser={this.props.currentUser} logout={this.props.logout}/>
                         </div>    
                     </div>
                     <div>
-                        <p className="best-in">Best {} in {}</p>
+                        <p className="best-in">Best {this.state.search} in {}</p>
                         {this.props.businesses.map(business => {
                             debugger
                             return(
