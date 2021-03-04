@@ -19,6 +19,7 @@ class BusinessIndex extends React.Component{
         // const search = this.props.location.search.split("=")[1];
     }
 
+
     render(){
         debugger
         if (Object.keys(this.props.businesses).length === 0 || !Array.isArray(this.props.businesses)) {

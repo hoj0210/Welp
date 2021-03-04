@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link, withRouter} from 'react-router-dom';
 import {connect} from 'react-redux'
+
 class SearchBox extends React.Component {
     constructor(props){
         super(props)
@@ -20,6 +21,7 @@ class SearchBox extends React.Component {
     }
 
     handleSubmit(e){
+        debugger
         e.preventDefault()
         this.props.searchBusinesses(this.state.query).then(() => this.props.history.push(`/businesses?query=${this.state.query}`))
     }
@@ -54,6 +56,7 @@ const msp = (state, ownProps) => (
 
     }
 )
+
 
 const mdp = dispatch => (
     {
