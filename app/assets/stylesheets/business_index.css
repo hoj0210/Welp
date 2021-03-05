@@ -45,6 +45,7 @@
 .each-result-container{
     width: 740px;
     margin-bottom: 30px;
+    margin-right: 30px;
     border: 1px solid #EEEEEF;
     border-radius: 4px;
     transition: box-shadow .3s;
@@ -169,5 +170,13 @@
 
 #map-container{
     width: 460px;
-    height: 500px;
+    height: 100%;
+    grid-area: map-container;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.business-index-main{
+    display: flex;
 }

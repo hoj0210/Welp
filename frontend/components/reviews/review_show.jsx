@@ -55,7 +55,7 @@ class ReviewShow extends React.Component {
                          <div className={`dropdown-review`}>
                             <div className="reviewDrpbtwn">
                                 <button onClick={() => this.handleClick(this.props.review.id)}className="review-options">
-                                    <i class="fas fa-ellipsis-h"></i>
+                                    <i className="fas fa-ellipsis-h"></i>
                                 </button>
                             </div>
                             <div id={`myReviewDropdown${this.props.review.id}`} className='review-dropdown-content'>
