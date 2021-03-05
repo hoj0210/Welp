@@ -38,8 +38,10 @@ export default class MarkerManager {
         debugger
         const marker = new google.maps.Marker({
             position: { lat: business.latitude, lng: business.longitude },
-            map: map
+            map: map,
+            title: "hello world"
         })
+        debugger
         this.markers[business.id] = marker
     }
 }
