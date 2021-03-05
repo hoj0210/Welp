@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import SearchBox from '../search_box/search_box';
 import NavBar from '../nav_bar/nav_bar';
 import About from '../about/about';
+import BusinessMap from './business_map';
 
 class BusinessIndex extends React.Component{
     constructor(props){
@@ -142,6 +143,9 @@ class BusinessIndex extends React.Component{
                             })}
                         </div>
                         
+                    </div>
+                    <div>
+                        <BusinessMap/>
                     </div>
                     <div className="splash-about">
                         <About />
