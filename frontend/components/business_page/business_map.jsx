@@ -1,4 +1,5 @@
 import React from 'react'
+import MarkerManager from '../../util/marker_manager';
 
 class BusinessMap extends React.Component{
     constructor(props) {
@@ -11,6 +12,9 @@ class BusinessMap extends React.Component{
         };
 
         this.map = new google.maps.Map(this.mapNode, mapOptions);
+        debugger
+        this.MarkerManager = new MarkerManager(this.map);
+        this.MarkerManager.updateMarkers(this.props.businesses)
     }
 
     render(){
