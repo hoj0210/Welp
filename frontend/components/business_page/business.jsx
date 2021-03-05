@@ -215,7 +215,7 @@ class Business extends React.Component {
                             <div className="business-location-hour-box">
                                 <div className="business-location">
                                     <div className="map-box">
-                                        <BusinessMap business={this.props.business}/>
+                                        <BusinessMap businesses={this.props.business}/>
                                     </div>
                                     {/* <img className="sample-map"src={window.sampleMap} alt=""/> */}
 
