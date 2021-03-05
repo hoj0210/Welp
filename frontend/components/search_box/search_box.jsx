@@ -37,7 +37,7 @@ class SearchBox extends React.Component {
                                 <input className={`search-text${this.type}`}type="text" placeholder="tacos, Japanese, Phil's BBQ..." onChange={this.handleChange('query')}/>
                             </label>
                             <label className={`search-word2${this.type}`}>{this.near}
-                                <input className={`search-text${this.type}`}type="text" placeholder="New York and Los Angeles ONLY FOR NOW" />
+                                <input className={`search-text${this.type}`}type="text" placeholder="Los Angeles ONLY FOR NOW" />
                             </label>
                             <button className={`search-icon-button${this.type}`}>
                                 <img src={window.searchIcon}/>

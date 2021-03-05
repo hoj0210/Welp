@@ -213,7 +213,8 @@
 .business-schedule{
     display: flex;
     position: relative;
-    top: 15px;
+    top: -28px;
+    line-height: 25px;
 }
 
 .each-schedule-day{
