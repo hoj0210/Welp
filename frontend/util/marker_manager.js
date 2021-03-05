@@ -13,7 +13,7 @@ export default class MarkerManager {
         for (let i = 0; i < businesses.length; i++) {
             // const myLatLng = {lat: businesses[i].latitude, lng: businesses[i].longitude};
             debugger
-            this.createMarkerFromBusiness(businesses[i], map);
+            this.createMarkerFromBusiness(businesses[i], map, i);
             // const map = new google.maps.Map(document.getElementById("map-container"), {
             //     center: myLatLng,
             //     zoom: 13,
@@ -34,14 +34,15 @@ export default class MarkerManager {
         console.log("time to update");
     }
 
-    createMarkerFromBusiness(business, map) {
+    createMarkerFromBusiness(business, map, num) {
         debugger
         const marker = new google.maps.Marker({
             position: { lat: business.latitude, lng: business.longitude },
+            label: (num + 1).toString(),
             map: map,
-            title: "hello world"
+            title: business.name
         })
         debugger
-        this.markers[business.id] = marker
+        // this.markers[business.id] = marker
     }
 }
