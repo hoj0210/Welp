@@ -146,7 +146,7 @@ class BusinessIndex extends React.Component{
                             
                         </div>
                         <div>
-                            <BusinessMap/>
+                            <BusinessMap businesses={this.props.businesses}/>
                         </div>
                     </div>
                     <div className="splash-about">
