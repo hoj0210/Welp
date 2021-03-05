@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom';
 import SearchBox from '../search_box/search_box';
 import NavBar from '../nav_bar/nav_bar';
 import About from '../about/about';
-import ReviewIndexContainer from '../reviews/review_index_container'
-
+import ReviewIndexContainer from '../reviews/review_index_container';
+import BusinessMap from './business_map';
 // import ReviewsContainer from '../reviews/reviews_container'
 // import OperationHoursContainer from '../operation_hours/operation_hours_container'
 
@@ -214,7 +214,10 @@ class Business extends React.Component {
                             <p className="location-hours-text">Location and Hours </p>
                             <div className="business-location-hour-box">
                                 <div className="business-location">
-                                    <img className="sample-map"src={window.sampleMap} alt=""/>
+                                    <div className="map-box">
+                                        <BusinessMap business={this.props.business}/>
+                                    </div>
+                                    {/* <img className="sample-map"src={window.sampleMap} alt=""/> */}
 
                                     <ul className="business-street">{this.props.business.address}</ul>
                                     <ul className="business-addy">

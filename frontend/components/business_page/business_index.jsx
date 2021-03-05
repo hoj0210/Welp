@@ -145,7 +145,7 @@ class BusinessIndex extends React.Component{
                             </div>
                             
                         </div>
-                        <div>
+                        <div className="index-map-box">
                             <BusinessMap businesses={this.props.businesses}/>
                         </div>
                     </div>

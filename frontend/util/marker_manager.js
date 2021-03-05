@@ -10,38 +10,37 @@ export default class MarkerManager {
         // let markers = this.markers
         const map = this.map
         debugger
-        for (let i = 0; i < businesses.length; i++) {
-            // const myLatLng = {lat: businesses[i].latitude, lng: businesses[i].longitude};
-            debugger
-            this.createMarkerFromBusiness(businesses[i], map, i);
-            // const map = new google.maps.Map(document.getElementById("map-container"), {
-            //     center: myLatLng,
-            //     zoom: 13,
-            // })
-            // new google.maps.Marker({
-            //     position: myLatLng,
-            //     map,
-            // })
+        if (Array.isArray(businesses)) {
+            for (let i = 0; i < businesses.length; i++) {
+                    debugger
+                    this.createMarkerFromBusiness(businesses[i], map, i);
+                        
+                }
+        } else {
+            this.createMarkerFromBusiness(businesses, map, null)
         }
-        // businesses.forEach(business => {
-        //     const marker = new google.maps.Marker({
-        //         position: new google.maps.LatLng(business.latitude, business.longitude),
-        //         map: map
-        //     })
-        //     debugger
-        //     markers.push(marker);
-        // })
+        
+        
         console.log("time to update");
     }
 
     createMarkerFromBusiness(business, map, num) {
         debugger
-        const marker = new google.maps.Marker({
+        if (num === null) {
+            const marker = new google.maps.Marker({
             position: { lat: business.latitude, lng: business.longitude },
-            label: (num + 1).toString(),
             map: map,
             title: business.name
         })
+        } else {
+            const marker = new google.maps.Marker({
+                position: { lat: business.latitude, lng: business.longitude },
+                label: (num + 1).toString(),
+                map: map,
+                title: business.name
+            }) 
+        }
+        
         debugger
         // this.markers[business.id] = marker
     }
