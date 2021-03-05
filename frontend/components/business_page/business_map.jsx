@@ -8,7 +8,19 @@ class BusinessMap extends React.Component{
     componentDidMount(){
         const mapOptions = {
             center: { lat: 34.047467, lng: -118.245710},
-            zoom: 13
+            zoom: 12
+        };
+
+        this.map = new google.maps.Map(this.mapNode, mapOptions);
+        debugger
+        this.MarkerManager = new MarkerManager(this.map);
+        this.MarkerManager.updateMarkers(this.props.businesses)
+    }
+
+    componentDidUpdate(){
+        const mapOptions = {
+            center: { lat: 34.047467, lng: -118.245710},
+            zoom: 12
         };
 
         this.map = new google.maps.Map(this.mapNode, mapOptions);
