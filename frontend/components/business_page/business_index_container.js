@@ -9,7 +9,7 @@ const msp = (state, ownProps) => {
     debugger
     return(
         {
-            businesses: state.entities.businesses,
+            businesses: Object.values(state.entities.businesses),
             formType: "other_pages",
             currentUser: state.entities.users[state.session.id]
         }
