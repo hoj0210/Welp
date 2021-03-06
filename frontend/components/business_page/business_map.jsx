@@ -14,7 +14,8 @@ class BusinessMap extends React.Component{
         this.map = new google.maps.Map(this.mapNode, mapOptions);
         debugger
         this.MarkerManager = new MarkerManager(this.map);
-        this.MarkerManager.updateMarkers(this.props.businesses)
+        this.MarkerManager.updateMarkers(this.props.businesses);
+        $("#map-container").css("position","none !important");
     }
 
     componentDidUpdate(){
@@ -27,6 +28,7 @@ class BusinessMap extends React.Component{
         debugger
         this.MarkerManager = new MarkerManager(this.map);
         this.MarkerManager.updateMarkers(this.props.businesses)
+        $("#map-container").css("position","none !important");
     }
 
     render(){
