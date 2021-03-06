@@ -4,14 +4,25 @@ import Business from './business'
 import {withRouter} from 'react-router-dom'
 import { logout } from '../../actions/session_actions';
 
-const msp = (state, ownProps) => (
-    {
-        business: state.entities.businesses[ownProps.match.params.businessId],
-        categoryId: ownProps.match.params.categoryId,
-        formType: "other_pages",
-        currentUser: state.entities.users[state.session.id]
-    }
-)
+const msp = (state, ownProps) => {
+    debugger
+    return(
+        {
+            business: state.entities.businesses[ownProps.match.params.businessId],
+            categoryId: ownProps.match.params.categoryId,
+            formType: "other_pages",
+            currentUser: state.entities.users[state.session.id]
+        }
+    )
+}
+// (
+//     {
+//         business: state.entities.businesses[ownProps.match.params.businessId],
+//         categoryId: ownProps.match.params.categoryId,
+//         formType: "other_pages",
+//         currentUser: state.entities.users[state.session.id]
+//     }
+// )
 
 const mdp = dispatch => {
     //debugger

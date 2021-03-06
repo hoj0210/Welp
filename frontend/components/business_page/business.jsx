@@ -87,13 +87,14 @@ class Business extends React.Component {
                     </div>);
     }
     componentDidMount(){
-        //debugger
+        
         this.props.fetchBusiness(this.props.match.params.businessId)
     }
 
     componentDidUpdate(prevProps){
         //debugger
         if (prevProps.match.params.businessId !== this.props.match.params.businessId) {
+            debugger
             this.props.fetchBusiness(this.props.match.params.businessId)
         }
         window.scrollTo(0, 0)
