@@ -6,10 +6,19 @@ class BusinessMap extends React.Component{
         super(props)
     }
     componentDidMount(){
-        const mapOptions = {
-            center: { lat: 34.047467, lng: -118.245710},
-            zoom: 12
-        };
+        let mapOptions;
+        if (Array.isArray(this.props.businesses)) {
+                mapOptions = {
+                center: { lat: this.props.businesses[0].latitude, lng: this.props.businesses[0].longitude},
+                zoom: 12
+            };
+        } else {
+            debugger
+            mapOptions = {
+                center: { lat: this.props.businesses.latitude, lng: this.props.businesses.longitude},
+                zoom: 12
+            }
+        }
 
         this.map = new google.maps.Map(this.mapNode, mapOptions);
         debugger
@@ -19,10 +28,21 @@ class BusinessMap extends React.Component{
     }
 
     componentDidUpdate(){
-        const mapOptions = {
-            center: { lat: 34.047467, lng: -118.245710},
-            zoom: 12
-        };
+        debugger
+        let mapOptions
+        if (Array.isArray(this.props.businesses)) {
+                mapOptions = {
+                center: { lat: this.props.businesses[0].latitude, lng: this.props.businesses[0].longitude},
+                zoom: 12
+            };
+        } else {
+            debugger
+            mapOptions = {
+                center: { lat: this.props.businesses.latitude, lng: this.props.businesses.longitude},
+                zoom: 12
+            }
+        }
+        
 
         this.map = new google.maps.Map(this.mapNode, mapOptions);
         debugger
