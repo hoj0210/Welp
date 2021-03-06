@@ -11,10 +11,12 @@ class BusinessIndex extends React.Component{
         this.state = {
             search: this.props.location.search.split("=")[1]
         }
+        this.mount = false;
     }
 
     componentDidMount(){
         debugger
+        this.mount = true;
         // this.setState({search: this.props.location.search.split("=")[1]})
         if (Object.keys(this.props.businesses).length === 0 || !Array.isArray(this.props.businesses)) {
             debugger
@@ -25,6 +27,7 @@ class BusinessIndex extends React.Component{
 
     componentDidUpdate(prevProps){
         debugger
+        if (!this.mount) this.mount = true;
         if (prevProps.location.search.split("=")[1] !== this.props.location.search.split("=")[1]) {
             debugger
             this.setState({search: this.props.location.search.split("=")[1]})
@@ -34,7 +37,27 @@ class BusinessIndex extends React.Component{
 
     render(){
         debugger
-        if (Object.keys(this.props.businesses).length === 0 || !Array.isArray(this.props.businesses)) {
+        if (this.mount === true && (Object.keys(this.props.businesses).length === 0 || !Array.isArray(this.props.businesses))) {
+            this.mount = false;
+            return (
+                <div>
+                    <div className="business-page-top-index">
+                        <div className="top-header-container">
+                            <Link to="/"><img className="top-logo-sign" src={window.mainLogo} /></Link>
+                            <SearchBox formType={this.props.formType} searchBusinesses={this.props.searchBusinesses}/>
+                            <Link to=""className="top-header-review-link">Write a Review</Link>
+                            <NavBar formType={this.props.formType} currentUser={this.props.currentUser} logout={this.props.logout}/>
+                        </div>    
+                    </div>
+                    <div className="business-index-main">
+                        <p className="best-in">Search not found. Try a different search.</p>
+                    </div>
+                    <div className="splash-about">
+                        <About />
+                    </div>
+                </div>
+            )
+        } else if ( this.mount === false && (Object.keys(this.props.businesses).length === 0 || !Array.isArray(this.props.businesses))) {
             debugger
             return (
                 <div>Loading..</div>
@@ -53,7 +76,7 @@ class BusinessIndex extends React.Component{
                     </div>
                     <div className="business-index-main">
                         <div>
-                            <p className="best-in">Best {this.state.search} in San Francisco, CA.</p>
+                            <p className="best-in">Best {this.state.search} in Los Angeles, CA.</p>
                             <p className="all-results">All Results</p>
                             <div className="results">
                                 {this.props.businesses.map((business, i) => {
