@@ -255,14 +255,13 @@
     font-weight: bold;
     font-family: "Open Sans", "Helvetica Neue", Helvetica;
     color: #2B273C;
-    margin-left: 43px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .business-reviews-container{
-    display: flex;
-    justify-content: center;
+    margin-left: 141px;
+    margin-right: 141px;
 }
 
 #inv-star{
@@ -296,7 +295,7 @@
 }
 
 .business-page-covid-update{
-    height: 175px;
+    height: 150px;
     margin-left: 141px;
 }
 
@@ -306,7 +305,7 @@
     font-family: "Open Sans", "Helvetica Neue", Helvetica;
     color: #2B273C;
     margin-bottom: 25px;
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 .updated-service{
