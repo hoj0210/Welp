@@ -2333,5 +2333,45 @@ b_c28 = BusinessesCategory.create!(business_id: business10.id, category_id: cate
 b_c29 = BusinessesCategory.create!(business_id: business10.id, category_id: category6.id)
 b_c30 = BusinessesCategory.create!(business_id: business10.id, category_id: category10.id)
 
+b_c31 = BusinessesCategory.create!(business_id: business11.id, category_id: category1.id)
+b_c32 = BusinessesCategory.create!(business_id: business11.id, category_id: category6.id)
+b_c33 = BusinessesCategory.create!(business_id: business11.id, category_id: category7.id)
+
+b_c34 = BusinessesCategory.create!(business_id: business12.id, category_id: category3.id)
+b_c35 = BusinessesCategory.create!(business_id: business12.id, category_id: category6.id)
+b_c36 = BusinessesCategory.create!(business_id: business12.id, category_id: category9.id)
+
+b_c37 = BusinessesCategory.create!(business_id: business13.id, category_id: category5.id)
+b_c38 = BusinessesCategory.create!(business_id: business13.id, category_id: category6.id)
+b_c39 = BusinessesCategory.create!(business_id: business13.id, category_id: category8.id)
+
+b_c40 = BusinessesCategory.create!(business_id: business14.id, category_id: category1.id)
+b_c41 = BusinessesCategory.create!(business_id: business14.id, category_id: category6.id)
+b_c42 = BusinessesCategory.create!(business_id: business14.id, category_id: category7.id)
+
+b_c43 = BusinessesCategory.create!(business_id: business15.id, category_id: category4.id)
+b_c44 = BusinessesCategory.create!(business_id: business15.id, category_id: category5.id)
+b_c45 = BusinessesCategory.create!(business_id: business15.id, category_id: category9.id)
+
+b_c46 = BusinessesCategory.create!(business_id: business16.id, category_id: category1.id)
+b_c47 = BusinessesCategory.create!(business_id: business16.id, category_id: category5.id)
+b_c48 = BusinessesCategory.create!(business_id: business16.id, category_id: category7.id)
+
+b_c49 = BusinessesCategory.create!(business_id: business17.id, category_id: category5.id)
+b_c50 = BusinessesCategory.create!(business_id: business17.id, category_id: category6.id)
+b_c51 = BusinessesCategory.create!(business_id: business17.id, category_id: category10.id)
+
+b_c52 = BusinessesCategory.create!(business_id: business18.id, category_id: category2.id)
+b_c53 = BusinessesCategory.create!(business_id: business18.id, category_id: category5.id)
+b_c54 = BusinessesCategory.create!(business_id: business18.id, category_id: category8.id)
+
+b_c55 = BusinessesCategory.create!(business_id: business19.id, category_id: category5.id)
+b_c56 = BusinessesCategory.create!(business_id: business19.id, category_id: category6.id)
+b_c57 = BusinessesCategory.create!(business_id: business19.id, category_id: category9.id)
+
+b_c58 = BusinessesCategory.create!(business_id: business20.id, category_id: category2.id)
+b_c59 = BusinessesCategory.create!(business_id: business20.id, category_id: category5.id)
+b_c60 = BusinessesCategory.create!(business_id: business20.id, category_id: category8.id)
+
 
 
