@@ -32,7 +32,7 @@
 .review-form-main{
     display: flex;
     justify-content: center;
-    height: 900px;
+    height: 100%;
 }
 
 .review-form-guide{
@@ -98,6 +98,7 @@ textarea {
     border: none;
     border-radius: 4px;
     margin-bottom: 40px;
+    margin-top: -15px;
 }
 .review-post-button:hover{
     cursor: pointer;

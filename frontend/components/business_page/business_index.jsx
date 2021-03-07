@@ -45,7 +45,6 @@ class BusinessIndex extends React.Component{
                         <div className="top-header-container">
                             <Link to="/"><img className="top-logo-sign" src={window.mainLogo} /></Link>
                             <SearchBox formType={this.props.formType} searchBusinesses={this.props.searchBusinesses}/>
-                            <Link to=""className="top-header-review-link">Write a Review</Link>
                             <NavBar formType={this.props.formType} currentUser={this.props.currentUser} logout={this.props.logout}/>
                         </div>    
                     </div>
@@ -70,7 +69,6 @@ class BusinessIndex extends React.Component{
                         <div className="top-header-container">
                             <Link to="/"><img className="top-logo-sign" src={window.mainLogo} /></Link>
                             <SearchBox formType={this.props.formType} searchBusinesses={this.props.searchBusinesses}/>
-                            <Link to=""className="top-header-review-link">Write a Review</Link>
                             <NavBar formType={this.props.formType} currentUser={this.props.currentUser} logout={this.props.logout}/>
                         </div>    
                     </div>
