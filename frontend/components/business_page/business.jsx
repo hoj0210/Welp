@@ -174,8 +174,8 @@ class Business extends React.Component {
                         </div> */}
                         <div className="business-pictures-container">
                             {this.props.business.photoUrls.map((photoUrl, i) => (
-                                <img className="business-pictures" key={i} src={photoUrl} alt=""/>
-                                // <img className="business-pictures" key={i} src={window.stockPhoto} alt=""/>
+                                // <img className="business-pictures" key={i} src={photoUrl} alt=""/>
+                                <img className="business-pictures" key={i} src={window.stockPhoto} alt=""/>
                             ))}
                         </div>
                              
@@ -208,6 +208,9 @@ class Business extends React.Component {
                         <div className="business-user-upload-links">
                             <button className="business-review-button" onClick={() => this.props.history.push(`/businesses/${this.props.business.id}/reviews/create`)}><img className="star-icon"src={window.star} alt=""/>Write a Review</button>
                         </div>
+                    </div>
+                    <div className="">
+                                        
                     </div>
                     <div className="business-location-hour-container">
                         <div>
