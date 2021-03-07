@@ -1726,779 +1726,557 @@ schedule15ss = Schedule.create!(
 
 
 
-business1 = Business.create!(
-    name: "Tacos El Gordo",
-    address: "315 Cascade Way",
-    city: "Cypress",
+business16 = Business.create!(
+    name: "King Taco",
+    address: "1299 W. Pico Blvd.",
+    city: "Los Angeles",
     state: "CA",
-    b_zip_code: 90630,
-    phone_num: "(213) 887-9090",
+    b_zip_code: 90010,
+    phone_num: "(213) 767-0010",
     price_range: "$",
-    latitude: 34.010717,
-    longitude: -118.285743,
-    delivery: false,
-    takeout: false,
+    latitude: 34.046399,
+    longitude: -118.257745,
+    delivery: true,
+    takeout: true,
     outdoor: true
 )
-file1_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos2.jpg')
-file1_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos3.jpg')
-file1_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos4.jpg')
-file1_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos5.jpg')
-business1.photos.attach(io: file1_1, filename: "tacos_gordo1.jpg")
-business1.photos.attach(io: file1_2, filename: "tacos_gordo2.jpg")
-business1.photos.attach(io: file1_3, filename: "tacos_gordo3.jpg")
-business1.photos.attach(io: file1_4, filename: "tacos_gordo4.jpg")
-review1a = Review.create!(
+file16_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/king_taco/king_taco1.jpg')
+file16_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/king_taco/king_taco2.jpg')
+file16_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/king_taco/king_taco3.jpg')
+file16_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/king_taco/king_taco4.jpg')
+business16.photos.attach(io: file16_1, filename: "king_taco1.jpg")
+business16.photos.attach(io: file16_2, filename: "king_taco2.jpg")
+business16.photos.attach(io: file16_3, filename: "king_taco3.jpg")
+business16.photos.attach(io: file16_4, filename: "king_taco4.jpg")
+review16a = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
+    rating: 3,
     user_id: user1.id,
-    business_id: business1.id
+    business_id: business16.id
 )
-review1b = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: user2.id,
-    business_id: business1.id
-)
-review1c = Review.create!(
+review16b = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 4,
-    user_id: user3.id,
-    business_id: business1.id
+    user_id: user2.id,
+    business_id: business16.id
 )
-review1d = Review.create!(
+review16c = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: user4.id,
-    business_id: business1.id
+    rating: 3,
+    user_id: user3.id,
+    business_id: business16.id
 )
-review1e = Review.create!(
+review16d = Review.create!(
+    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
+    rating: 4,
+    user_id: user4.id,
+    business_id: business16.id
+)
+review16e = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 2,
     user_id: user5.id,
-    business_id: business1.id
+    business_id: business16.id
 )
-review1f = Review.create!(
+review16f = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 5,
     user_id: user6.id,
-    business_id: business1.id
+    business_id: business16.id
 )
-review1g = Review.create!(
+review16g = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
+    rating: 3,
     user_id: demo_user.id,
-    business_id: business1.id
+    business_id: business16.id
 )
 
-schedule1m = Schedule.create!(
+schedule16m = Schedule.create!(
     day: 'Mon',
     open: "11:00 AM",
     close: "1:00 AM",
-    business_id: business1.id
+    business_id: business16.id
 )
-schedule1t = Schedule.create!(
+schedule16t = Schedule.create!(
     day: 'Tue',
     open: "11:00 AM",
     close: "1:00 AM",
-    business_id: business1.id
+    business_id: business16.id
 )
-schedule1w = Schedule.create!(
+schedule16w = Schedule.create!(
     day: 'Wed',
     open: "11:00 AM",
     close: "1:00 AM",
-    business_id: business1.id
+    business_id: business16.id
 )
-schedule1th = Schedule.create!(
+schedule16th = Schedule.create!(
     day: 'Thu',
     open: "11:00 AM",
     close: "1:00 AM",
-    business_id: business1.id
+    business_id: business16.id
 )
-schedule1f = Schedule.create!(
+schedule16f = Schedule.create!(
     day: 'Fri',
     open: "11:00 AM",
     close: "3:00 AM",
-    business_id: business1.id
+    business_id: business16.id
 )
-schedule1s = Schedule.create!(
+schedule16s = Schedule.create!(
     day: 'Sat',
     open: "11:00 AM",
     close: "3:00 AM",
-    business_id: business1.id
+    business_id: business16.id
 )
-schedule1ss = Schedule.create!(
+schedule16ss = Schedule.create!(
     day: 'Sun',
     open: "11:00 AM",
     close: "1:00 AM",
-    business_id: business1.id
+    business_id: business16.id
 )
 
 
 
 
-business1 = Business.create!(
-    name: "Tacos El Gordo",
-    address: "315 Cascade Way",
-    city: "Cypress",
+business17 = Business.create!(
+    name: "Mastro's Steakhouse",
+    address: "102 Rodeo Drive",
+    city: "Los Angeles",
     state: "CA",
-    b_zip_code: 90630,
-    phone_num: "(213) 887-9090",
-    price_range: "$",
-    latitude: 34.010717,
-    longitude: -118.285743,
+    b_zip_code: 90001,
+    phone_num: "(213) 653-0742",
+    price_range: "$$$$",
+    latitude: 34.042414,
+    longitude: -118.265864,
     delivery: false,
-    takeout: false,
+    takeout: true,
     outdoor: true
 )
-file1_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos2.jpg')
-file1_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos3.jpg')
-file1_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos4.jpg')
-file1_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos5.jpg')
-business1.photos.attach(io: file1_1, filename: "tacos_gordo1.jpg")
-business1.photos.attach(io: file1_2, filename: "tacos_gordo2.jpg")
-business1.photos.attach(io: file1_3, filename: "tacos_gordo3.jpg")
-business1.photos.attach(io: file1_4, filename: "tacos_gordo4.jpg")
-review1a = Review.create!(
+file17_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/mastros/mastros1.jpg')
+file17_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/mastros/mastros2.jpg')
+file17_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/mastros/mastros3.jpg')
+file17_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/mastros/mastros4.jpg')
+business17.photos.attach(io: file17_1, filename: "mastros1.jpg")
+business17.photos.attach(io: file17_2, filename: "mastros2.jpg")
+business17.photos.attach(io: file17_3, filename: "mastros3.jpg")
+business17.photos.attach(io: file17_4, filename: "mastros4.jpg")
+review17a = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 5,
     user_id: user1.id,
-    business_id: business1.id
+    business_id: business17.id
 )
-review1b = Review.create!(
+review17b = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 5,
     user_id: user2.id,
-    business_id: business1.id
+    business_id: business17.id
 )
-review1c = Review.create!(
+review17c = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 4,
     user_id: user3.id,
-    business_id: business1.id
+    business_id: business17.id
 )
-review1d = Review.create!(
+review17d = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 5,
     user_id: user4.id,
-    business_id: business1.id
+    business_id: business17.id
 )
-review1e = Review.create!(
+review17e = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 2,
+    rating: 5,
     user_id: user5.id,
-    business_id: business1.id
+    business_id: business17.id
 )
-review1f = Review.create!(
+review17f = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 5,
     user_id: user6.id,
-    business_id: business1.id
+    business_id: business17.id
 )
-review1g = Review.create!(
+review17g = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 5,
     user_id: demo_user.id,
-    business_id: business1.id
+    business_id: business17.id
 )
 
-schedule1m = Schedule.create!(
+schedule17m = Schedule.create!(
     day: 'Mon',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
+    open: "11:30 AM",
+    close: "11:00 PM",
+    business_id: business17.id
 )
-schedule1t = Schedule.create!(
+schedule17t = Schedule.create!(
     day: 'Tue',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
+    open: "11:30 AM",
+    close: "11:00 PM",
+    business_id: business17.id
 )
-schedule1w = Schedule.create!(
+schedule17w = Schedule.create!(
     day: 'Wed',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
+    open: "11:30 AM",
+    close: "11:00 PM",
+    business_id: business17.id
 )
-schedule1th = Schedule.create!(
+schedule17th = Schedule.create!(
     day: 'Thu',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
+    open: "11:30 AM",
+    close: "11:00 PM",
+    business_id: business17.id
 )
-schedule1f = Schedule.create!(
+schedule17f = Schedule.create!(
     day: 'Fri',
-    open: "11:00 AM",
-    close: "3:00 AM",
-    business_id: business1.id
+    open: "11:30 AM",
+    close: "11:00 PM",
+    business_id: business17.id
 )
-schedule1s = Schedule.create!(
+schedule17s = Schedule.create!(
     day: 'Sat',
-    open: "11:00 AM",
-    close: "3:00 AM",
-    business_id: business1.id
+    open: "11:30 AM",
+    close: "11:00 PM",
+    business_id: business17.id
 )
-schedule1ss = Schedule.create!(
+schedule17ss = Schedule.create!(
     day: 'Sun',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
+    open: "11:30 AM",
+    close: "11:00 PM",
+    business_id: business17.id
 )
 
 
 
 
-business1 = Business.create!(
-    name: "Tacos El Gordo",
-    address: "315 Cascade Way",
-    city: "Cypress",
+business18 = Business.create!(
+    name: "Sake To Me",
+    address: "121 Alexandria Way",
+    city: "Los Angeles",
     state: "CA",
-    b_zip_code: 90630,
-    phone_num: "(213) 887-9090",
-    price_range: "$",
-    latitude: 34.010717,
-    longitude: -118.285743,
-    delivery: false,
-    takeout: false,
+    b_zip_code: 90012,
+    phone_num: "(213) 123-1212",
+    price_range: "$$",
+    latitude: 34.058029,
+    longitude: -118.295180,
+    delivery: true,
+    takeout: true,
     outdoor: true
 )
-file1_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos2.jpg')
-file1_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos3.jpg')
-file1_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos4.jpg')
-file1_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos5.jpg')
-business1.photos.attach(io: file1_1, filename: "tacos_gordo1.jpg")
-business1.photos.attach(io: file1_2, filename: "tacos_gordo2.jpg")
-business1.photos.attach(io: file1_3, filename: "tacos_gordo3.jpg")
-business1.photos.attach(io: file1_4, filename: "tacos_gordo4.jpg")
-review1a = Review.create!(
+file18_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/sake_to_me/sake_to_me1.jpg')
+file18_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/sake_to_me/sake_to_me2.jpg')
+file18_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/sake_to_me/sake_to_me3.jpg')
+file18_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/sake_to_me/sake_to_me4.jpg')
+business18.photos.attach(io: file18_1, filename: "sake_to_me1.jpg")
+business18.photos.attach(io: file18_2, filename: "sake_to_me2.jpg")
+business18.photos.attach(io: file18_3, filename: "sake_to_me3.jpg")
+business18.photos.attach(io: file18_4, filename: "sake_to_me4.jpg")
+review18a = Review.create!(
+    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
+    rating: 4,
+    user_id: user1.id,
+    business_id: business18.id
+)
+review18b = Review.create!(
+    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
+    rating: 5,
+    user_id: user2.id,
+    business_id: business18.id
+)
+review18c = Review.create!(
+    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
+    rating: 5,
+    user_id: user3.id,
+    business_id: business18.id
+)
+review18d = Review.create!(
+    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
+    rating: 4,
+    user_id: user4.id,
+    business_id: business18.id
+)
+review18e = Review.create!(
+    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
+    rating: 3,
+    user_id: user5.id,
+    business_id: business18.id
+)
+review18f = Review.create!(
+    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
+    rating: 5,
+    user_id: user6.id,
+    business_id: business18.id
+)
+review18g = Review.create!(
+    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
+    rating: 4,
+    user_id: demo_user.id,
+    business_id: business18.id
+)
+
+schedule18m = Schedule.create!(
+    day: 'Mon',
+    open: "11:00 AM",
+    close: "10:00 PM",
+    business_id: business18.id
+)
+schedule18t = Schedule.create!(
+    day: 'Tue',
+    open: "11:00 AM",
+    close: "10:00 PM",
+    business_id: business18.id
+)
+schedule18w = Schedule.create!(
+    day: 'Wed',
+    open: "11:00 AM",
+    close: "10:00 PM",
+    business_id: business18.id
+)
+schedule18th = Schedule.create!(
+    day: 'Thu',
+    open: "11:00 AM",
+    close: "10:00 PM",
+    business_id: business18.id
+)
+schedule18f = Schedule.create!(
+    day: 'Fri',
+    open: "11:00 AM",
+    close: "11:00 PM",
+    business_id: business18.id
+)
+schedule18s = Schedule.create!(
+    day: 'Sat',
+    open: "11:00 AM",
+    close: "11:00 PM",
+    business_id: business18.id
+)
+schedule18ss = Schedule.create!(
+    day: 'Sun',
+    open: "11:00 AM",
+    close: "10:00 PM",
+    business_id: business18.id
+)
+
+
+
+
+business19 = Business.create!(
+    name: "Seoul Gamjatang",
+    address: "200 6th Street",
+    city: "Los Angeles",
+    state: "CA",
+    b_zip_code: 90007,
+    phone_num: "(213) 755-1277",
+    price_range: "$$",
+    latitude: 34.052557,
+    longitude: -118.305616,
+    delivery: true,
+    takeout: true,
+    outdoor: true
+)
+file19_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/seoul_gamjatang/seoul_gamjatang1.jpg')
+file19_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/seoul_gamjatang/seoul_gamjatang2.jpg')
+file19_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/seoul_gamjatang/seoul_gamjatang3.jpg')
+file19_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/seoul_gamjatang/seoul_gamjatang4.jpg')
+business19.photos.attach(io: file19_1, filename: "seoul_gamjatang1.jpg")
+business19.photos.attach(io: file19_2, filename: "seoul_gamjatang2.jpg")
+business19.photos.attach(io: file19_3, filename: "seoul_gamjatang3.jpg")
+business19.photos.attach(io: file19_4, filename: "seoul_gamjatang4.jpg")
+review19a = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 5,
     user_id: user1.id,
-    business_id: business1.id
+    business_id: business19.id
 )
-review1b = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: user2.id,
-    business_id: business1.id
-)
-review1c = Review.create!(
+review19b = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 4,
-    user_id: user3.id,
-    business_id: business1.id
+    user_id: user2.id,
+    business_id: business19.id
 )
-review1d = Review.create!(
+review19c = Review.create!(
+    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
+    rating: 3,
+    user_id: user3.id,
+    business_id: business19.id
+)
+review19d = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 5,
     user_id: user4.id,
-    business_id: business1.id
+    business_id: business19.id
 )
-review1e = Review.create!(
+review19e = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 2,
+    rating: 1,
     user_id: user5.id,
-    business_id: business1.id
+    business_id: business19.id
 )
-review1f = Review.create!(
+review19f = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 5,
     user_id: user6.id,
-    business_id: business1.id
+    business_id: business19.id
 )
-review1g = Review.create!(
+review19g = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
+    rating: 4,
     user_id: demo_user.id,
-    business_id: business1.id
+    business_id: business19.id
 )
 
-schedule1m = Schedule.create!(
+schedule19m = Schedule.create!(
     day: 'Mon',
     open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
+    close: "9:30 PM",
+    business_id: business19.id
 )
-schedule1t = Schedule.create!(
+schedule19t = Schedule.create!(
     day: 'Tue',
     open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
+    close: "9:30 PM",
+    business_id: business19.id
 )
-schedule1w = Schedule.create!(
+schedule19w = Schedule.create!(
     day: 'Wed',
     open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
+    close: "9:30 PM",
+    business_id: business19.id
 )
-schedule1th = Schedule.create!(
+schedule19th = Schedule.create!(
     day: 'Thu',
     open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
+    close: "9:30 PM",
+    business_id: business19.id
 )
-schedule1f = Schedule.create!(
+schedule19f = Schedule.create!(
     day: 'Fri',
     open: "11:00 AM",
-    close: "3:00 AM",
-    business_id: business1.id
+    close: "9:30 PM",
+    business_id: business19.id
 )
-schedule1s = Schedule.create!(
+schedule19s = Schedule.create!(
     day: 'Sat',
     open: "11:00 AM",
-    close: "3:00 AM",
-    business_id: business1.id
+    close: "9:30 PM",
+    business_id: business19.id
 )
-schedule1ss = Schedule.create!(
+schedule19ss = Schedule.create!(
     day: 'Sun',
     open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
+    close: "9:30 PM",
+    business_id: business19.id
 )
 
 
 
 
-business1 = Business.create!(
-    name: "Tacos El Gordo",
-    address: "315 Cascade Way",
-    city: "Cypress",
+
+business20 = Business.create!(
+    name: "Sugarfish Sushi",
+    address: "203 Rodeo Drive",
+    city: "Los Angeles",
     state: "CA",
-    b_zip_code: 90630,
-    phone_num: "(213) 887-9090",
-    price_range: "$",
-    latitude: 34.010717,
-    longitude: -118.285743,
+    b_zip_code: 90016,
+    phone_num: "(213) 555-1758",
+    price_range: "$$$",
+    latitude: 34.050628,
+    longitude: -118.247337,
     delivery: false,
-    takeout: false,
+    takeout: true,
     outdoor: true
 )
-file1_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos2.jpg')
-file1_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos3.jpg')
-file1_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos4.jpg')
-file1_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos5.jpg')
-business1.photos.attach(io: file1_1, filename: "tacos_gordo1.jpg")
-business1.photos.attach(io: file1_2, filename: "tacos_gordo2.jpg")
-business1.photos.attach(io: file1_3, filename: "tacos_gordo3.jpg")
-business1.photos.attach(io: file1_4, filename: "tacos_gordo4.jpg")
-review1a = Review.create!(
+file20_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/sugarfish/sugarfish1.jpg')
+file20_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/sugarfish/sugarfish2.jpg')
+file20_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/sugarfish/sugarfish3.jpg')
+file20_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/sugarfish/sugarfish4.jpg')
+business20.photos.attach(io: file20_1, filename: "sugarfish1.jpg")
+business20.photos.attach(io: file20_2, filename: "sugarfish2.jpg")
+business20.photos.attach(io: file20_3, filename: "sugarfish3.jpg")
+business20.photos.attach(io: file20_4, filename: "sugarfish4.jpg")
+review20a = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 5,
     user_id: user1.id,
-    business_id: business1.id
+    business_id: business20.id
 )
-review1b = Review.create!(
+review20b = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 5,
     user_id: user2.id,
-    business_id: business1.id
+    business_id: business20.id
 )
-review1c = Review.create!(
+review20c = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 4,
+    rating: 5,
     user_id: user3.id,
-    business_id: business1.id
+    business_id: business20.id
 )
-review1d = Review.create!(
+review20d = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 5,
     user_id: user4.id,
-    business_id: business1.id
+    business_id: business20.id
 )
-review1e = Review.create!(
+review20e = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 2,
     user_id: user5.id,
-    business_id: business1.id
+    business_id: business20.id
 )
-review1f = Review.create!(
+review20f = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 5,
     user_id: user6.id,
-    business_id: business1.id
+    business_id: business20.id
 )
-review1g = Review.create!(
+review20g = Review.create!(
     message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
     rating: 5,
     user_id: demo_user.id,
-    business_id: business1.id
+    business_id: business20.id
 )
 
-schedule1m = Schedule.create!(
+schedule20m = Schedule.create!(
     day: 'Mon',
     open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
+    close: "8:30 PM",
+    business_id: business20.id
 )
-schedule1t = Schedule.create!(
+schedule20t = Schedule.create!(
     day: 'Tue',
     open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
+    close: "8:30 PM",
+    business_id: business20.id
 )
-schedule1w = Schedule.create!(
+schedule20w = Schedule.create!(
     day: 'Wed',
     open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
+    close: "8:30 PM",
+    business_id: business20.id
 )
-schedule1th = Schedule.create!(
+schedule20th = Schedule.create!(
     day: 'Thu',
     open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
+    close: "8:30 PM",
+    business_id: business20.id
 )
-schedule1f = Schedule.create!(
+schedule20f = Schedule.create!(
     day: 'Fri',
     open: "11:00 AM",
-    close: "3:00 AM",
-    business_id: business1.id
+    close: "8:30 PM",
+    business_id: business20.id
 )
-schedule1s = Schedule.create!(
+schedule20s = Schedule.create!(
     day: 'Sat',
     open: "11:00 AM",
-    close: "3:00 AM",
-    business_id: business1.id
+    close: "8:30 PM",
+    business_id: business20.id
 )
-schedule1ss = Schedule.create!(
+schedule20ss = Schedule.create!(
     day: 'Sun',
     open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
-)
-
-
-
-
-
-business1 = Business.create!(
-    name: "Tacos El Gordo",
-    address: "315 Cascade Way",
-    city: "Cypress",
-    state: "CA",
-    b_zip_code: 90630,
-    phone_num: "(213) 887-9090",
-    price_range: "$",
-    latitude: 34.010717,
-    longitude: -118.285743,
-    delivery: false,
-    takeout: false,
-    outdoor: true
-)
-file1_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos2.jpg')
-file1_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos3.jpg')
-file1_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos4.jpg')
-file1_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos5.jpg')
-business1.photos.attach(io: file1_1, filename: "tacos_gordo1.jpg")
-business1.photos.attach(io: file1_2, filename: "tacos_gordo2.jpg")
-business1.photos.attach(io: file1_3, filename: "tacos_gordo3.jpg")
-business1.photos.attach(io: file1_4, filename: "tacos_gordo4.jpg")
-review1a = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: user1.id,
-    business_id: business1.id
-)
-review1b = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: user2.id,
-    business_id: business1.id
-)
-review1c = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 4,
-    user_id: user3.id,
-    business_id: business1.id
-)
-review1d = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: user4.id,
-    business_id: business1.id
-)
-review1e = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 2,
-    user_id: user5.id,
-    business_id: business1.id
-)
-review1f = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: user6.id,
-    business_id: business1.id
-)
-review1g = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: demo_user.id,
-    business_id: business1.id
-)
-
-schedule1m = Schedule.create!(
-    day: 'Mon',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
-)
-schedule1t = Schedule.create!(
-    day: 'Tue',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
-)
-schedule1w = Schedule.create!(
-    day: 'Wed',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
-)
-schedule1th = Schedule.create!(
-    day: 'Thu',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
-)
-schedule1f = Schedule.create!(
-    day: 'Fri',
-    open: "11:00 AM",
-    close: "3:00 AM",
-    business_id: business1.id
-)
-schedule1s = Schedule.create!(
-    day: 'Sat',
-    open: "11:00 AM",
-    close: "3:00 AM",
-    business_id: business1.id
-)
-schedule1ss = Schedule.create!(
-    day: 'Sun',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
-)
-
-
-
-
-business1 = Business.create!(
-    name: "Tacos El Gordo",
-    address: "315 Cascade Way",
-    city: "Cypress",
-    state: "CA",
-    b_zip_code: 90630,
-    phone_num: "(213) 887-9090",
-    price_range: "$",
-    latitude: 34.010717,
-    longitude: -118.285743,
-    delivery: false,
-    takeout: false,
-    outdoor: true
-)
-file1_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos2.jpg')
-file1_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos3.jpg')
-file1_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos4.jpg')
-file1_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos5.jpg')
-business1.photos.attach(io: file1_1, filename: "tacos_gordo1.jpg")
-business1.photos.attach(io: file1_2, filename: "tacos_gordo2.jpg")
-business1.photos.attach(io: file1_3, filename: "tacos_gordo3.jpg")
-business1.photos.attach(io: file1_4, filename: "tacos_gordo4.jpg")
-review1a = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: user1.id,
-    business_id: business1.id
-)
-review1b = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: user2.id,
-    business_id: business1.id
-)
-review1c = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 4,
-    user_id: user3.id,
-    business_id: business1.id
-)
-review1d = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: user4.id,
-    business_id: business1.id
-)
-review1e = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 2,
-    user_id: user5.id,
-    business_id: business1.id
-)
-review1f = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: user6.id,
-    business_id: business1.id
-)
-review1g = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: demo_user.id,
-    business_id: business1.id
-)
-
-schedule1m = Schedule.create!(
-    day: 'Mon',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
-)
-schedule1t = Schedule.create!(
-    day: 'Tue',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
-)
-schedule1w = Schedule.create!(
-    day: 'Wed',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
-)
-schedule1th = Schedule.create!(
-    day: 'Thu',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
-)
-schedule1f = Schedule.create!(
-    day: 'Fri',
-    open: "11:00 AM",
-    close: "3:00 AM",
-    business_id: business1.id
-)
-schedule1s = Schedule.create!(
-    day: 'Sat',
-    open: "11:00 AM",
-    close: "3:00 AM",
-    business_id: business1.id
-)
-schedule1ss = Schedule.create!(
-    day: 'Sun',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
-)
-
-
-
-
-business1 = Business.create!(
-    name: "Tacos El Gordo",
-    address: "315 Cascade Way",
-    city: "Cypress",
-    state: "CA",
-    b_zip_code: 90630,
-    phone_num: "(213) 887-9090",
-    price_range: "$",
-    latitude: 34.010717,
-    longitude: -118.285743,
-    delivery: false,
-    takeout: false,
-    outdoor: true
-)
-file1_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos2.jpg')
-file1_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos3.jpg')
-file1_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos4.jpg')
-file1_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/tacos_el_gordo/tacos5.jpg')
-business1.photos.attach(io: file1_1, filename: "tacos_gordo1.jpg")
-business1.photos.attach(io: file1_2, filename: "tacos_gordo2.jpg")
-business1.photos.attach(io: file1_3, filename: "tacos_gordo3.jpg")
-business1.photos.attach(io: file1_4, filename: "tacos_gordo4.jpg")
-review1a = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: user1.id,
-    business_id: business1.id
-)
-review1b = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: user2.id,
-    business_id: business1.id
-)
-review1c = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 4,
-    user_id: user3.id,
-    business_id: business1.id
-)
-review1d = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: user4.id,
-    business_id: business1.id
-)
-review1e = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 2,
-    user_id: user5.id,
-    business_id: business1.id
-)
-review1f = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: user6.id,
-    business_id: business1.id
-)
-review1g = Review.create!(
-    message: "I've been to more than a few Taco trucks in North Hollywood and this one by far is my Favorite Go-To spot. The food always tastes fresh and the staff is very attentive. The asada is great and so is the al pastor do yourself a favor and spend the extra .25 cents to get the handmade tortillas. Tacos are 1.25 regular or 1.50 for handmade tortillas. Recently they've been giving away a free fresh of either Horcharta, Jamaica or Strawberry juice with every purchase. They are happy to give you grilled jalapeños or onions upon request and with every order they give you a tostada with beans . This truck is open til 3am so it's a great after club spot to grab a bite. When you stop by please make sure to tip the staff they are awesome and seriously go above and beyond. Beware that there is another taco truck nearby that really isn't anywhere near as good",
-    rating: 5,
-    user_id: demo_user.id,
-    business_id: business1.id
-)
-
-schedule1m = Schedule.create!(
-    day: 'Mon',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
-)
-schedule1t = Schedule.create!(
-    day: 'Tue',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
-)
-schedule1w = Schedule.create!(
-    day: 'Wed',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
-)
-schedule1th = Schedule.create!(
-    day: 'Thu',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
-)
-schedule1f = Schedule.create!(
-    day: 'Fri',
-    open: "11:00 AM",
-    close: "3:00 AM",
-    business_id: business1.id
-)
-schedule1s = Schedule.create!(
-    day: 'Sat',
-    open: "11:00 AM",
-    close: "3:00 AM",
-    business_id: business1.id
-)
-schedule1ss = Schedule.create!(
-    day: 'Sun',
-    open: "11:00 AM",
-    close: "1:00 AM",
-    business_id: business1.id
+    close: "8:30 PM",
+    business_id: business20.id
 )
 
 
