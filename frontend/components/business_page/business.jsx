@@ -213,9 +213,9 @@ class Business extends React.Component {
                         <p className="covid-title">COVID-19 Updates</p>  
                         <p className="updated-service">Updated Services</p>
                         <div className="business-show-result-bools">
-                            <p className="result-boolean">{this.props.business.delivery ? <img className="result-bool" src={window.yes}/> : <img className="result-bool"src={window.no}/>} Delivery</p>
-                            <p className="result-boolean">{this.props.business.takeout ? <img className="result-bool"src={window.yes}/> : <img className="result-bool"src={window.no}/>} Takeout</p>
-                            <p className="result-boolean">{this.props.business.outdoor ? <img className="result-bool"src={window.yes}/> : <img className="result-bool"src={window.no}/>} Outdoor seating</p>
+                            <p className="business-show-result-boolean">{this.props.business.delivery ? <img className="result-bool" src={window.yes}/> : <img className="result-bool"src={window.no}/>} Delivery</p>
+                            <p className="business-show-result-boolean">{this.props.business.takeout ? <img className="result-bool"src={window.yes}/> : <img className="result-bool"src={window.no}/>} Takeout</p>
+                            <p className="business-show-result-boolean">{this.props.business.outdoor ? <img className="result-bool"src={window.yes}/> : <img className="result-bool"src={window.no}/>} Outdoor seating</p>
                         </div>
                     </div>
                     <div className="business-location-hour-container">
