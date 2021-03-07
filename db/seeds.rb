@@ -521,10 +521,10 @@ business5 = Business.create!(
     takeout: true,
     outdoor: false
 )
-file5_1 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/blue_bottle/blue_bottle1.jpg')
+file5_1 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/blue_bottle/blue_bottle4.jpg')
 file5_2 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/blue_bottle/blue_bottle2.jpg')
 file5_3 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/blue_bottle/blue_bottle3.jpg')
-file5_4 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/blue_bottle/blue_bottle4.jpg')
+file5_4 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/blue_bottle/blue_bottle1.jpg')
 business5.photos.attach(io: file5_1, filename: "blue_bottle_coffee1.jpg")
 business5.photos.attach(io: file5_2, filename: "blue_bottle_coffee2.jpg")
 business5.photos.attach(io: file5_3, filename: "blue_bottle_coffee3.jpg")
@@ -631,8 +631,8 @@ business6 = Business.create!(
     takeout: true,
     outdoor: true
 )
-file6_1 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/innout/innout1.jpg')
-file6_2 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/innout/innout2.jpg')
+file6_1 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/innout/innout2.jpg')
+file6_2 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/innout/innout1.jpg')
 file6_3 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/innout/innout3.jpg')
 file6_4 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/innout/innout4.jpg')
 business6.photos.attach(io: file6_1, filename: "innout_1.jpg")
@@ -853,10 +853,10 @@ business8 = Business.create!(
     takeout: true,
     outdoor: true
 )
-file8_1 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/ozen/ozen1.jpg')
+file8_1 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/ozen/ozen4.jpg')
 file8_2 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/ozen/ozen2.jpg')
 file8_3 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/ozen/ozen3.jpg')
-file8_4 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/ozen/ozen4.jpg')
+file8_4 = URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics/ozen/ozen1.jpg')
 business8.photos.attach(io: file8_1, filename: "ozen_sushi1.jpg")
 business8.photos.attach(io: file8_2, filename: "ozen_sushi2.jpg")
 business8.photos.attach(io: file8_3, filename: "ozen_sushi3.jpg")
@@ -1407,9 +1407,9 @@ business13 = Business.create!(
     takeout: true,
     outdoor: false
 )
-file13_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/daikokuya/daikokuya1.jpg')
+file13_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/daikokuya/daikokuya3.jpg')
 file13_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/daikokuya/daikokuya2.jpg')
-file13_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/daikokuya/daikokuya3.jpg')
+file13_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/daikokuya/daikokuya1.jpg')
 file13_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/daikokuya/daikokuya4.jpg')
 business13.photos.attach(io: file13_1, filename: "daikokuya1.jpg")
 business13.photos.attach(io: file13_2, filename: "daikokuya2.jpg")
@@ -1518,10 +1518,10 @@ business14 = Business.create!(
     takeout: true,
     outdoor: true
 )
-file14_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/el_taurino/el_taurino1.jpg')
+file14_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/el_taurino/el_taurino4.jpg')
 file14_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/el_taurino/el_taurino2.jpg')
 file14_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/el_taurino/el_taurino3.jpg')
-file14_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/el_taurino/el_taurino4.jpg')
+file14_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/el_taurino/el_taurino1.jpg')
 business14.photos.attach(io: file14_1, filename: "el_taurino1.jpg")
 business14.photos.attach(io: file14_2, filename: "el_taurino2.jpg")
 business14.photos.attach(io: file14_3, filename: "el_taurino3.jpg")
@@ -1629,10 +1629,10 @@ business15 = Business.create!(
     takeout: true,
     outdoor: true
 )
-file15_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/jangmojip/jangmojip1.jpg')
+file15_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/jangmojip/jangmojip4.jpg')
 file15_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/jangmojip/jangmojip2.jpg')
 file15_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/jangmojip/jangmojip3.jpg')
-file15_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/jangmojip/jangmojip4.jpg')
+file15_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/jangmojip/jangmojip1.jpg')
 business15.photos.attach(io: file15_1, filename: "jangmojip1.jpg")
 business15.photos.attach(io: file15_2, filename: "jangmojip2.jpg")
 business15.photos.attach(io: file15_3, filename: "jangmojip3.jpg")
@@ -1851,8 +1851,8 @@ business17 = Business.create!(
     takeout: true,
     outdoor: true
 )
-file17_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/mastros/mastros1.jpg')
-file17_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/mastros/mastros2.jpg')
+file17_1= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/mastros/mastros2.jpg')
+file17_2= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/mastros/mastros1.jpg')
 file17_3= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/mastros/mastros3.jpg')
 file17_4= URI.open('https://welp-aa-seed.s3-us-west-1.amazonaws.com/business_pics2/mastros/mastros4.jpg')
 business17.photos.attach(io: file17_1, filename: "mastros1.jpg")
