@@ -11,13 +11,18 @@
 
 .business-page-link-container{
     height: 97px;
+    border-bottom: 1px solid lightgrey;
+    margin-left: 141px;
+    margin-right: 141px;
 }
 
 .business-location-hour-container{
     height: 400px;
-    background-color:#F5F5F5;
-    display: flex;
     justify-content: center;
+    margin-left: 141px;
+    margin-right: 141px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 
 .search-box-container-splash{
@@ -105,9 +110,8 @@
     background-color: #F43939;
     width: 180px;
     outline: none;
-    margin: 23px;
+    margin-top: 26px;
     padding-bottom: 6px;
-    margin-left: 141px;
 }
 
 .business-review-button:hover{
@@ -233,15 +237,10 @@
     font-weight: 540;
 }
 
-.business-location{
-    margin-left: 40px;
-}
-
 .location-hours-text{
     font-size: 20px;
     font-family: "Open Sans", Helvetica, "Helvetica Neue";
     font-weight: bold;
-    margin-left: 40px;
     margin-top: 20px;
     margin-bottom: 25px;
     padding-top: 25px;
@@ -298,7 +297,7 @@
 
 .business-page-covid-update{
     height: 175px;
-    margin-left: 140px;
+    margin-left: 141px;
 }
 
 .covid-title{
@@ -306,6 +305,8 @@
     font-weight: bold;
     font-family: "Open Sans", "Helvetica Neue", Helvetica;
     color: #2B273C;
+    margin-bottom: 25px;
+    margin-top: 30px;
 }
 
 .updated-service{
@@ -313,9 +314,17 @@
     font-weight: bold;
     font-family: "Open Sans", "Helvetica Neue", Helvetica;
     color: #2B273C;
+    margin-bottom: 20px;
 }
 
 .business-show-result-bools{
     font-family: "Open Sans", "Helvetica Neue", Helvetica;
     font-size: 16px;
+    font-weight: 500;
+    display: flex;
+
+}
+
+.business-show-result-boolean{
+    margin-right: 12px;
 }
