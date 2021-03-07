@@ -5,14 +5,15 @@ import Rating from 'react-rating';
 
 class UpdateReviewForm extends React.Component {
     constructor(props){
+        debugger
         super(props)
         this.state = {
-            message: this.props.review.message,
-            rating: this.props.review.rating,
+            message: this.props.review,
+            rating: this.props.review,
             user_id: this.props.user_id,
             //match.params will always give back string.
-            business_id: parseInt(this.props.match.params.businessId),
-            id: parseInt(this.props.match.params.reviewId)
+            business_id: this.props.match.params.businessId,
+            id: this.props.match.params.reviewId
         }
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleRatingChange = this.handleRatingChange.bind(this);
@@ -93,8 +94,19 @@ class UpdateReviewForm extends React.Component {
     }
 
     componentDidMount(){
-        //debugger
+        debugger
         this.props.fetchBusiness(this.props.match.params.businessId)
+        this.props.fetchReviews(this.props.match.params.businessId).then(() => {
+            this.setState({
+                message: this.props.review ? this.props.review.message : "",
+                rating: this.props.review ? this.props.review.rating : "",
+                user_id: this.props.user_id ? this.props.user_id : "",
+                //match.params will always give back string.
+                business_id: this.props.match.params.businessId ? parseInt(this.props.match.params.businessId) : "",
+                id: this.props.match.params.reviewId ? parseInt(this.props.match.params.reviewId) : ""
+            })
+
+        })
     }
 
     handleSubmit(e){
@@ -117,7 +129,8 @@ class UpdateReviewForm extends React.Component {
     }
 
     render(){
-        if (!this.props.business) {
+        debugger
+        if (!this.props.business || this.state.message === "") {
             return (
                 <div>Loading..</div>
             )
@@ -183,7 +196,7 @@ class UpdateReviewForm extends React.Component {
                                     {/* <input type="number" min="1" max="5" className="rating-number"value={this.state.rating} onChange={this.handleChange("rating")}/> */}
                                     <textarea className="text-area-text"value={this.state.message} onChange={this.handleChange("message")} ></textarea>
                                 </div>
-                                <div>
+                                {/* <div>
                                     <h1 className="review-form-attach-photos">Attach Photos</h1>
                                     <div className="just-box">
                                         <div className="attach-picture">
@@ -191,7 +204,7 @@ class UpdateReviewForm extends React.Component {
                                         </div>
                                     </div>
                                     
-                                </div>
+                                </div> */}
                             </div>
                             <button className="review-post-button">Post Review</button>
                         </form>
