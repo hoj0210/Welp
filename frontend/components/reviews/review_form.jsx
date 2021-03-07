@@ -182,15 +182,18 @@ class ReviewForm extends React.Component {
                                     <textarea className="text-area-text"value={this.state.message} onChange={this.handleChange("message")} 
                                     placeholder="It's amazing that they've added delivery due to COVID. The delivery wasn't perfert--they forgot one of my side dishes--but I understand this is a new operation for them at this time. Even so, the burrito was delicious and more than made up for it!"></textarea>
                                 </div>
-                                <div>
+                                {/* <div>
                                     <h1 className="review-form-attach-photos">Attach Photos</h1>
+                                    <div className="business-img-container">
+                                        <input type="file" onChange={e => this.setState({photos: e.target.files})} multiple/>
+                                    </div>
                                     <div className="just-box">
                                         <div className="attach-picture">
                                             <img className="add-photo-icon" src={window.addPhoto} alt=""/>
                                         </div>
                                     </div>
                                     
-                                </div>
+                                </div> */}
                             </div>
                             <button className="review-post-button">Post Review</button>
                         </form>

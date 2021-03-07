@@ -244,7 +244,7 @@
     z-index: 1;
     background-color: white;
     width: 218px;
-    right: 20px;
+    right: -170px;
     top: 41px;
     border-radius: 3px;
     box-shadow: 0 3px 3px darkgrey;
@@ -269,11 +269,30 @@
     display: block;
 } */
 
-.signed-on-button{
+.signed-on-button-splash{
     background-color: transparent;
     border: none;
     outline: none;
     min-width: 100px;
+}
+
+.signed-on-button-review_pages{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    min-width: 100px;
+    position: relative;
+    left: -144px;
+    bottom: 3px;
+}
+
+.signed-on-button-other_pages{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    min-width: 100px;
+    position: relative;
+    left: 190px;
 }
 
 /* .signed-on-button:hover{

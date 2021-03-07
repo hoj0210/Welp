@@ -50,7 +50,7 @@ class NavBar extends React.Component {
                 {/* <button className={`logout-button${this.type}`} onClick={() => props.logout()}>Log Out</button> */}
                 <div className={`dropdown-${this.type}`}>
                     <div className="drpbtwn">
-                        <button onClick={() => this.handleClick()}className="signed-on-button">
+                        <button onClick={() => this.handleClick()}className={`signed-on-button-${this.type}`}>
                             <img className="profile" src={this.chooseProfile()} />
                             <img className="down-arrow" src={window.downArrow} />
                         </button>
