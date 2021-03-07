@@ -295,3 +295,27 @@
     width: 315px;
     height: 150px;
 }
+
+.business-page-covid-update{
+    height: 175px;
+    margin-left: 140px;
+}
+
+.covid-title{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica;
+    color: #2B273C;
+}
+
+.updated-service{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica;
+    color: #2B273C;
+}
+
+.business-show-result-bools{
+    font-family: "Open Sans", "Helvetica Neue", Helvetica;
+    font-size: 16px;
+}
