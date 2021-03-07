@@ -1,10 +1,11 @@
 import { connect } from 'react-redux';
 import UpdateReviewForm from './update_review_form'
-import { updateReview } from '../../actions/review_actions'
+import { updateReview, fetchReviews } from '../../actions/review_actions'
 import { fetchBusiness } from '../../actions/business_actions'
 import { logout } from '../../actions/session_actions';
 
 const msp = (state, ownProps) => {
+    debugger
     return {
         business: state.entities.businesses[ownProps.match.params.businessId],
         user_id: state.session.id,
@@ -17,6 +18,7 @@ const msp = (state, ownProps) => {
 const mdp = dispatch =>(
     {
         fetchBusiness: (businessId) => dispatch(fetchBusiness(businessId)),
+        fetchReviews: (businessId) => dispatch(fetchReviews(businessId)),
         updateReview: (review, businessId) => dispatch(updateReview(review, businessId)),
         logout: () => dispatch(logout())
     }
