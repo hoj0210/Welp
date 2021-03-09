@@ -48,7 +48,7 @@ class LoginForm extends React.Component {
             <div id="wrapper">
                 <div className="session-form">
                     <div className="session-form-top">
-                        <Link to="/"><img className="welplogo" src="https://vivalajaiba.com/wp-content/uploads/2018/07/yelp-logo.png"/></Link>
+                        <Link to="/"><img className="welplogo" src={window.mainLogo}/></Link>
                     </div>
                     <div className="session-errors-container">
                         <div className={classNameErrors}>
