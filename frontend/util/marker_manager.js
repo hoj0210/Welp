@@ -19,9 +19,6 @@ export default class MarkerManager {
         } else {
             this.createMarkerFromBusiness(businesses, map, null)
         }
-        
-        
-        console.log("time to update");
     }
 
     createMarkerFromBusiness(business, map, num) {

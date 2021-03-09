@@ -42,7 +42,6 @@ class LoginForm extends React.Component {
     }
 
     render(){
-        //console.log(errors)
         const classNameErrors = (this.props.errors.length !== 0) ? "session-errors-box-login" : ""
         return(
             <div id="wrapper">
