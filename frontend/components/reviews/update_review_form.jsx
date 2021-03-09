@@ -5,7 +5,7 @@ import Rating from 'react-rating';
 
 class UpdateReviewForm extends React.Component {
     constructor(props){
-        debugger
+    
         super(props)
         this.state = {
             message: this.props.review,
@@ -21,11 +21,11 @@ class UpdateReviewForm extends React.Component {
     }
 
     handleHover(n){
-        // debugger
+        //
         if (this.state.rating === '') {
             const ratingText = document.getElementById("rating-text");
             if (n === 1) {
-                // debugger
+                //
                 ratingText.innerText = "Not good"
             } else if (n === 2) {
                 ratingText.innerText = "Could've been better"
@@ -42,7 +42,7 @@ class UpdateReviewForm extends React.Component {
         } else {
             const ratingText = document.getElementById("rating-text");
             if (n === 1) {
-                // debugger
+                //
                 ratingText.innerText = "Not good"
             } else if (n === 2) {
                 ratingText.innerText = "Could've been better"
@@ -54,7 +54,7 @@ class UpdateReviewForm extends React.Component {
                 ratingText.innerText = "Great"
             } else {
                 if (this.state.rating === 1) {
-                    // debugger
+                    //
                     ratingText.innerText = "Not good"
                 } else if (this.state.rating === 2) {
                     ratingText.innerText = "Could've been better"
@@ -94,7 +94,7 @@ class UpdateReviewForm extends React.Component {
     }
 
     componentDidMount(){
-        debugger
+    
         this.props.fetchBusiness(this.props.match.params.businessId)
         this.props.fetchReviews(this.props.match.params.businessId).then(() => {
             this.setState({
@@ -129,7 +129,7 @@ class UpdateReviewForm extends React.Component {
     }
 
     render(){
-        debugger
+    
         if (!this.props.business || this.state.message === "") {
             return (
                 <div>Loading..</div>

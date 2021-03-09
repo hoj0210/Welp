@@ -17,11 +17,11 @@ const receiveBusinesses = (businesses) => (
     }
 )
 export const fetchBusiness = (businessId) => dispatch => {
-    //debugger
+    
     return(
         BusinessApiUtil.fetchBusiness(businessId)
             .then((business) => {
-                //debugger
+                
                 return (
                     dispatch(receiveBusiness(business))
                 )
@@ -31,11 +31,10 @@ export const fetchBusiness = (businessId) => dispatch => {
 
 
 export const fetchBusinesses = () => dispatch => {
-    debugger
     return(
         BusinessApiUtil.fetchBusinesses()
             .then((businesses) => {
-                debugger
+        
                 return (
                     dispatch(receiveBusinesses(businesses))
                 )

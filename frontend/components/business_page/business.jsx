@@ -92,9 +92,9 @@ class Business extends React.Component {
     }
 
     componentDidUpdate(prevProps){
-        //debugger
+        //
         if (prevProps.match.params.businessId !== this.props.match.params.businessId) {
-            debugger
+            
             this.props.fetchBusiness(this.props.match.params.businessId)
         }
         window.scrollTo(0, 0)
@@ -118,14 +118,14 @@ class Business extends React.Component {
         }
     }
     render(){
-        debugger
+        
         if (!this.props.business) {
-            //debugger
+            //
             return (
                 <div>Loading..</div>
             )
         } else {
-            debugger
+            
             let finalRating = 0;
             if (this.props.business.reviews.length === 0) {
                 finalRating = 5.00.toFixed(2);

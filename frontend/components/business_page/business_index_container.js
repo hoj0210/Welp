@@ -6,7 +6,6 @@ import { logout } from '../../actions/session_actions';
 import { searchBusinesses } from '../../actions/business_actions';
 
 const msp = (state, ownProps) => {
-    debugger
     return(
         {
             businesses: Object.values(state.entities.businesses),

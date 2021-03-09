@@ -5,7 +5,6 @@ import { fetchBusiness } from '../../actions/business_actions'
 import { logout } from '../../actions/session_actions';
 
 const msp = (state, ownProps) => {
-    debugger
     return {
         business: state.entities.businesses[ownProps.match.params.businessId],
         user_id: state.session.id,

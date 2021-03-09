@@ -13,7 +13,7 @@ class BusinessMap extends React.Component{
                 zoom: 12
             };
         } else {
-            debugger
+            
             mapOptions = {
                 center: { lat: this.props.businesses.latitude, lng: this.props.businesses.longitude},
                 zoom: 12
@@ -21,14 +21,14 @@ class BusinessMap extends React.Component{
         }
 
         this.map = new google.maps.Map(this.mapNode, mapOptions);
-        debugger
+        
         this.MarkerManager = new MarkerManager(this.map);
         this.MarkerManager.updateMarkers(this.props.businesses);
         $("#map-container").css("position","none !important");
     }
 
     componentDidUpdate(){
-        debugger
+        
         let mapOptions
         if (Array.isArray(this.props.businesses)) {
                 mapOptions = {
@@ -36,7 +36,7 @@ class BusinessMap extends React.Component{
                 zoom: 12
             };
         } else {
-            debugger
+            
             mapOptions = {
                 center: { lat: this.props.businesses.latitude, lng: this.props.businesses.longitude},
                 zoom: 12
@@ -45,7 +45,7 @@ class BusinessMap extends React.Component{
         
 
         this.map = new google.maps.Map(this.mapNode, mapOptions);
-        debugger
+        
         this.MarkerManager = new MarkerManager(this.map);
         this.MarkerManager.updateMarkers(this.props.businesses)
         $("#map-container").css("position","none !important");

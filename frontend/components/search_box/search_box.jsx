@@ -21,7 +21,7 @@ class SearchBox extends React.Component {
     }
 
     handleSubmit(e){
-        debugger
+        
         e.preventDefault()
         this.props.searchBusinesses(this.state.query).then(() => this.props.history.push(`/businesses?query=${this.state.query}`))
     }

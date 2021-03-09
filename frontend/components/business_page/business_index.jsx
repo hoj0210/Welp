@@ -15,28 +15,28 @@ class BusinessIndex extends React.Component{
     }
 
     componentDidMount(){
-        debugger
+        
         this.mount = true;
         // this.setState({search: this.props.location.search.split("=")[1]})
         if (Object.keys(this.props.businesses).length === 0 || !Array.isArray(this.props.businesses)) {
-            debugger
+            
             this.props.searchBusinesses(this.state.search)
         }
         // const search = this.props.location.search.split("=")[1];
     }
 
     componentDidUpdate(prevProps){
-        debugger
+        
         if (!this.mount) this.mount = true;
         if (prevProps.location.search.split("=")[1] !== this.props.location.search.split("=")[1]) {
-            debugger
+            
             this.setState({search: this.props.location.search.split("=")[1]})
         }
         window.scrollTo(0, 0)
     }
 
     render(){
-        debugger
+        
         if (this.mount === true && (Object.keys(this.props.businesses).length === 0 || !Array.isArray(this.props.businesses))) {
             this.mount = false;
             return (
@@ -57,12 +57,12 @@ class BusinessIndex extends React.Component{
                 </div>
             )
         } else if ( this.mount === false && (Object.keys(this.props.businesses).length === 0 || !Array.isArray(this.props.businesses))) {
-            debugger
+            
             return (
                 <div>Loading..</div>
             )
         } else {
-            debugger
+            
             return(
                 <div>
                     <div className="business-page-top-index">
@@ -78,7 +78,7 @@ class BusinessIndex extends React.Component{
                             <p className="all-results">All Results</p>
                             <div className="results">
                                 {this.props.businesses.map((business, i) => {
-                                    debugger
+                                    
                                     let finalRating = 0;
                                     let avgStar = "";
                                     let numReviews = ""
@@ -115,12 +115,12 @@ class BusinessIndex extends React.Component{
                                     } else {
                                         avgStar = window.oneStar
                                     }
-                                    debugger
+        
                                     return(
                                         <div className="each-result-container" key={i}>
                                             <Link className="result-link" to={`/businesses/${business.id}`}>
                                                 <div className="each-result">
-                                                    {/* <img className="b_index_pic"src={window.stockPhoto} alt=""/> */}
+                                                    <img className="b_index_pic"src={window.stockPhoto} alt=""/>
                                                     <img className="b_index_pic"src={business.photoUrls[0]} alt=""/>
                                                     <div className="result-info">
                                                         <div className="result-name">

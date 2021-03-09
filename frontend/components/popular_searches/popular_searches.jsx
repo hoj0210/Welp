@@ -9,7 +9,6 @@ class PopularSearches extends React.Component {
     }
 
     handleClick(type) {
-        debugger
         this.props.searchBusinesses(type).then(() => this.props.history.push(`/businesses?query=${type}`))
     }
 

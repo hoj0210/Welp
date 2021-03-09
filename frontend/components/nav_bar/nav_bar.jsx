@@ -30,7 +30,6 @@ class NavBar extends React.Component {
         }
     }
     handleClick(){
-        //debugger
         document.getElementById("myDropdown").classList.toggle("show");
     }
 
@@ -80,48 +79,5 @@ class NavBar extends React.Component {
     }
 
 }
-
-// const NavBar = props => {
-//     // debugger
-//     const type = (props.formType === "splash") ? "splash" : "other_pages";
-//     // const link = (props.formType === "splash") ? "/login" : `/business/${props.businessId}`;
-
-//     const notInSession = () => (
-//         <nav className={`login-signup${type}`}>
-//             <Link to="/login"><button className={`session-button1${type}`}>Log In</button></Link>
-//             <Link to="/signup"><button className={`session-button2${type}`}>Sign Up</button></Link>
-//         </nav>
-//     );
-
-//     const inSession = () => (
-//         <div className="nav-loggedin">
-//             {/* <button className={`logout-button${type}`} onClick={() => props.logout()}>Log Out</button> */}
-//             <div className="dropdown">
-//                 <div>
-//                     <img className="profile" src={window.defaultProfile}/>
-//                     <img className="down-arrow" src={window.downArrow}/>
-//                 </div>
-//                 <div id="myDropdown" className="dropdown-content">
-//                     <div className="dropdown-profile">
-//                         <img className="profile-inner" src={window.defaultProfile}/>
-//                         <div className="dropdown-profile-text">
-//                             <div className="dropdown-profile-name">{`${props.currentUser.fname} ${props.currentUser.lname.slice(0, 1)}.`}</div>
-//                             <div className="dropdown-profile-addy">{`${props.currentUser.zip_code}`}</div>
-//                         </div>
-//                     </div>
-//                     <button className={`logout-button${type}`} onClick={() => props.logout()}>Log Out</button>
-//                 </div>
-//             </div>
-//         </div>
-//     )
-
-//     return (
-//         <div>
-//             {props.currentUser ? inSession() : notInSession()}
-//             {/* <SearchBoxContainer/> */}
-//         </div>
-
-//     )
-// }
 
 export default NavBar

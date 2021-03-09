@@ -26,7 +26,6 @@ class ReviewShow extends React.Component {
     }
 
     handleClick(id){
-        //debugger
         if (document.getElementById(`myReviewDropdown${id}`).style.display === "block") {
             document.getElementById(`myReviewDropdown${id}`).style.display = "none";
         } else {

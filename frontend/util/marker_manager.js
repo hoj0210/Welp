@@ -9,10 +9,10 @@ export default class MarkerManager {
     updateMarkers(businesses) {
         // let markers = this.markers
         const map = this.map
-        debugger
+        
         if (Array.isArray(businesses)) {
             for (let i = 0; i < businesses.length; i++) {
-                    debugger
+                    
                     this.createMarkerFromBusiness(businesses[i], map, i);
                         
                 }
@@ -25,7 +25,7 @@ export default class MarkerManager {
     }
 
     createMarkerFromBusiness(business, map, num) {
-        debugger
+        
         if (num === null) {
             const marker = new google.maps.Marker({
             position: { lat: business.latitude, lng: business.longitude },
@@ -41,7 +41,7 @@ export default class MarkerManager {
             }) 
         }
         
-        debugger
+        
         // this.markers[business.id] = marker
     }
 }

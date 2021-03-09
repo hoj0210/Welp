@@ -5,7 +5,6 @@ import {withRouter} from 'react-router-dom'
 import { logout } from '../../actions/session_actions';
 
 const msp = (state, ownProps) => {
-    debugger
     return(
         {
             business: state.entities.businesses[ownProps.match.params.businessId],
@@ -25,7 +24,6 @@ const msp = (state, ownProps) => {
 // )
 
 const mdp = dispatch => {
-    //debugger
     return (
         {
             fetchBusiness: (businessId) => dispatch(fetchBusiness(businessId)),
