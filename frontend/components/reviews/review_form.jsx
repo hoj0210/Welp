@@ -126,7 +126,7 @@ class ReviewForm extends React.Component {
         }
         
         return (
-            <p>{error}</p>
+            <p className="review-form-error">{error}</p>
             // <ul>
             //     {this.props.errors[0].map((error, i) => (
             //         <li key={i}>{error}</li>
