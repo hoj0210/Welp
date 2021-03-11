@@ -210,7 +210,6 @@
 .dropdown-splash{
     position: relative;
     display: inline-block;
-    right: 94px;
 }
 
 .dropdown-other_pages{
@@ -241,7 +240,7 @@
     z-index: 1;
     background-color: white;
     width: 218px;
-    right: -170px;
+    right: 20px;
     top: 41px;
     border-radius: 3px;
     box-shadow: 0 3px 3px darkgrey;
