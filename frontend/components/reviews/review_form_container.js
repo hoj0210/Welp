@@ -9,7 +9,8 @@ const msp = (state, ownProps) => {
         business: state.entities.businesses[ownProps.match.params.businessId],
         user_id: state.session.id,
         formType: "review_pages",
-        currentUser: state.entities.users[state.session.id]
+        currentUser: state.entities.users[state.session.id],
+        errors: state.errors.review
     }
 }
     

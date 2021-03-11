@@ -113,7 +113,19 @@ class ReviewForm extends React.Component {
         )
     }
 
+    renderErrors() {
+        return (
+            <p>{this.props.errors[0]}</p>
+            // <ul>
+            //     {this.props.errors[0].map((error, i) => (
+            //         <li key={i}>{error}</li>
+            //     ))}
+            // </ul>
+        )
+    }
+
     render(){
+        const classNameErrors = (this.props.errors.length !== 0) ? "review-errors-box" : ""
         if (!this.props.business) {
             return (
                 <div>Loading..</div>
@@ -180,6 +192,9 @@ class ReviewForm extends React.Component {
                                     {/* <input type="number" min="1" max="5" className="rating-number"value={this.state.rating} onChange={this.handleChange("rating")}/> */}
                                     <textarea className="text-area-text"value={this.state.message} onChange={this.handleChange("message")} 
                                     placeholder="It's amazing that they've added delivery due to COVID. The delivery wasn't perfert--they forgot one of my side dishes--but I understand this is a new operation for them at this time. Even so, the burrito was delicious and more than made up for it!"></textarea>
+                                    <div className={classNameErrors}>
+                                        {this.renderErrors()}
+                                    </div>
                                 </div>
                                 {/* <div>
                                     <h1 className="review-form-attach-photos">Attach Photos</h1>
