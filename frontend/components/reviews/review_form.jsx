@@ -114,8 +114,19 @@ class ReviewForm extends React.Component {
     }
 
     renderErrors() {
+        let error;
+        if (this.props.errors.length !== 0) {
+            debugger
+            error = this.props.errors[0];
+            if (error.includes("Message")) {
+                error = "To submit youre review, please explain your rating to others."
+            } else {
+                error = "To submit your review, please select a star rating for this business."
+            }
+        }
+        
         return (
-            <p>{this.props.errors[0]}</p>
+            <p>{error}</p>
             // <ul>
             //     {this.props.errors[0].map((error, i) => (
             //         <li key={i}>{error}</li>
