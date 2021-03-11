@@ -15,7 +15,6 @@
     width: 200px;
     position: relative;
     top: 26px;
-    left: 297px;
 }
 .nav-loggedin-splash{
     position: relative;
@@ -31,10 +30,8 @@
     position: relative;
     z-index: 1;
     top: 24px;
-    float: right;
     display: flex;
     justify-content: flex-end;
-    left: 200px;
 }
 
 
@@ -292,7 +289,6 @@
     outline: none;
     min-width: 100px;
     position: relative;
-    left: 190px;
 }
 
 /* .signed-on-button:hover{
