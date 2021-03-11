@@ -8,7 +8,7 @@ const About = props => (
                 <p className="footer-title">About</p>
                 <div className="about-links">
                     <div className="about-link">
-                        <a href="https://github.com/hoj0210">Github</a>
+                        <a href="https://github.com/hoj0210" target="_blank">Github</a>
                     </div>
                     <div className="about-link">
                         <a href="https://angel.co/u/hojung-cha">AngelList</a>
