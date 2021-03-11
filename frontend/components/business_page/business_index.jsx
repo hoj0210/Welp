@@ -120,8 +120,8 @@ class BusinessIndex extends React.Component{
                                         <div className="each-result-container" key={i}>
                                             <Link className="result-link" to={`/businesses/${business.id}`}>
                                                 <div className="each-result">
-                                                    <img className="b_index_pic"src={window.stockPhoto} alt=""/>
-                                                    {/* <img className="b_index_pic"src={business.photoUrls[0]} alt=""/> */}
+                                                    {/* <img className="b_index_pic"src={window.stockPhoto} alt=""/> */}
+                                                    <img className="b_index_pic"src={business.photoUrls[0]} alt=""/>
                                                     <div className="result-info">
                                                         <div className="result-name">
                                                             <p>{i + 1}. </p>
