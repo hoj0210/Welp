@@ -23,6 +23,7 @@ class ReviewShow extends React.Component {
 
     handleDelete() {
         this.props.deleteReview(this.props.review, this.props.business.id)
+            .then(() => window.location.reload())
     }
 
     handleClick(id){
