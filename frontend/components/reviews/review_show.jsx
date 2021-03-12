@@ -68,7 +68,7 @@ class ReviewShow extends React.Component {
                         <div id={`delete${this.props.review.id}`} className="delete-background" onClick={this.removeModal}>
                             <div className="delete-container-top"onClick={e => e.stopPropagation()} >
                                 <div className="delete-text">
-                                    <p className="delete-review-header"><strong>Remove Review</strong></p>
+                                    {/* <p className="delete-review-header"><strong>Remove Review</strong></p>
                                     <br/>
                                     <p className="delete-text-q">Reasons for removing this review?</p>
                                     <br/>
@@ -83,7 +83,7 @@ class ReviewShow extends React.Component {
                                         <br/>
                                         <li>Other</li>
                                         <br/>
-                                    </ul>
+                                    </ul> */}
                                     <div className="delete-options">
                                         <p>Are you sure you want to remove your review?</p>
                                         <br/>
