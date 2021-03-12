@@ -155,7 +155,7 @@ class ReviewForm extends React.Component {
                             <div className="review-form-box">
                                 <div className="review-form-texts">
                                     <span className="review-form-business-name">{this.props.business.name}</span>
-                                    <span className="review-form-guide" onClick={() => this.reviewModal()}>Read our review guidelines</span>
+                                    <span className="review-form-guide" onClick={() => this.reviewModal()}>Read our guideline</span>
                                     <div id="regulation"className="regulation-background" onClick={this.removeModal}>
                                         <div className="regulation-container-top" onClick={e => e.stopPropagation()}>
                                             <div className="regulation-text">
@@ -166,13 +166,44 @@ class ReviewForm extends React.Component {
                                                     </p>
                                                 </div>
                                                 <div className="regulation-scrollable">
-                                                    <p className="gen-guide">General Guidelines</p>
+                                                    <p className="gen-guide">You've found the Easter Egg!</p>
                                                     <br/>
                                                     <p>
-                                                        People come to Yelp to connect with great local businesses. We know that people won’t always agree, but we expect everyone on the site to treat one another and the platform with honesty and respect. We’ve put together these general guidelines to help set the tone for discourse on the site—just in case. Please also read the additional guidelines below for specific types of content that you might contribute to the site.
+                                                        Thank you so much for enjoying my content so far. Here is a little more information about myself!
                                                     </p>
                                                     <br/>
-                                                    <ul>
+                                                    <div>
+                                                        <p>
+                                                            My name is Hojung Cha, and I am a software engineer with experience in building web applications with UI using Javascript, React, Redux, Rails, Ruby on Rails, Mongoose, MongoDB, Express.js, SQL, Node.js, and PostgreSQL.
+                                                        </p>
+                                                        <br/>
+                                                        <p>
+                                                            I graduated from App Academy, a highly selective (3% acceptance rate) software engineer program, where I spent more than 100 hours per week learning and mastering my skills in different technologies and computer languages. Though challenging, it invigorated my passion for problem solving and the desire to keep learning and building my knowledge to become the most optimal problem-solver as a programmer. And I am looking for an opportunity to keep this flame going. 
+                                                        </p>
+                                                        <br/>
+                                                        <p>
+                                                            These are some of my other recent projects:
+                                                        </p>
+                                                        <br/>
+                                                        <p>
+                                                            FIT2ME: A fitness app that connects fitness seekers to trainers affording them flexibility of their choice of location and the type of workout they want, created with MERN stack
+                                                        </p>
+                                                        <br/>
+                                                        <p>
+                                                            Space Escape: A fun game where users must press the right key to play notes and destroy spaceships, created with HTML Canvas, CSS, and Javascript
+                                                        </p>
+                                                        <br/>
+                                                        <p>
+                                                            If you enjoyed these projects or have any questions, please contact me:
+                                                        </p>
+                                                        <br/>
+                                                        <p>
+                                                            Email: hoj0210@gmail.com
+                                                            <br/>
+                                                            Phone: 949-702-0026
+                                                        </p>
+                                                    </div>
+                                                    {/* <ul>
                                                         <li><span>Relevance:</span> Please make sure your contributions are appropriate to the forum. For example, reviews aren’t the place for rants about political ideologies, a business’s employment practices, extraordinary circumstances, or other matters that don’t address the core of the consumer experience.</li>
                                                         <br/>
                                                         <li><span>Inappropriate content:</span> Colorful language and imagery are fine, but there's no place for threats, harassment, lewdness, hate speech, or other display sof bigotry.</li>
@@ -184,7 +215,7 @@ class ReviewForm extends React.Component {
                                                         <li><span>Promotional content:</span> Don’t post promotional material unless it’s in connection with a Yelp advertising product and through a Business Account. Let’s keep the site useful for consumers and not overrun with commercial noise from every user.</li>
                                                         <br/>
                                                         <li><span>Intellectual property:</span> Don’t swipe content from other sites, users, or businesses. You’re a smart cookie, so write your own copy and share your own photos and videos.</li>                                                   
-                                                    </ul>
+                                                    </ul> */}
                                                 </div>
                                             </div>
                                         </div>
