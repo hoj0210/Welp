@@ -67,7 +67,6 @@
    top: 50%;
    left: 44%;
    transform: translate(-50%, -50%); 
-   height: 575px;
    border: 1px solid black;
     z-index: 1000;
 }
@@ -197,8 +196,6 @@
 }
 
 .delete-options{
-    position: relative;
-    top: 100px;
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 18px;
 
