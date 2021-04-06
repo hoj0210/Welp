@@ -148,9 +148,9 @@ class BusinessIndex extends React.Component{
                                                             )}
                                                         </div>
                                                         <div className="result-booleans">
-                                                            <p className="result-boolean">{business.delivery ? <img className="result-bool" src={window.yes}/> : <img className="result-bool"src={window.no}/>} Delivery</p>
-                                                            <p className="result-boolean">{business.takeout ? <img className="result-bool"src={window.yes}/> : <img className="result-bool"src={window.no}/>} Takeout</p>
-                                                            <p className="result-boolean">{business.outdoor ? <img className="result-bool"src={window.yes}/> : <img className="result-bool"src={window.no}/>} Outdoor seating</p>
+                                                            <p className="result-boolean">{business.delivery ? <img className="result-bool" src="http://d5yem10y0aabn.cloudfront.net/business_boolean/yes.png"/> : <img className="result-bool"src="http://d5yem10y0aabn.cloudfront.net/business_boolean/no.png"/>} Delivery</p>
+                                                            <p className="result-boolean">{business.takeout ? <img className="result-bool"src="http://d5yem10y0aabn.cloudfront.net/business_boolean/yes.png"/> : <img className="result-bool"src="http://d5yem10y0aabn.cloudfront.net/business_boolean/no.png"/>} Takeout</p>
+                                                            <p className="result-boolean">{business.outdoor ? <img className="result-bool"src="http://d5yem10y0aabn.cloudfront.net/business_boolean/yes.png"/> : <img className="result-bool"src="http://d5yem10y0aabn.cloudfront.net/business_boolean/no.png"/>} Outdoor seating</p>
                                                         </div>
                                                         <div className="result-review">
                                                             <p className="result-review-text">"{business.reviews.length !== 0 ? `${business.reviews[0].message.split(" ").filter((w, i) => i < 30).join(" ")}...` : "Write the first review!"}"<span className="result-review-more">more</span></p>

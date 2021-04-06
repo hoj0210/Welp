@@ -187,7 +187,7 @@ class Business extends React.Component {
                                     <span className="num-reviews">{this.props.business.reviews.length} reviews</span>
                                 </div>
                                 <div className="business-categories">
-                                    <span className="claimed"><img className="claimed-icon"src={window.verified} alt=""/>Claimed</span>
+                                    <span className="claimed"><img className="claimed-icon"src="http://d5yem10y0aabn.cloudfront.net/verified.png" alt=""/>Claimed</span>
                                     <span>&#8226;</span>
                                     <span className="dollar-sign">{this.props.business.price_range}</span>
                                     <span className="bullet-2">&#8226;</span>
@@ -206,16 +206,16 @@ class Business extends React.Component {
                     </div>
                     <div className="business-page-link-container">
                         <div className="business-user-upload-links">
-                            <button className="business-review-button" onClick={() => this.props.history.push(`/businesses/${this.props.business.id}/reviews/create`)}><img className="star-icon"src={window.star} alt=""/>Write a Review</button>
+                            <button className="business-review-button" onClick={() => this.props.history.push(`/businesses/${this.props.business.id}/reviews/create`)}><img className="star-icon"src="http://d5yem10y0aabn.cloudfront.net/outline-star-128.png" alt=""/>Write a Review</button>
                         </div>
                     </div>
                     <div className="business-page-covid-update">
                         <p className="covid-title">COVID-19 Updates</p>  
                         <p className="updated-service">Updated Services</p>
                         <div className="business-show-result-bools">
-                            <p className="business-show-result-boolean">{this.props.business.delivery ? <img className="result-bool" src={window.yes}/> : <img className="result-bool"src={window.no}/>} Delivery</p>
-                            <p className="business-show-result-boolean">{this.props.business.takeout ? <img className="result-bool"src={window.yes}/> : <img className="result-bool"src={window.no}/>} Takeout</p>
-                            <p className="business-show-result-boolean">{this.props.business.outdoor ? <img className="result-bool"src={window.yes}/> : <img className="result-bool"src={window.no}/>} Outdoor seating</p>
+                            <p className="business-show-result-boolean">{this.props.business.delivery ? <img className="result-bool" src="http://d5yem10y0aabn.cloudfront.net/business_boolean/yes.png"/> : <img className="result-bool"src="http://d5yem10y0aabn.cloudfront.net/business_boolean/no.png"/>} Delivery</p>
+                            <p className="business-show-result-boolean">{this.props.business.takeout ? <img className="result-bool"src="http://d5yem10y0aabn.cloudfront.net/business_boolean/yes.png"/> : <img className="result-bool"src="http://d5yem10y0aabn.cloudfront.net/business_boolean/no.png"/>} Takeout</p>
+                            <p className="business-show-result-boolean">{this.props.business.outdoor ? <img className="result-bool"src="http://d5yem10y0aabn.cloudfront.net/business_boolean/yes.png"/> : <img className="result-bool"src="http://d5yem10y0aabn.cloudfront.net/business_boolean/no.png"/>} Outdoor seating</p>
                         </div>
                     </div>
                     <div className="business-location-hour-container">
