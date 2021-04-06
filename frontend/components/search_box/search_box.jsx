@@ -40,7 +40,8 @@ class SearchBox extends React.Component {
                                 <input className={`search-text${this.type}`}type="text" placeholder="Los Angeles ONLY FOR NOW" />
                             </label>
                             <button className={`search-icon-button${this.type}`}>
-                                <img src={window.searchIcon}/>
+                                {/* <img src={window.searchIcon}/> */}
+                                <img src="http://d5yem10y0aabn.cloudfront.net/search_icon.png" alt=""/>
                             </button>
                         </div>
                         
