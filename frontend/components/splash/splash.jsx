@@ -28,7 +28,7 @@ class Splash extends React.Component {
                             <SearchBox formType={this.props.formType} searchBusinesses={this.props.searchBusinesses} />
                         </div>
                         <div className="splash-logo-container">
-                            <Link to="/"><img className="splash-logo"src={window.mainLogo} /></Link>
+                            <Link to="/"><img className="splash-logo"src="http://d5yem10y0aabn.cloudfront.net/welp_logo.png" /></Link>
                         </div>
                         {/* <div className="search-box-container-splash">
                             <SplashSearchBoxContainer />

@@ -163,7 +163,7 @@ class Business extends React.Component {
                 <div>
                     <div className="business-page-top">
                         <div className="top-header-container">
-                            <Link to="/"><img className="top-logo-sign" src={window.mainLogo} /></Link>
+                            <Link to="/"><img className="top-logo-sign" src="http://d5yem10y0aabn.cloudfront.net/welp_logo.png" /></Link>
                             <SearchBox formType={this.props.formType} searchBusinesses={this.props.searchBusinesses}/>
                             <NavBar formType={this.props.formType} currentUser={this.props.currentUser} logout={this.props.logout}/>
                         </div>    

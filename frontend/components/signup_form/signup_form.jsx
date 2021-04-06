@@ -53,7 +53,7 @@ class SignupForm extends React.Component {
             <div id="wrapper">
                 <div className="session-form">
                     <div className="session-form-top">
-                        <Link to="/"><img className="welplogo" src={window.mainLogo}/></Link>
+                        <Link to="/"><img className="welplogo" src="http://d5yem10y0aabn.cloudfront.net/welp_logo.png"/></Link>
                     </div>
                     <div className="session-errors-container">
                         <div className={classNameErrors}>

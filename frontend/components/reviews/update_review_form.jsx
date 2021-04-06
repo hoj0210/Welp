@@ -138,7 +138,7 @@ class UpdateReviewForm extends React.Component {
             return(
                 <div>
                     <div className="review-form-navbar">
-                        <Link to="/"><img className="review-logo" src={window.mainLogo} alt=""/></Link>
+                        <Link to="/"><img className="review-logo" src="http://d5yem10y0aabn.cloudfront.net/welp_logo.png" alt=""/></Link>
                         
                         <div className="review-nav-spacefill"></div>
                         <NavBar formType={this.props.formType} currentUser={this.props.currentUser} logout={this.props.logout}/>
