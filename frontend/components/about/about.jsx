@@ -47,7 +47,8 @@ const About = props => (
                 </div>
             </div>
         </div>
-        <img className="bottom-image" src={window.bottomImg} alt=""/>
+        <img className="bottom-image"src="http://d5yem10y0aabn.cloudfront.net/yelp_footer.png" alt=""/>
+        {/* <img className="bottom-image" src={window.bottomImg} alt=""/> */}
         {/* <div className="bottom-image">
             <img src={window.bottomImg} alt=""/>
         </div> */}
