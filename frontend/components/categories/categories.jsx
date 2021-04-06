@@ -7,25 +7,25 @@ const Categories = props => (
         <div className="categories-container">
             <div className="category">
                 <div className="category-1-container">
-                    <img src={window.restaurantIcon} alt=""/>
+                    <img src="http://d5yem10y0aabn.cloudfront.net/categories/restaurant_icon.png" alt=""/>
                     <p className="category-icon-text">Restaurants</p>
                 </div>
             </div>
             <div className="category">
                 <div className="category-2-container">
-                    <img src={window.shoppingIcon} />
+                    <img src="http://d5yem10y0aabn.cloudfront.net/categories/shopping_icon.png" />
                     <p className="category-icon-text-1">Shopping</p>
                 </div>
             </div>
             <div className="category">
                 <div className="category-3-container">
-                    <img src={window.carIcon} />
+                    <img src="http://d5yem10y0aabn.cloudfront.net/categories/car_icon.png" />
                     <p className="category-icon-text">Automotive</p>
                 </div>
             </div>
             <div className="category">
                 <div className="category-1-container">
-                    <img src={window.nightlifeIcon} />
+                    <img src="http://d5yem10y0aabn.cloudfront.net/categories/nightlife_icon.png" />
                     <p className="category-icon-text">Nightlife</p>
                 </div>
             </div>
